@@ -1,7 +1,7 @@
 #EXTM3U url-tvg=""
-#EXTINF:-1 tvg-id="Disney India SD" tvg-name="Disney India SD" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/imageContent-1356-j5tdnwmw-v1/imageContent-1356-j5tdnwmw-m1.png" group-title="Kids",Disney India SD
+#EXTINF:-1 tvg-id="Disney India HD" tvg-name="Disney India HD" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/imageContent-1356-j5tdnwmw-v1/imageContent-1356-j5tdnwmw-m1.png" group-title="Kids",Disney India HD
 https://fifabd.xyz/KIDxRANAPK/play.m3u8?id=167551%7CReferer=RANAPK
-#EXTINF:-1 tvg-id="Disney India SD (TATAPLAY-MULTIAUDIO) 2 " tvg-name="Disney India SD 2" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/imageContent-1356-j5tdnwmw-v1/imageContent-1356-j5tdnwmw-m1.png" group-title="Kids",Disney India SD 2
+#EXTINF:-1 tvg-id="Disney India SD (TATAPLAY-MULTIAUDIO) 2 " tvg-name="Disney India SD" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/imageContent-1356-j5tdnwmw-v1/imageContent-1356-j5tdnwmw-m1.png" group-title="Kids",Disney India SD 
 http://game.denver1769.in/port/tp3.php?id=11639
 #EXTINF:-1 tvg-id="Hungama Kids" tvg-name="Hungama Kids" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Hungama_TV.svg/220px-Hungama_TV.svg.png" group-title="Kids",Hungama Kids
 http://starshare.live:8080/live/7382837374/5003958588/18456.m3u8
