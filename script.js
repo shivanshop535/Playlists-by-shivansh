@@ -1,3 +1,4 @@
+
 fetch('M3UPlus-Playlist-20241019222427.m3u')
     .then(response => response.text())
     .then(data => {
@@ -10,7 +11,7 @@ fetch('M3UPlus-Playlist-20241019222427.m3u')
 function parseM3U(data) {
     const lines = data.split('\n');
     const channels = [];
-    let currentChannel = {31};
+    let currentChannel = {};
 
     lines.forEach(line => {
         line = line.trim();
