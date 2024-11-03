@@ -1,84 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <title>MY KIDS</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stream Player</title>
-    <link rel="stylesheet" href="https://vjs.zencdn.net/7.21.1/video-js.css">
+    <script src="tatabyamit.js"></script>
     <style>
         body {
-            background-color: #121212;
-            color: white;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
+            margin: 0px;
         }
-        #videoContainer {
-            max-width: 800px;
-            margin: auto;
-            text-align: center;
-            padding: 20px;
+
+        .jwplayer {
+            position: absolute !important;
         }
-        h1 {
-            color: #ffffff;
-        }
-        .error-message {
-            color: red;
-            margin-top: 20px;
-        }
-        #debug-log {
-            background-color: #333;
-            padding: 10px;
-            border-radius: 5px;
-            margin-top: 20px;
-            text-align: left;
-        }
-        #debug-log p {
-            margin: 5px 0;
+
+        .jwplayer.jw-flag-aspect-mode {
+            min-height: 100%;
+            max-height: 100%;
         }
     </style>
 </head>
+
 <body>
-    <div id="videoContainer">
-        <h1 id="channel-name"></h1>
-        <video id="video" class="video-js vjs-default-skin" controls crossorigin="anonymous" playsinline style="width: 100%;"></video>
-        <div id="debug-log"></div>
-        <div class="error-message" id="error-message"></div>
-    </div>
+    <div id="jwplayerDiv"></div>
+    <script type="text/javascript">
+        // Function to get URL parameters
+        function getParameterByName(name, url) {
+            if (!url) url = window.location.href;
+            name = name.replace(/[\[\]]/g, "\\$&");
+            var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, " "));
+        }
 
-    <script src="https://vjs.zencdn.net/7.21.1/video.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/videojs-contrib-hls@latest/dist/videojs-contrib-hls.min.js"></script>
-    <script>
-        const params = new URLSearchParams(window.location.search);
-        const streamUrl = decodeURIComponent(params.get('url'));
-        const channelName = decodeURIComponent(params.get('name'));
+        // Function to fetch JSON data
+        function fetchChannels(callback) {
+            // Replace 'path/to/your/channels.json' with the actual path to your JSON file
+            fetch('channels.json')
+                .then(response => response.json())
+                .then(data => callback(data))
+                .catch(error => console.error('Error fetching JSON:', error));
+        }
 
-        document.getElementById('channel-name').innerText = channelName;
+        // Define player setup function
+        function setupPlayer(channelData) {
+            // Set up JWPlayer
+            var playerSetup = {
+                file: channelData.url,
+                position: 'bottom',
+                autostart: true,
+                stretching: "",
+                width: "100%"
+            };
 
-        const log = (message) => {
-            const logContainer = document.getElementById('debug-log');
-            const logEntry = document.createElement('p');
-            logEntry.innerText = message;
-            logContainer.appendChild(logEntry);
-        };
+            if (channelData.url.endsWith('.mpd')) {
+                // Set up DRM for DASH with keys if available
+                playerSetup.type = 'dash';
 
-        const errorMessage = document.getElementById('error-message');
+                // Check if Clear Key is available
+                if (channelData.license_key && channelData.license_key2) {
+                    playerSetup.drm = {
+                        clearkey: {
+                            keyId: channelData.license_key,
+                            key: channelData.license_key2
+                        }
+                    };
+                }
+            } else if (channelData.url.endsWith('.m3u8')) {
+                // Set up DRM for HLS with keys if available
+                playerSetup.type = 'hls';
 
-        // Initialize Video.js player
-        const player = videojs('video');
+                // Check if Clear Key is available
+                if (channelData.license_key && channelData.license_key2) {
+                    playerSetup.drm = {
+                        clearkey: {
+                            keyId: channelData.license_key,
+                            key: channelData.license_key2
+                        }
+                    };
+                }
+            } else {
+                // Default to HLS without keys
+                playerSetup.type = 'hls';
+            }
 
-        player.ready(() => {
-            player.src({
-                src: streamUrl,
-                type: 'application/x-mpegURL'
-            });
-            player.play();
+            jwplayer("jwplayerDiv").setup(playerSetup);
+        }
 
-            player.on('error', () => {
-                errorMessage.innerText = 'Error: Unable to play the stream.';
-                log('Error encountered while trying to play the stream.');
-            });
+        // Fetch channels data and set up the player
+        fetchChannels(function(channels) {
+            // Get channel name from the URL
+            var channelName = getParameterByName('channel');
+            // Find the channel data in the JSON
+            var channelData = channels.find(channel => decodeURIComponent(channel.name) === channelName);
+
+            if (channelData) {
+                // Set up the player with the channel data
+                setupPlayer(channelData);
+            } else {
+                console.error('Channel not found:', channelName);
+            }
         });
     </script>
-</body>
+</body><!---
+
+    <!------>
+
 </html>
