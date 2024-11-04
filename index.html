@@ -5,26 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MY KIDS (By Shivansh)</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://cdn.jwplayer.com/libraries/YOUR_LICENSE_KEY.js"></script>
 </head>
 <body>
     <div class="container">
         <h1>MY KIDS CHANNEL</h1>
         <input type="text" id="search-bar" placeholder="Search for a video...">
         <div id="channel-list"></div>
-        <div id="myPlayer"></div>
+        <object classid="clsid:9BE31822-FDAD-461B-AD51-BE1D1C159921"
+                codebase="http://downloads.videolan.org/pub/videolan/vlc/latest/win32/axvlc.cab"
+                width="640" height="480" id="vlc" events="True">
+            <param name="Src" value="http://your-ip-address:8080/">
+            <param name="ShowDisplay" value="True">
+            <param name="AutoLoop" value="False">
+            <param name="AutoPlay" value="True">
+            <embed type="application/x-vlc-plugin" pluginspage="http://www.videolan.org"
+                   width="640" height="480" id="vlc" loop="no" autoplay="yes"
+                   target=":sout=#transcode{vcodec=h264,acodec=mpga,ab=128,channels=2,samplerate=44100,scodec=none}:http{mux=ffmpeg{mux=flv},dst=:8080/} :no-sout-all :sout-keep">
+            </embed>
+        </object>
     </div>
-    <script>
-        jwplayer("myPlayer").setup({
-            file: "https://fifabd.xyz/KIDxRANAPK/play.m3u8?id=167551|Referer=RANAPK",
-            image: "https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/imageContent-1356-j5tdnwmw-v1/imageContent-1356-j5tdnwmw-m1.png",
-            width: "640",
-            height: "360"
-        });
-    </script>
     <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
