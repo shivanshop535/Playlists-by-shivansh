@@ -65,3 +65,32 @@ function displayChannels(channels) {
 function playStream(url, name) {
     window.location.href = `player.html?url=${url}&name=${name}`;
 }
+document.addEventListener('DOMContentLoaded', function() {
+    const searchBar = document.getElementById('search-bar');
+    const channelList = document.getElementById('channel-list');
+    const videos = [
+        // Add your video data here
+        { title: 'Video 1', url: 'video1.mp4' },
+        { title: 'Video 2', url: 'video2.mp4' },
+        // Add more videos as needed
+    ];
+
+    function displayVideos(videos) {
+        channelList.innerHTML = '';
+        videos.forEach(video => {
+            const videoElement = document.createElement('div');
+            videoElement.className = 'video-item';
+            videoElement.innerHTML = `<a href="${video.url}">${video.title}</a>`;
+            channelList.appendChild(videoElement);
+        });
+    }
+
+    searchBar.addEventListener('input', function(e) {
+        const searchTerm = e.target.value.toLowerCase();
+        const filteredVideos = videos.filter(video => video.title.toLowerCase().includes(searchTerm));
+        displayVideos(filteredVideos);
+    });
+
+    // Display all videos initially
+    displayVideos(videos);
+});
