@@ -20,7 +20,7 @@
             <param name="AutoPlay" value="True">
             <embed type="application/x-vlc-plugin" pluginspage="http://www.videolan.org"
                    width="640" height="480" id="vlc" loop="no" autoplay="yes"
-                   target=":https://fifabd.xyz/KIDxRANAPK/play.m3u8?id=26187,">
+                   target="::sout=#transcode{vcodec=h264,acodec=mpga,ab=128,channels=2,samplerate=44100,scodec=none} :no-sout-all :sout-keep,">
             </embed>
         </object>
     </div>
