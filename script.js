@@ -94,3 +94,42 @@ document.addEventListener('DOMContentLoaded', function() {
     // Display all videos initially
     displayVideos(videos);
 });
+document.addEventListener('DOMContentLoaded', function() {
+    const searchBar = document.getElementById('search-bar');
+    const channelList = document.getElementById('channel-list');
+    const videoPlayer = document.getElementById('video-player');
+    const videos = [
+        { title: 'Disney India SD', url: 'https://fifabd.xyz/KIDxRANAPK/play.m3u8?id=167551' },
+        { title: 'Hungama Kids 1', url: 'http://starshare.live:8080/live/7382837374/5003958588/18456.m3u8' },
+        // Add more videos as needed
+    ];
+
+    function displayVideos(videos) {
+        channelList.innerHTML = '';
+        videos.forEach(video => {
+            const videoElement = document.createElement('div');
+            videoElement.className = 'video-item';
+            videoElement.innerHTML = `<a href="#" data-url="${video.url}">${video.title}</a>`;
+            channelList.appendChild(videoElement);
+        });
+    }
+
+    channelList.addEventListener('click', function(e) {
+        if (e.target.tagName === 'A') {
+            e.preventDefault();
+            const videoUrl = e.target.getAttribute('data-url');
+            videoPlayer.src = videoUrl;
+            videoPlayer.play();
+        }
+    });
+
+    searchBar.addEventListener('input', function(e) {
+        const searchTerm = e.target.value.toLowerCase();
+        const filteredVideos = videos.filter(video => video.title.toLowerCase().includes(searchTerm));
+        displayVideos(filteredVideos);
+    });
+
+    // Display all videos initially
+    displayVideos(videos);
+});
+
