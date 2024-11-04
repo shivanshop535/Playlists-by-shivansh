@@ -3,8 +3,10 @@
 https://fifabd.xyz/KIDxRANAPK/play.m3u8?id=167551%7CReferer=RANAPK
 #EXTINF:-1 tvg-id="Disney India SD (TATAPLAY-MULTIAUDIO) 2 " tvg-name="Disney India SD" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/imageContent-1356-j5tdnwmw-v1/imageContent-1356-j5tdnwmw-m1.png" group-title="Kids",Disney India SD 2
 http://game.denver1769.in/port/tp3.php?id=11639
-#EXTINF:-1 tvg-id="Hungama Kids" tvg-name="Hungama Kids" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Hungama_TV.svg/220px-Hungama_TV.svg.png" group-title="Kids",Hungama Kids
+#EXTINF:-1 tvg-id="Hungama Kids 1" tvg-name="Hungama Kids 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Hungama_TV.svg/220px-Hungama_TV.svg.png" group-title="Kids",Hungama Kids 1
 http://starshare.live:8080/live/7382837374/5003958588/18456.m3u8
+#EXTINF:-1 tvg-id="Hungama Kids 2" tvg-name="Hungama Kids 2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Hungama_TV.svg/220px-Hungama_TV.svg.png" group-title="Kids",Hungama Kids 2
+http://tgaadi-web.tech/portal/sg-iptv.php?watch=92287
 #EXTINF:-1 tvg-id="(no tvg-id)" tvg-name="Cartoon Network Hindi" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Cartoon_Network_Hindi.png" group-title="Kids",Cartoon Network Hindi
 https://fifabd.xyz/KIDxRANAPK/play.m3u8?id=150478
 #EXTINF:-1 tvg-id="Disney India HD" tvg-name="Disney India HD" tvg-logo="https://logodix.com/logo/619085.png" group-title="Kids",Disney India HD
@@ -13,6 +15,8 @@ https://fifabd.xyz/KIDxRANAPK/play.m3u8?id=167551%7CReferer=RANAPK
 https://dplus.gammacdn.workers.dev/videos/113.m3u8
 #EXTINF:-1 tvg-id="Sony Yay" tvg-name="Sony Yay" tvg-logo="https://sonypicturesnetworks.com/images/logos/SONY%20YAY.png" group-title="Kids",Sony Yay
 http://port.denver1769.in/ulpl7.php?tv=4756
+#EXTINF:-1 tvg-id="Sony Yay(GeoRestricted)" tvg-name="Sony Yay(GeoRestricted)" tvg-logo="https://sonypicturesnetworks.com/images/logos/SONY%20YAY.png" group-title="Kids",Sony Yay(GeoRestricted)
+https://pubads.g.doubleclick.net/ssai/event/40H5HfwWTZadFGYkBTqagg/master.m3u8
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/en/7/74/Super_Hungama_Logo.png?20220302022636" group-title="Kids", SUPER HUNGAMA
 http://103.124.251.164:28015/play/a02n/index.m3u8
 #EXTINF:-1 tvg-id="Gubbare" tvg-name="Gubbare" tvg-logo="https://www.epicon.in/img/gubbare-logo.png" group-title="Kids",Gubbare
@@ -24,7 +28,7 @@ http://119.156.26.155:8000/play/a061/index.m3u8
 #EXTINF:-1 tvg-id="(no tvg-id)" tvg-name="Sonic Hindi" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/sonic_Hindi.png" group-title="Kids",Sonic Hindi
 http://tgaadi-web.tech/portal/sg-iptv.php?watch=111083
 #EXTINF:-1 tvg-id="POGO" tvg-name="POGO" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/POGO-logo.png/250px-POGO-logo.png" group-title="Kids",POGO
-https://fifabd.xyz/KIDxRANAPK/play.m3u8?id=150483
+https://fifabd.xyz/KIDxRANAPK/play.m3u8?id=150483%7CReferer=RANAPK
 #EXTINF:-1 tvg-id="POGO 2" tvg-name="POGO 2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/POGO-logo.png/250px-POGO-logo.png" group-title="Kids",POGO 2
 http://tgaadi-web.tech/portal/sg-iptv.php?watch=92296
 #EXTINF:-1 tvg-id="Zoo Moo" tvg-name="Zoo Moo" tvg-logo="https://cdn.prod.website-files.com/64e961c3862892bff815289d/667534c959673c60d0418dad_logo_ZM_web_crop.webp" group-title="Kids",Zoo Moo
@@ -35,7 +39,7 @@ https://fifabd.xyz/KIDxRANAPK/play.m3u8?id=153175
 https://fifabd.xyz/KIDxRANAPK/play.m3u8?id=76722%7CReferer=RANAPK
 #EXTINF:-1 tvg-id="Cartoon Network HD+" tvg-name="Cartoon Network HD+" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Cartoon_Network_HD%2B_India_logo.png/375px-Cartoon_Network_HD%2B_India_logo.png" group-title="Kids",Cartoon Network HD+
 https://fifabd.xyz/KIDxRANAPK/play.m3u8?id=153154%7CReferer=RANAPK
-#EXTINF:-1 tvg-id="Masha And The Bear 24/7(HINDI)" tvg-name="Masha And The Bear 24/7(HINDI)" tvg-logo="https://static.wikia.nocookie.net/masha-and-bear/images/a/a9/Masha_and_the_Bear.png/revision/latest?cb=20180612195257" group-title="Kids",Masha And The Bear 24/7(HINDI)
+#EXTINF:-1 tvg-id="Masha And The Bear 24/7(HINDI)" tvg-name="Masha And The Bear 24/7(HINDI)" tvg-logo="https://thumbnail.imgbin.com/12/14/3/imgbin-masha-and-the-bear-animaccord-animation-studio-television-show-masha-y-el-oso-masha-and-the-bear-RFCAFur0X6QYNdGEdgW1mmAc4_t.jpg" group-title="Kids",Masha And The Bear 24/7(HINDI)
 https://fifabd.xyz/KIDxRANAPK/play.m3u8?id=301506
 #EXTINF:-1 tvg-id="Shiva 24/7" tvg-name="Shiva 24/7(HINDI)" tvg-logo="https://i.pinimg.com/originals/f0/6f/eb/f06feb87fe59247f98f161be490a778d.jpg" group-title="Kids",Shiva 24/7
 https://fifabd.xyz/KIDxRANAPK/play.m3u8?id=342074
@@ -64,4 +68,13 @@ https://fifabd.xyz/KIDxRANAPK/play.m3u8?id=301502%7CReferer=RANAPK
 #EXTINF:-1 tvg-id="COCOMELON TV 24/7" tvg-name="COCOMELON TV 24/7" tvg-logo="https://yt3.ggpht.com/ytc/AIdro_mR-I4TDlJI7Rc2jwF0cZf6uMnzDpkRggMK4zGOi4eOndY=s176-c-k-c0x00ffffff-no-rj" group-title="Kids",COCOMELON TV 24/7
 https://fifabd.xyz/KIDxRANAPK/play.m3u8?id=301499%7CReferer=RANAPK
 #EXTINF:-1 tvg-id="PINK PANTHER 24/7" tvg-name="PINK PANTHER 24/7" tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_lEeZP6Urk3JhCp_BnVamf57KSdAv-ZJb2nJqHmW-8ZIuM=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Kids",PINK PANTHER 24/7
-https://fifabd.xyz/KIDxRANAPK/play
+https://fifabd.xyz/KIDxRANAPK/play.m3u8?id=301503%7CReferer=RANAPK
+#EXTINF:-1 tvg-id="MR BEAN (CARTOON) 24/7" tvg-name="MR BEAN (CARTOON) 24/7" tvg-logo="https://www.pngall.com/wp-content/uploads/5/Cartoon-Mr.-Bean-Transparent.png" group-title="Kids",MR BEAN (CARTOON) 24/7
+https://fifabd.xyz/KIDxRANAPK/play.m3u8?id=301501%7CReferer=RANAPK
+#EXTINF:-1 tvg-id="PEPPA PIG 24/7" tvg-name="PEPPA PIG 24/7" tvg-logo="https://www.kindpng.com/picc/m/254-2544394_peppa-pig-logo-png-transparent-png.png" group-title="Kids",PEPPA PIG 24/7
+https://fifabd.xyz/KIDxRANAPK/play.m3u8?id=301509%7CReferer=RANAPK
+#EXTINF:-1 tvg-id="24/7 KIDS | MOV HINDI" tvg-name="24/7 KIDS | MOV HINDI" tvg-logo="https://th.bing.com/th/id/OIP.RubRrJta6l-fAtRxPfmkugAAAA?w=450&h=450&rs=1&pid=ImgDetMain" group-title="Kids",24/7 KIDS | MOV HINDI
+https://fifabd.xyz/KIDxRANAPK/play.m3u8?id=362998%7CReferer=RANAPK
+
+
+
