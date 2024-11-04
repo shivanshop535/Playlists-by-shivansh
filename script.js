@@ -94,10 +94,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Display all videos initially
     displayVideos(videos);
 });
-document.addEventListener('DOMContentLoaded', function() {
-    const searchBar = document.getElementById('search-bar');
-    const channelList = document.getElementById('channel-list');
-    const videoPlayer = document.getElementById('video-player');
 
 ];
 
