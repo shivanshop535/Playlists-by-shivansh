@@ -20,7 +20,7 @@
             <param name="AutoPlay" value="True">
             <embed type="application/x-vlc-plugin" pluginspage="http://www.videolan.org"
                    width="640" height="480" id="vlc" loop="no" autoplay="yes"
-                   target=":sout=#transcode{vcodec=h264,acodec=mpga,ab=128,channels=2,samplerate=44100,scodec=none}:http{mux=ffmpeg{mux=flv},dst=:8080/} :no-sout-all :sout-keep">
+                   target=":http{mux=ffmpeg{mux=flv},dst=:8080/,">
             </embed>
         </object>
     </div>
