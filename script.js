@@ -1,5 +1,11 @@
+// Fetch the local M3U playlist
 fetch('M3UPlus-Playlist-20241019222427.m3u')
-    .then(response => response.text())
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok: ' + response.statusText);
+        }
+        return response.text();
+    })
     .then(data => {
         const channels = parseM3U(data);
         console.log('Parsed Channels:', channels); // Debugging: Logs parsed channels
@@ -7,20 +13,21 @@ fetch('M3UPlus-Playlist-20241019222427.m3u')
     })
     .catch(error => console.error('Error fetching M3U file:', error));
 
+// Function to parse the M3U file and extract channel information
 function parseM3U(data) {
-    const lines = data.split('\n');
-    const channels = [];
-    let currentChannel = {};
+    const lines = data.split('\n'); // Split data by lines
+    const channels = []; // Array to store channel objects
+    let currentChannel = {}; // Temporary object to hold current channel data
 
     lines.forEach(line => {
-        line = line.trim();
+        line = line.trim(); // Remove whitespace
         if (line.startsWith('#EXTINF:')) {
             if (currentChannel.name) {
-                channels.push(currentChannel);
-                currentChannel = {};
+                channels.push(currentChannel); // Push the completed channel to the list
+                currentChannel = {}; // Reset for the next channel
             }
-            const nameMatch = line.match(/,(.+)$/);
-            const logoMatch = line.match(/tvg-logo="([^"]+)"/); // Extracts logo from M3U
+            const nameMatch = line.match(/,(.+)$/); // Extract channel name
+            const logoMatch = line.match(/tvg-logo="([^"]+)"/); // Extract logo URL from M3U
             if (nameMatch) {
                 currentChannel.name = nameMatch[1].trim();
             }
@@ -28,11 +35,11 @@ function parseM3U(data) {
                 currentChannel.logo = logoMatch[1];
             }
         } else if (line && !line.startsWith('#')) {
-            currentChannel.url = line.trim();
+            currentChannel.url = line.trim(); // Set the URL of the stream
         }
     });
 
-    // Push last channel if exists
+    // Push the last channel if exists
     if (currentChannel.name) {
         channels.push(currentChannel);
     }
@@ -40,7 +47,7 @@ function parseM3U(data) {
     return channels;
 }
 
-// Display channels in the HTML
+// Function to display channels in the HTML
 function displayChannels(channels) {
     const container = document.getElementById('channel-list');
     container.innerHTML = ''; // Clear any existing content
@@ -62,77 +69,8 @@ function displayChannels(channels) {
     }
 }
 
+// Function to navigate to player.html with URL parameters for streaming
 function playStream(url, name) {
     window.location.href = `player.html?url=${url}&name=${name}`;
 }
-document.addEventListener('DOMContentLoaded', function() {
-    const searchBar = document.getElementById('search-bar');
-    const channelList = document.getElementById('channel-list');
-    const videos = [
-        // Add your video data here
-        { title: 'Video 1', url: 'video1.mp4' },
-        { title: 'Video 2', url: 'video2.mp4' },
-        // Add more videos as needed
-    ];
-
-    function displayVideos(videos) {
-        channelList.innerHTML = '';
-        videos.forEach(video => {
-            const videoElement = document.createElement('div');
-            videoElement.className = 'video-item';
-            videoElement.innerHTML = `<a href="${video.url}">${video.title}</a>`;
-            channelList.appendChild(videoElement);
-        });
-    }
-
-    searchBar.addEventListener('input', function(e) {
-        const searchTerm = e.target.value.toLowerCase();
-        const filteredVideos = videos.filter(video => video.title.toLowerCase().includes(searchTerm));
-        displayVideos(filteredVideos);
-    });
-
-    // Display all videos initially
-    displayVideos(videos);
-});
-document.addEventListener('DOMContentLoaded', function() {
-    const searchBar = document.getElementById('search-bar');
-    const channelList = document.getElementById('channel-list');
-    const videoPlayer = document.getElementById('video-player');
-    const videos = [
-        { title: 'Disney India SD', url: 'https://fifabd.xyz/KIDxRANAPK/play.m3u8?id=167551|Referer=RANAPK', logo: 'path/to/logo1.png' },
-        { title: 'Hungama Kids 1', url: 'http://starshare.live:8080/live/7382837374/5003958588/18456.m3u8', logo: 'path/to/logo2.png' },
-        // Add more videos from your M3U8 playlist here
-    ];
-
-    function displayVideos(videos) {
-        channelList.innerHTML = '';
-        videos.forEach(video => {
-            const videoElement = document.createElement('div');
-            videoElement.className = 'video-item';
-            videoElement.innerHTML = `
-                <img src="${video.logo}" alt="${video.title} logo" class="video-logo">
-                <a href="#" data-url="${video.url}">${video.title}</a>
-            `;
-            channelList.appendChild(videoElement);
-        });
-    }
-
-    channelList.addEventListener('click', function(e) {
-        if (e.target.tagName === 'A') {
-            e.preventDefault();
-            const videoUrl = e.target.getAttribute('data-url');
-            videoPlayer.src = videoUrl;
-            videoPlayer.play();
-        }
-    });
-
-    searchBar.addEventListener('input', function(e) {
-        const searchTerm = e.target.value.toLowerCase();
-        const filteredVideos = videos.filter(video => video.title.toLowerCase().includes(searchTerm));
-        displayVideos(filteredVideos);
-    });
-
-    // Display all videos initially
-    displayVideos(videos);
-});
 
