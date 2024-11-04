@@ -98,11 +98,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const searchBar = document.getElementById('search-bar');
     const channelList = document.getElementById('channel-list');
     const videoPlayer = document.getElementById('video-player');
-    const videos = [
-        { title: 'Disney India SD', url: 'https://fifabd.xyz/KIDxRANAPK/play.m3u8?id=167551' },
-        { title: 'Hungama Kids 1', url: 'http://starshare.live:8080/live/7382837374/5003958588/18456.m3u8' },
-        // Add more videos as needed
-    ];
+
+];
 
     function displayVideos(videos) {
         channelList.innerHTML = '';
