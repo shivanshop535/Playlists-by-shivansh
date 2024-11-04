@@ -11,18 +11,6 @@
         <h1>MY KIDS CHANNEL</h1>
         <input type="text" id="search-bar" placeholder="Search for a video...">
         <div id="channel-list"></div>
-        <object classid="clsid:9BE31822-FDAD-461B-AD51-BE1D1C159921"
-                codebase="http://downloads.videolan.org/pub/videolan/vlc/latest/win32/axvlc.cab"
-                width="640" height="480" id="vlc" events="True">
-            <param name="Src" value=":sout=#transcode{vcodec=h264,acodec=mpga,ab=128,channels=2,samplerate=44100,scodec=none}:http{mux=ffmpeg{mux=flv},dst=:8080/} :no-sout-all :sout-keep/">
-            <param name="ShowDisplay" value="True">
-            <param name="AutoLoop" value="False">
-            <param name="AutoPlay" value="True">
-            <embed type="application/x-vlc-plugin" pluginspage="http://www.videolan.org"
-                   width="640" height="480" id="vlc" loop="no" autoplay="yes"
-                   target="::sout=#transcode{vcodec=h264,acodec=mpga,ab=128,channels=2,samplerate=44100,scodec=none} :no-sout-all :sout-keep,">
-            </embed>
-        </object>
     </div>
     <script src="script.js"></script>
 </body>
