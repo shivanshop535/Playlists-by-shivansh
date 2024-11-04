@@ -94,15 +94,25 @@ document.addEventListener('DOMContentLoaded', function() {
     // Display all videos initially
     displayVideos(videos);
 });
-
-];
+document.addEventListener('DOMContentLoaded', function() {
+    const searchBar = document.getElementById('search-bar');
+    const channelList = document.getElementById('channel-list');
+    const videoPlayer = document.getElementById('video-player');
+    const videos = [
+        { title: 'Disney India SD', url: 'https://fifabd.xyz/KIDxRANAPK/play.m3u8?id=167551|Referer=RANAPK', logo: 'path/to/logo1.png' },
+        { title: 'Hungama Kids 1', url: 'http://starshare.live:8080/live/7382837374/5003958588/18456.m3u8', logo: 'path/to/logo2.png' },
+        // Add more videos from your M3U8 playlist here
+    ];
 
     function displayVideos(videos) {
         channelList.innerHTML = '';
         videos.forEach(video => {
             const videoElement = document.createElement('div');
             videoElement.className = 'video-item';
-            videoElement.innerHTML = `<a href="#" data-url="${video.url}">${video.title}</a>`;
+            videoElement.innerHTML = `
+                <img src="${video.logo}" alt="${video.title} logo" class="video-logo">
+                <a href="#" data-url="${video.url}">${video.title}</a>
+            `;
             channelList.appendChild(videoElement);
         });
     }
