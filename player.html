@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stream Player</title>
     <link rel="stylesheet" href="https://cdn.plyr.io/3.6.8/plyr.css" />
+    <script src="https://cdn.plyr.io/3.6.8/plyr.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
     <style>
         body {
             background-color: #121212;
@@ -41,25 +43,39 @@
 <body>
     <div id="videoContainer">
         <h1 id="channel-name"></h1>
-        <video id="player" playsinline controls>
-            <source src="https://example.com/video-1080p.m3u8" type="application/x-mpegURL" data-quality="1080p" />
-            <source src="https://example.com/video-720p.m3u8" type="application/x-mpegURL" data-quality="720p" />
-            <source src="https://example.com/video-480p.m3u8" type="application/x-mpegURL" data-quality="480p" />
-        </video>
+        <video id="player" playsinline controls></video>
         <div id="debug-log"></div>
         <div class="error-message" id="error-message"></div>
     </div>
-    <script src="https://cdn.plyr.io/3.6.8/plyr.js"></script>
     <script>
-        const player = new Plyr('#player', {
-            quality: {
-                default: 720,
-                options: [1080, 720, 480],
-                forced: true,
-                onChange: (e) => {
-                    console.log(`Quality changed to ${e}`);
-                }
+        document.addEventListener('DOMContentLoaded', () => {
+            const video = document.getElementById('player');
+            const source = 'https://fifabd.xyz/KIDxRANAPK/play.m3u8?id=167551|Referer=RANAPK';
+
+            if (Hls.isSupported()) {
+                const hls = new Hls();
+                hls.loadSource(source);
+                hls.attachMedia(video);
+                hls.on(Hls.Events.MANIFEST_PARSED, () => {
+                    video.play();
+                });
+            } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+                video.src = source;
+                video.addEventListener('loadedmetadata', () => {
+                    video.play();
+                });
             }
+
+            const player = new Plyr(video, {
+                quality: {
+                    default: 720,
+                    options: [1080, 720, 480, 360, 240, 144, Auto],
+                    forced: true,
+                    onChange: (e) => {
+                        console.log(`Quality changed to ${e}`);
+                    }
+                }
+            });
         });
     </script>
 </body>
