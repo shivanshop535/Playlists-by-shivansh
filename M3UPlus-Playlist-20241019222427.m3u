@@ -21,6 +21,8 @@ https://livetvbox.live:443/live/15008/15008/66162.ts
 https://epiconvh.s.llnwi.net/gubbare/master.m3u8
 #EXTINF:-1 tvg-id="Nick Hindi" tvg-name="Nick Hindi" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Nickelodeon_2023_logo_%28outline%29.svg/512px-Nickelodeon_2023_logo_%28outline%29.svg.png" group-title="Kids",Nick Hindi
 https://fifabd.xyz/KIDxRANAPK/play.m3u8?id=150482
+#EXTINF:-1 tvg-id="Nick Hindi 2" tvg-name="Nick Hindi 2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Nickelodeon_2023_logo_%28outline%29.svg/512px-Nickelodeon_2023_logo_%28outline%29.svg.png" group-title="Kids",Nick Hindi 2
+https://live.drmlive-02.workers.dev/jc/1227.m3u8
 #EXTINF:-1 tvg-id="Nick Junior" tvg-name="Nick Junior" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Nick_Junior.png" group-title="Kids",Nick Junior
 http://119.156.26.155:8000/play/a061/index.m3u8
 #EXTINF:-1 tvg-id="(no tvg-id)" tvg-name="Sonic Hindi" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/sonic_Hindi.png" group-title="Kids",Sonic Hindi
