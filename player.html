@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="https://cdn.plyr.io/3.6.8/plyr.css" />
     <script src="https://cdn.plyr.io/3.6.8/plyr.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-    <script src="https://cdn.jwplayer.com/libraries/YOUR_LICENSE_KEY.js"></script>
     <style>
         body {
             background-color: #121212;
@@ -85,5 +84,22 @@
                     video.play();
                 });
                 video.addEventListener('error', (event) => {
-                    const errorMessage
-                
+                    const errorMessage = document.getElementById('error-message');
+                    errorMessage.textContent = `Error: ${event.message}`;
+                });
+            }
+
+            const player = new Plyr(video, {
+                quality: {
+                    default: 720,
+                    options: [1080, 720, 480],
+                    forced: true,
+                    onChange: (e) => {
+                        console.log(`Quality changed to ${e}`);
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
