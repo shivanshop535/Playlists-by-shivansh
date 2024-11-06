@@ -1,189 +1,27 @@
-<link rel="import" href="../polymer/polymer.html">
-<!-- <link rel="import" href="bower_components/iron-flex-layout/iron-flex-layout.html"> -->
+<!DOCTYPE html>
 
-<dom-module id="video-stream">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stream Player</title>
 
-  <template>
-
-    <style>
-      :host {
-        display: block;
-        width: 200px;
-        z-index: 10;
-        @apply(--layout-vertical);
-      }
-
-      video {
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-
-      ::cue {
-        background-color:#000;
-        color:#FFF;
-      }
-
-    </style>
-
-    <video poster$="{{poster}}" id="myVideo" autoplay$="{{autoplay}}">
-      <source src$="{{hd_src}}" type="video/mp4" />
-      <source src$="{{sd_src}}" type="video/mp4" />
-    </video>
-
-  </template>
-
-  <script>
-
-    Polymer({
-
-      is: 'video-stream',
-
-      properties: {
-        sd_src: String,
-        hd_src: String,
-        poster: String,
-        ratio: {
-          type: String,
-          value: "16:9"
-        },
-        subtitles: String,
-        sublang: String,
-        isPlaying: {
-          type: Boolean,
-          notify: true,
-          observer: 'isPlayingChanged'
-        },
-        progress: {
-          type: Number,
-          value: 0,
-          notify: true,
-          observer: 'progressChanged',
-        },
-        buffered: Number,
-        duration: Number,
-        isHD: {
-          type: Boolean,
-          observer: 'isHDChanged'
-        },
-        speed: {
-          type: Number, // TODO: double
-          observer: 'speedChanged'
-        },
-        volume: {
-          type: Number,
-          observer: 'volumeChanged'
-        },
-        autoplay: {
-          type: Boolean,
-          value: false
-        },
-        currentSubLang: {
-          type: String,
-          reflectToAttribute: true,
-          notify: true,
-          observer: 'currentSubLangChanged'
-        }
-      },
-
-      notStarted: true,
-
-      timer: null,
-
-      secondStream: false,
-
-      attached: function() {
-        this.$.myVideo.addEventListener('durationchange', function(event) {
-          this.duration = Math.floor(this.$.myVideo.duration);
-        }.bind(this));
-
-        this.timer = window.setInterval(function() {
-          if (this.$.myVideo.readyState >= 1) {
-            this.isPlaying = !this.$.myVideo.paused;
-            this.progress = Math.floor(this.$.myVideo.currentTime);
-            this.buffered = Math.floor(this.$.myVideo.buffered); // TODO: buffered.end(0)
-          }
-        }.bind(this), 500);
-      },
-
-      detached: function() {
-        window.clearInterval(this.timer);
-        this.timer = null;
-      },
-
-
-      /**
-       * Observers
-       */
-
-      isPlayingChanged: function() {
-        //console.log('stream isPlayingChanged', arguments);
-        if (this.isPlaying) {
-          //console.log('video play', this.$);
-          this.$.myVideo.play();
-          this.notStarted = false;
-        } else {
-          //console.log('video pause');
-          this.$.myVideo.pause();
-        }
-      },
-
-      progressChanged: function(newValue, oldValue) {
-        console.log('stream progressChanged', arguments);
-        if (Math.abs(oldValue - newValue) >= 3) {
-          this.$.myVideo.currentTime = newValue;
-        }
-      },
-
-      isHDChanged: function() {
-        console.log('stream isHDChanged', arguments);
-        if (this.isHD && this.hd_src != null) {
-          this.useSrc(this.hd_src);
-        } else if (this.sd_src != null) {
-          this.useSrc(this.sd_src);
-        }
-      },
-
-      speedChanged: function() {
-        console.log('stream speedChanged', arguments);
-        this.$.myVideo.playbackRate = this.speed;
-      },
-
-      volumeChanged: function() {
-        console.log('stream volumeChanged', arguments);
-        this.$.myVideo.volume = this.volume / 100;
-      },
-
-      currentSubLangChanged: function() {
-        console.log('stream currentSubLangChanged', arguments);
-        for (var i = 0; i < this.$.myVideo.textTracks.length; i++) {
-          if (this.$.myVideo.textTracks[i].language === this.currentSubLang) {
-            this.$.myVideo.textTracks[i].mode = 'showing';
-            this.setAttribute('data-state', 'active');
-          }
-          else {
-            this.$.myVideo.textTracks[i].mode = 'hidden';
-          }
-        }
-      },
-
-      /**
-       * Utility functions
-       */
-
-      useSrc: function(src) {
-        var currentTime = this.$.myVideo.currentTime;
-        this.$.myVideo.src = src;
-        if (!this.notStarted) {
-          this.$.myVideo.load();
-          this.$.myVideo.currentTime = currentTime;
-          this.$.myVideo.play();
-        }
-      }
-
-    })
-
-  </script>
-
-</dom-module>
+    <!-- import the video-player -->
+    <link rel="import" href="elements/video-player.html">
+    
+    <link rel="stylesheet" href="video_player.css">
+  </head>
+  <body>
+    <h1>Stream Player</h1>    
+      <video-player id="player" quality="hd">
+        <video-stream
+          poster="https://i.vimeocdn.com/video/487220623_640.jpg"
+          sd_src="https://player.vimeo.com/external/104624360.sd.mp4?s=a7a41026f4c356cc46de876e3e6072af&amp;download=1">
+        </video-stream>
+      </video-player>
+      
+    <!-- bootstrap polymer -->
+    <script type="application/dart">export 'package:polymer/init.dart';</script>
+    <script src="packages/browser/dart.js"></script>
+  </body>
+</html>
