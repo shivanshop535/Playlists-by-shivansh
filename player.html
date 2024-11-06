@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stream Player</title>
-    <link rel="stylesheet" href="https://vjs.zencdn.net/7.21.1/video-js.css">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.8/plyr.css" />
     <style>
         body {
             background-color: #121212;
@@ -41,44 +41,15 @@
 <body>
     <div id="videoContainer">
         <h1 id="channel-name"></h1>
-        <video id="video" class="video-js vjs-default-skin" controls crossorigin="anonymous" playsinline style="width: 100%;"></video>
+        <video id="player" playsinline controls>
+            <source src="https://fifabd.xyz/KIDxRANAPK/play.m3u8?id=167551|Referer=RANAPK" type="application/x-mpegURL" />
+        </video>
         <div id="debug-log"></div>
         <div class="error-message" id="error-message"></div>
     </div>
-
-    <script src="https://vjs.zencdn.net/7.21.1/video.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/videojs-contrib-hls@latest/dist/videojs-contrib-hls.min.js"></script>
+    <script src="https://cdn.plyr.io/3.6.8/plyr.js"></script>
     <script>
-        const params = new URLSearchParams(window.location.search);
-        const streamUrl = decodeURIComponent(params.get('url'));
-        const channelName = decodeURIComponent(params.get('name'));
-
-        document.getElementById('channel-name').innerText = channelName;
-
-        const log = (message) => {
-            const logContainer = document.getElementById('debug-log');
-            const logEntry = document.createElement('p');
-            logEntry.innerText = message;
-            logContainer.appendChild(logEntry);
-        };
-
-        const errorMessage = document.getElementById('error-message');
-
-        // Initialize Video.js player
-        const player = videojs('video');
-
-        player.ready(() => {
-            player.src({
-                src: streamUrl,
-                type: 'application/x-mpegURL'
-            });
-            player.play();
-
-            player.on('error', () => {
-                errorMessage.innerText = 'Error: Unable to play the stream.';
-                log('Error encountered while trying to play the stream.');
-            });
-        });
+        const player = new Plyr('#player');
     </script>
 </body>
 </html>
