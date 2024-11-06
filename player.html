@@ -42,14 +42,25 @@
     <div id="videoContainer">
         <h1 id="channel-name"></h1>
         <video id="player" playsinline controls>
-            <source src="https://fifabd.xyz/KIDxRANAPK/play.m3u8?id=167551|Referer=RANAPK" type="application/x-mpegURL" />
+            <source src="https://example.com/video-1080p.m3u8" type="application/x-mpegURL" data-quality="1080p" />
+            <source src="https://example.com/video-720p.m3u8" type="application/x-mpegURL" data-quality="720p" />
+            <source src="https://example.com/video-480p.m3u8" type="application/x-mpegURL" data-quality="480p" />
         </video>
         <div id="debug-log"></div>
         <div class="error-message" id="error-message"></div>
     </div>
     <script src="https://cdn.plyr.io/3.6.8/plyr.js"></script>
     <script>
-        const player = new Plyr('#player');
+        const player = new Plyr('#player', {
+            quality: {
+                default: 720,
+                options: [1080, 720, 480],
+                forced: true,
+                onChange: (e) => {
+                    console.log(`Quality changed to ${e}`);
+                }
+            }
+        });
     </script>
 </body>
 </html>
