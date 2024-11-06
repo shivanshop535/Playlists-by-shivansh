@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdn.plyr.io/3.6.8/plyr.css" />
     <script src="https://cdn.plyr.io/3.6.8/plyr.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <script src="https://cdn.jwplayer.com/libraries/YOUR_LICENSE_KEY.js"></script>
     <style>
         body {
             background-color: #121212;
@@ -69,12 +70,18 @@
             const player = new Plyr(video, {
                 quality: {
                     default: 720,
-                    options: [1080, 720, 480, 360, 240, 144, Auto],
+                    options: [1080, 720, 480, 360, 240, 144],
                     forced: true,
                     onChange: (e) => {
                         console.log(`Quality changed to ${e}`);
                     }
                 }
+            });
+
+            jwplayer("player").setup({
+                file: source,
+                width: "640",
+                height: "360"
             });
         });
     </script>
