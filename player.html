@@ -33,4 +33,66 @@
             padding: 10px;
             border-radius: 5px;
             margin-top: 20px;
-            text
+            text-align: left;
+        }
+        #debug-log p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="videoContainer">
+        <h1 id="channel-name"></h1>
+        <video id="player" playsinline controls></video>
+        <div id="debug-log"></div>
+        <div class="error-message" id="error-message"></div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const video = document.getElementById('player');
+            const source = 'https://livetvbox.live:443/live/15008/15008/66162.ts';
+
+            if (Hls.isSupported()) {
+                const hls = new Hls();
+                hls.loadSource(source);
+                hls.attachMedia(video);
+                hls.on(Hls.Events.MANIFEST_PARSED, () => {
+                    video.play();
+                });
+                hls.on(Hls.Events.ERROR, (event, data) => {
+                    const errorMessage = document.getElementById('error-message');
+                    if (data.fatal) {
+                        switch (data.type) {
+                            case Hls.ErrorTypes.NETWORK_ERROR:
+                                errorMessage.textContent = 'Network error encountered. Retrying...';
+                                hls.startLoad();
+                                break;
+                            case Hls.ErrorTypes.MEDIA_ERROR:
+                                errorMessage.textContent = 'Media error encountered. Attempting recovery...';
+                                hls.recoverMediaError();
+                                break;
+                            default:
+                                errorMessage.textContent = `Error: ${data.details}`;
+                                hls.destroy();
+                                break;
+                        }
+                    }
+                });
+            } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+                video.src = source;
+                video.addEventListener('loadedmetadata', () => {
+                    video.play();
+                });
+                video.addEventListener('error', (event) => {
+                    const errorMessage = document.getElementById('error-message');
+                    errorMessage.textContent = `Error: ${event.message}`;
+                });
+            }
+
+            const player = new Plyr(video, {
+                quality: {
+                    default: 720,
+                    options: [1080, 720, 480],
+                    forced: true,
+                    onChange: (e) => {
+                        console.log(`Quality
