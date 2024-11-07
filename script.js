@@ -64,10 +64,9 @@ function displayChannels(channels) {
             console.log('Displaying channel:', channel); // Debug each channel
             const channelDiv = document.createElement('div');
             channelDiv.classList.add('channel');
-            channelDiv.innerHTML = `
-                <img src="${channel.logo || 'path/to/default_logo.png'}" alt="${channel.name}" class="channel-logo" onclick="playStream('${encodeURIComponent(channel.url)}', '${encodeURIComponent(channel.name)}')">
-                <p>${channel.name}</p>
-            `;
+            channelDiv.innerHTML = 
+                `<img src="${channel.logo || 'path/to/default_logo.png'}" alt="${channel.name}" class="channel-logo" onclick="playStream('${encodeURIComponent(channel.url)}', '${encodeURIComponent(channel.name)}')">
+                <p>${channel.name}</p>`;
             container.appendChild(channelDiv);
         });
     }
