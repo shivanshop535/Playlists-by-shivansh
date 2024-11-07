@@ -14,7 +14,7 @@ https://livetvbox.live:443/live/15008/15008/19741.ts
 #EXTINF:-1 tvg-id="Discovery Kids" tvg-name="Discovery Kids" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Discovery_Kids_Logo_2021-Presente.webp/215px-Discovery_Kids_Logo_2021-Presente.webp.png" group-title="Kids",Discovery Kids
 https://dplus.gammacdn.workers.dev/videos/113.m3u8
 #EXTINF:-1 tvg-id="Sony Yay" tvg-name="Sony Yay" tvg-logo="https://sonypicturesnetworks.com/images/logos/SONY%20YAY.png" group-title="Kids",Sony Yay
-https://s82-ious.freeconvert.com/task/672b78b335cf3dc1fc9354bd/204.mp4
+http://bostv.one:8080/54846548461/774302/92420
 #EXTINF:-1 tvg-id="SUPER HUNGAMA" tvg-name="SUPER HUNGAMA" tvg-logo="https://upload.wikimedia.org/wikipedia/en/7/74/Super_Hungama_Logo.png?20220302022636" group-title="Kids", SUPER HUNGAMA
 https://livetvbox.live:443/live/15008/15008/66162.ts
 #EXTINF:-1 tvg-id="Gubbare" tvg-name="Gubbare" tvg-logo="https://www.epicon.in/img/gubbare-logo.png" group-title="Kids",Gubbare
