@@ -6,7 +6,7 @@ https://tgaadi-web.tech/stalker/portal.m3u8?id=643
 http://bostv.one:8080/85750857500/0004312/92410
 
 #EXTINF:-1 tvg-id="" tvg-name="Nick Junior" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/imageContent-390-j5jpps1s-v1/imageContent-390-j5jpps1s-m1.png" group-title="IND | KIDS VIP",Nick Junior
-http://bostv.one:8080/85750857500/0004312/92409
+http://119.156.26.155:8000/play/a061/index.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="Sonic_Hindi" tvg-logo="https://img-cdn.curl.pk/channels_icon/76823199191.png" group-title="IND | KIDS VIP",Sonic_Hindi
 http://bostv.one:8080/85750857500/0004312/92412
