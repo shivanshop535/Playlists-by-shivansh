@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stream Player with Quality Selection</title>
+    <title>Stream Player</title>
     <link rel="stylesheet" href="https://vjs.zencdn.net/7.21.1/video-js.css">
     <style>
         body {
@@ -26,43 +26,34 @@
             color: red;
             margin-top: 20px;
         }
-        #debug-log {
-            background-color: #333;
-            padding: 10px;
-            border-radius: 5px;
+        #loading-spinner {
+            display: none;
             margin-top: 20px;
-            text-align: left;
         }
-        #debug-log p {
-            margin: 5px 0;
+        #loading-spinner img {
+            width: 50px;
         }
     </style>
 </head>
 <body>
     <div id="videoContainer">
-        <h1 id="channel-name"></h1>
+        <h1>Live Stream</h1>
         <video id="video" class="video-js vjs-default-skin" controls crossorigin="anonymous" playsinline style="width: 100%;"></video>
-        <div id="debug-log"></div>
+        <div id="loading-spinner">
+            <img src="spinner.gif" alt="Loading...">
+        </div>
         <div class="error-message" id="error-message"></div>
     </div>
 
     <script src="https://vjs.zencdn.net/7.21.1/video.min.js"></script>
-    <script src="https://unpkg.com/videojs-contrib-quality-levels@2.0.9/dist/videojs-contrib-quality-levels.js"></script>
-    <script src="https://unpkg.com/videojs-http-source-selector@1.1.5/dist/videojs-http-source-selector.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/videojs-contrib-hls@5.13.0/dist/videojs-contrib-hls.min.js"></script>
     <script>
         const params = new URLSearchParams(window.location.search);
         const streamUrl = decodeURIComponent(params.get('url'));
-        const channelName = decodeURIComponent(params.get('name'));
-        document.getElementById('channel-name').innerText = channelName;
-
-        const logMessage = (message) => {
-            const logContainer = document.getElementById('debug-log');
-            const logEntry = document.createElement('p');
-            logEntry.innerText = message;
-            logContainer.appendChild(logEntry);
-        };
-
         const errorMessage = document.getElementById('error-message');
+        const loadingSpinner = document.getElementById('loading-spinner');
+
+        let videoElement = document.getElementById('video');
 
         function initializeVideoJS() {
             if (!streamUrl) {
@@ -70,25 +61,31 @@
                 return;
             }
 
-            logMessage('Attempting playback with Video.js...');
-            const player = videojs('video', {
-                autoplay: false,
-                muted: false,
-                controls: true
-            });
+            const player = videojs(videoElement);
 
             player.src({
                 src: streamUrl,
-                type: streamUrl.endsWith(".mpd") ? "application/dash+xml" : 
-                      (streamUrl.endsWith(".m3u8") || streamUrl.endsWith(".ts")) ? "application/x-mpegURL" : "video/mp4"
+                type: 'application/x-mpegURL'  // HLS stream
             });
 
-            // Quality Levels Plugin Initialization
-            player.qualityLevels();
-            player.httpSourceSelector();
+            // Show loading spinner while the video buffers
+            player.on('waiting', function() {
+                loadingSpinner.style.display = 'block';
+            });
 
-            player.ready(() => {
-                logMessage("Player is ready. Starting playback...");
-                player.play().catch(error => {
-                    logMessage("Playback error: " + error.message);
-                    errorMessage.innerText = 'Error: Unable to play the video automatically
+            // Hide loading spinner when the video starts playing
+            player.on('playing', function() {
+                loadingSpinner.style.display = 'none';
+            });
+
+            // Handle errors
+            player.on('error', function() {
+                errorMessage.innerText = 'Error: Unable to load the video stream. Please try again later.';
+            });
+        }
+
+        // Initialize the player
+        initializeVideoJS();
+    </script>
+</body>
+</html>
