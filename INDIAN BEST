@@ -1,12 +1,12 @@
 #EXTM3U url-tvg=""
 #EXTINF:-1 tvg-id="" tvg-name="Nick HD+" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/imageContent-11658-j9k5lvgo-v1/imageContent-11658-j9k5lvgo-m1.png" group-title="IND | KIDS VIP",Nick HD+
-http://bostv.one:8080/85750857500/0004312/92409
+https://tgaadi-web.tech/stalker/portal.m3u8?id=643
 
 #EXTINF:-1 tvg-id="" tvg-name="Pogo_Kids" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/imageContent-2694-j638bugw-v1/imageContent-2694-j638bugw-m1.png" group-title="IND | KIDS VIP",Pogo_Kids
 http://bostv.one:8080/85750857500/0004312/92410
 
 #EXTINF:-1 tvg-id="" tvg-name="Nick Junior" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/imageContent-390-j5jpps1s-v1/imageContent-390-j5jpps1s-m1.png" group-title="IND | KIDS VIP",Nick Junior
-http://bostv.one:8080/85750857500/0004312/92411
+http://bostv.one:8080/85750857500/0004312/92409
 
 #EXTINF:-1 tvg-id="" tvg-name="Sonic_Hindi" tvg-logo="https://img-cdn.curl.pk/channels_icon/76823199191.png" group-title="IND | KIDS VIP",Sonic_Hindi
 http://bostv.one:8080/85750857500/0004312/92412
@@ -20,11 +20,17 @@ http://bostv.one:8080/85750857500/0004312/92414
 #EXTINF:-1 tvg-id="" tvg-name="Cartoon Network SD" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/imageContent-11161-j99h67u8-v1/imageContent-11161-j99h67u8-m1.png" group-title="IND | KIDS VIP",Cartoon Network SD
 http://bostv.one:8080/85750857500/0004312/92415
 
+#EXTINF:-1 tvg-id="Chutti TV" tvg-name="Chutti TV" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/4/4c/Chutti_TV.jpg/revision/latest?cb=20240314122637" group-title="Kids",Chutti TV
+https://tgaadi-web.tech/stalker/portal.m3u8?id=975
+
 #EXTINF:-1 tvg-id="" tvg-name="Disney Kids" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Disney_Channel_logo_%282014%29.svg/512px-Disney_Channel_logo_%282014%29.svg.png" group-title="IND | KIDS VIP",Disney Kids
 http://bostv.one:8080/85750857500/0004312/92416
 
 #EXTINF:-1 tvg-id="" tvg-name="Hungama TV" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/imageContent-35365-jr3xz4uo-v5/imageContent-35365-jr3xz4uo-m6.png" group-title="IND | KIDS VIP",Hungama TV
 http://bostv.one:8080/85750857500/0004312/92417
+
+#EXTINF:-1 tvg-id="SUPER HUNGAMA" tvg-name="SUPER HUNGAMA" tvg-logo="https://upload.wikimedia.org/wikipedia/en/7/74/Super_Hungama_Logo.png?20220302022636" group-title="Kids", SUPER HUNGAMA
+https://livetvbox.live:443/live/15008/15008/66162.ts
 
 #EXTINF:-1 tvg-id="" tvg-name="Gubbare  Kids" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/imageContent-57985-khvdchrs-v2/imageContent-57985-khvdchrs-m2.png" group-title="IND | KIDS VIP",Gubbare  Kids
 http://bostv.one:8080/85750857500/0004312/92418
@@ -37,6 +43,33 @@ http://bostv.one:8080/85750857500/0004312/92420
 
 #EXTINF:-1 tvg-id="" tvg-name="Sonic Nickelodeon" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/imageContent-8018-j7a7n1a8-v1/imageContent-8018-j7a7n1a8-m1.png" group-title="IND | KIDS VIP",Sonic Nickelodeon
 http://bostv.one:8080/85750857500/0004312/92421
+
+#EXTINF:-1 tvg-id="WOW KIDS ACTION" tvg-name="WOW KIDS ACTION" tvg-logo="https://i.ibb.co/q99whvs/20240803-103842.png" group-title="Kids",WOW KIDS ACTION
+https://fifabd.xyz/KIDxRANAPK/play.m3u8?id=314753%7CReferer=RANAPK
+
+#EXTINF:-1 tvg-id="Chacha Bhatija 24/7" tvg-name="Chacha Bhatija 24/7" tvg-logo="https://m.media-amazon.com/images/M/MV5BNmFlODk2ZmEtMWE5MC00Nzg5LWE3ODMtMzViYTRhNjdjMjgzXkEyXkFqcGdeQXVyNjEyNjM1MjY@._V1_.jpg" group-title="Kids",Chacha Bhatija 24/7
+https://fifabd.xyz/KIDxRANAPK/play.m3u8?id=311774%7CReferer=RANAPK
+
+#EXTINF:-1 tvg-id="WOW Kids" tvg-name="WOW Kids" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/tv/150/150/bnw/wow-kidz-new-hindi-black.png" group-title="Kids",WOW Kids
+https://previewsecgire.akamaized.net/v1/master/a0d007312bfd99c47f76b77ae26b1ccdaae76cb1/pr_live_ire_hd/wowkidzhin/master/chunklist.m3u8?hdnts=
+
+#EXTINF:-1 tvg-id="Shiva 24/7" tvg-name="Shiva 24/7(HINDI)" tvg-logo="https://i.pinimg.com/originals/f0/6f/eb/f06feb87fe59247f98f161be490a778d.jpg" group-title="Kids",Shiva 24/7
+https://fifabd.xyz/KIDxRANAPK/play.m3u8?id=342074
+
+#EXTINF:-1 tvg-id="Motu Patlu 24/7(HINDI)" tvg-name="Motu Patlu 24/7(HINDI)" tvg-logo="https://upload.wikimedia.org/wikipedia/sco/c/cc/Motu_Patlu_official_logo.png" group-title="Kids",Motu Patlu 24/7(HINDI)
+https://fifabd.xyz/KIDxRANAPK/play.m3u8?id=311373%7CReferer=RANAPK
+
+#EXTINF:-1 tvg-id="Doraemon 24/7(HINDI)" tvg-name="Doraemon 24/7(HINDI)" tvg-logo="https://seeklogo.com/images/D/doraemon-logo-4E89A9406B-seeklogo.com.png" group-title="Kids",Doraemon 24/7(HINDI)
+http://game.denver1769.in/port/tp3.m3u8?id=58634
+
+#EXTINF:-1 tvg-id="Doraemon 24/7(HINDI) 2" tvg-name="Doraemon 24/7(HINDI) 2" tvg-logo="https://seeklogo.com/images/D/doraemon-logo-4E89A9406B-seeklogo.com.png" group-title="Kids",Doraemon 24/7(HINDI) 2
+https://livetvbox.live:443/live/15008/15008/147746.ts
+
+#EXTINF:-1 tvg-id="Oggy and the Cockroaches 24/7(HINDI)" tvg-name="Oggy and the Cockroaches 24/7(HINDI)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/3/3b/Oggy_and_the_Cockroaches_Logo.webp" group-title="Kids",Oggy and the Cockroaches 24/7(HINDI)
+https://fifabd.xyz/KIDxRANAPK/play.m3u8?id=308282
+
+#EXTINF:-1 tvg-id="Chhota Bheem 24/7" tvg-name="Chhota Bheem 24/7" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/5/5b/Chhota_Bheem_logo.png/1200px-Chhota_Bheem_logo.png?20220228124519" group-title="Kids",Chhota Bheem 24/7
+https://fifabd.xyz/KIDxRANAPK/play.m3u8?id=315401
 
 #EXTINF:-1 tvg-id="" tvg-name="KIDS: CoComelon TV 24/7" tvg-logo="" group-title="Kids 24/7 live",KIDS: CoComelon TV 24/7
 http://bostv.one:8080/85750857500/0004312/94411
@@ -61,3 +94,9 @@ http://bostv.one:8080/85750857500/0004312/94419
 
 #EXTINF:-1 tvg-id="" tvg-name="24/7 Kids: Peppa Pig" tvg-logo="" group-title="Kids 24/7 live",24/7 Kids: Peppa Pig
 http://bostv.one:8080/85750857500/0004312/94422
+
+#EXTINF:-1 tvg-id="24/7 KIDS | MOV HINDI" tvg-name="24/7 KIDS | MOV HINDI" tvg-logo="https://th.bing.com/th/id/OIP.RubRrJta6l-fAtRxPfmkugAAAA?w=450&h=450&rs=1&pid=ImgDetMain" group-title="Kids",24/7 KIDS | MOV HINDI
+https://fifabd.xyz/KIDxRANAPK/play.m3u8?id=362998%7CReferer=RANAPK
+
+#EXTINF:-1 tvg-id="" tvg-name="Taarak Mehta Ka Ooltah Chashmah 24/7" tvg-logo="https://m.media-amazon.com/images/S/pv-target-images/63484f11ba2ba1b5af0d8cf18e9548918e2448e9f0f67794dac7e8646596a01a.jpg" group-title="Indian Reality TV Shows 24/7",Taarak Mehta Ka Ooltah Chashmah 24/7
+http://bostv.one:8080/85750857500/0004312/97474
