@@ -36,6 +36,12 @@
         #debug-log p {
             margin: 5px 0;
         }
+        select {
+            background-color: #333;
+            color: white;
+            font-size: 14px;
+            margin-top: 10px;
+        }
     </style>
 </head>
 <body>
@@ -64,92 +70,4 @@
         const errorMessage = document.getElementById('error-message');
 
         let videoElement = document.getElementById('video');
-        
-        // Initialize Video.js player
-        const player = videojs(videoElement, {
-            techOrder: ['html5', 'hls'],
-            autoplay: true,
-            controls: true,
-            preload: 'auto',
-            fluid: true,
-        });
-
-        // Add HLS.js for custom streams
-        if (Hls.isSupported()) {
-            const hls = new Hls({
-                startLevel: -1, // Auto-detect level
-                capLevelToPlayerSize: true, // Ensure proper scaling
-                maxMaxBufferLength: 30, // Prevents buffering delays
-            });
-
-            // Attach event listeners for error handling
-            hls.on(Hls.Events.ERROR, function(event, data) {
-                logMessage('HLS.js encountered an error: ' + data.type);
-                if (data.fatal) {
-                    if (data.fatal === 'networkError') {
-                        errorMessage.innerText = 'Network Error: Unable to fetch the stream.';
-                        console.error('Network error:', data);
-                    } else if (data.fatal === 'mediaError') {
-                        errorMessage.innerText = 'Media Error: Unable to decode the media.';
-                        console.error('Media error:', data);
-                    } else if (data.fatal === 'otherError') {
-                        errorMessage.innerText = 'Unknown Error: Something went wrong.';
-                        console.error('Unknown error:', data);
-                    } else {
-                        errorMessage.innerText = 'Error: Unable to load HLS stream.';
-                    }
-                }
-            });
-
-            hls.on(Hls.Events.MANIFEST_PARSED, function(event, data) {
-                logMessage('HLS.js is parsing the manifest...');
-                // Enable audio track switching
-                if (data.audioTracks && data.audioTracks.length > 1) {
-                    logMessage('Multiple audio tracks found.');
-                    const audioTrackSelector = document.createElement('select');
-                    audioTrackSelector.style.marginTop = '10px';
-                    audioTrackSelector.style.backgroundColor = '#333';
-                    audioTrackSelector.style.color = 'white';
-                    audioTrackSelector.style.fontSize = '14px';
-
-                    data.audioTracks.forEach((track, index) => {
-                        const option = document.createElement('option');
-                        option.value = index;
-                        option.innerText = track.name || `Audio Track ${index + 1}`;
-                        audioTrackSelector.appendChild(option);
-                    });
-
-                    audioTrackSelector.addEventListener('change', function() {
-                        const trackIndex = audioTrackSelector.value;
-                        hls.audioTrack = trackIndex;
-                        logMessage('Switched to audio track: ' + trackIndex);
-                    });
-
-                    document.getElementById('videoContainer').appendChild(audioTrackSelector);
-                }
-            });
-
-            // Use a CORS Proxy to handle streams that don't support CORS
-            const corsProxyUrl = "https://cors-anywhere.herokuapp.com/";
-            const proxiedStreamUrl = corsProxyUrl + streamUrl;
-
-            hls.loadSource(proxiedStreamUrl);
-            hls.attachMedia(player.tech().el()); // Attach to Video.js player
-            hls.on(Hls.Events.MANIFEST_PARSED, function() {
-                logMessage('HLS.js is parsing the manifest...');
-            });
-            hls.on(Hls.Events.LEVEL_SWITCHED, function(event, data) {
-                logMessage('Switched to level ' + data.level);
-            });
-        } else {
-            logMessage('HLS.js is not supported in this browser.');
-            errorMessage.innerText = 'Error: HLS.js is not supported.';
-        }
-
-        // If the URL is invalid, show an error
-        if (!streamUrl) {
-            errorMessage.innerText = 'Error: Invalid stream URL.';
-        }
-    </script>
-</body>
-</html>
+      
