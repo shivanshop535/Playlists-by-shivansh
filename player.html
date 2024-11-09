@@ -36,7 +36,8 @@
         #debug-log p {
             margin: 5px 0;
         }
-        .audio-selector {
+        .audio-selector,
+        .quality-selector {
             position: absolute;
             top: 10px;
             right: 10px;
@@ -45,6 +46,9 @@
             padding: 10px;
             border-radius: 5px;
             font-size: 14px;
+        }
+        .quality-selector {
+            top: 50px;
         }
     </style>
 </head>
@@ -55,6 +59,9 @@
             <video id="video" class="video-js vjs-default-skin" controls crossorigin="anonymous" playsinline style="width: 100%;"></video>
             <div class="audio-selector" id="audio-selector" style="display: none;">
                 <select id="audioTrackSelector"></select>
+            </div>
+            <div class="quality-selector" id="quality-selector" style="display: none;">
+                <select id="qualityTrackSelector"></select>
             </div>
         </div>
         <div id="debug-log"></div>
@@ -118,6 +125,7 @@
 
             hls.on(Hls.Events.MANIFEST_PARSED, function(event, data) {
                 logMessage('HLS.js is parsing the manifest...');
+                
                 // Enable audio track switching
                 if (data.audioTracks && data.audioTracks.length > 1) {
                     logMessage('Multiple audio tracks found.');
@@ -136,6 +144,27 @@
                         const trackIndex = audioTrackSelector.value;
                         hls.audioTrack = trackIndex;
                         logMessage('Switched to audio track: ' + trackIndex);
+                    });
+                }
+
+                // Enable quality level switching
+                if (data.levels && data.levels.length > 1) {
+                    logMessage('Multiple quality levels found.');
+                    const qualityTrackSelector = document.getElementById('qualityTrackSelector');
+                    data.levels.forEach((level, index) => {
+                        const option = document.createElement('option');
+                        option.value = index;
+                        option.innerText = `${level.height ? level.height + 'p' : 'Auto'}`;
+                        qualityTrackSelector.appendChild(option);
+                    });
+
+                    // Show the quality level selector
+                    document.getElementById('quality-selector').style.display = 'block';
+
+                    qualityTrackSelector.addEventListener('change', function() {
+                        const levelIndex = qualityTrackSelector.value;
+                        hls.startLevel = levelIndex; // Switch to the selected quality level
+                        logMessage('Switched to quality level: ' + (data.levels[levelIndex].height || 'Auto'));
                     });
                 }
             });
