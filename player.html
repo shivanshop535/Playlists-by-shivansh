@@ -36,12 +36,6 @@
         #debug-log p {
             margin: 5px 0;
         }
-        select {
-            background-color: #333;
-            color: white;
-            font-size: 14px;
-            margin-top: 10px;
-        }
     </style>
 </head>
 <body>
@@ -58,4 +52,125 @@
         const params = new URLSearchParams(window.location.search);
         const streamUrl = decodeURIComponent(params.get('url'));
         const channelName = decodeURIComponent(params.get('name'));
-        document.getElementById('channel
+        document.getElementById('channel-name').innerText = channelName;
+
+        const logMessage = (message) => {
+            const logContainer = document.getElementById('debug-log');
+            const logEntry = document.createElement('p');
+            logEntry.innerText = message;
+            logContainer.appendChild(logEntry);
+        };
+
+        const errorMessage = document.getElementById('error-message');
+
+        let videoElement = document.getElementById('video');
+        
+        // Initialize Video.js player
+        const player = videojs(videoElement, {
+            techOrder: ['html5', 'hls'],
+            autoplay: true,
+            controls: true,
+            preload: 'auto',
+            fluid: true,
+        });
+
+        // Add HLS.js for custom streams
+        if (Hls.isSupported()) {
+            const hls = new Hls({
+                startLevel: -1, // Auto-detect level
+                capLevelToPlayerSize: true, // Ensure proper scaling
+                maxMaxBufferLength: 30, // Prevents buffering delays
+            });
+
+            // Attach event listeners for error handling
+            hls.on(Hls.Events.ERROR, function(event, data) {
+                logMessage('HLS.js encountered an error: ' + data.type);
+                if (data.fatal) {
+                    if (data.fatal === 'networkError') {
+                        errorMessage.innerText = 'Network Error: Unable to fetch the stream.';
+                        console.error('Network error:', data);
+                    } else if (data.fatal === 'mediaError') {
+                        errorMessage.innerText = 'Media Error: Unable to decode the media.';
+                        console.error('Media error:', data);
+                    } else if (data.fatal === 'otherError') {
+                        errorMessage.innerText = 'Unknown Error: Something went wrong.';
+                        console.error('Unknown error:', data);
+                    } else {
+                        errorMessage.innerText = 'Error: Unable to load HLS stream.';
+                    }
+                }
+            });
+
+            hls.on(Hls.Events.MANIFEST_PARSED, function(event, data) {
+                logMessage('HLS.js is parsing the manifest...');
+                // Enable audio track switching
+                if (data.audioTracks && data.audioTracks.length > 1) {
+                    logMessage('Multiple audio tracks found.');
+                    const audioTrackSelector = document.createElement('select');
+                    audioTrackSelector.style.marginTop = '10px';
+                    audioTrackSelector.style.backgroundColor = '#333';
+                    audioTrackSelector.style.color = 'white';
+                    audioTrackSelector.style.fontSize = '14px';
+
+                    data.audioTracks.forEach((track, index) => {
+                        const option = document.createElement('option');
+                        option.value = index;
+                        option.innerText = track.name || `Audio Track ${index + 1}`;
+                        audioTrackSelector.appendChild(option);
+                    });
+
+                    audioTrackSelector.addEventListener('change', function() {
+                        const trackIndex = audioTrackSelector.value;
+                        hls.audioTrack = trackIndex;
+                        logMessage('Switched to audio track: ' + trackIndex);
+                    });
+
+                    document.getElementById('videoContainer').appendChild(audioTrackSelector);
+                }
+            });
+
+            // CORS Proxy URL
+            const corsProxyUrl = "https://cors-anywhere.herokuapp.com/";
+
+            // Function to check if CORS is enabled
+            const checkCors = (url) => {
+                return fetch(url, {
+                    method: 'HEAD', 
+                    mode: 'cors',
+                    headers: {
+                        'Origin': window.location.origin,
+                    },
+                }).then(response => response.ok)
+                .catch(error => false);
+            };
+
+            // First, try loading the stream without the CORS proxy
+            checkCors(streamUrl).then(isCorsEnabled => {
+                if (isCorsEnabled) {
+                    logMessage('CORS is enabled, using the stream URL directly...');
+                    hls.loadSource(streamUrl);
+                } else {
+                    logMessage('CORS is not enabled, using the CORS proxy...');
+                    hls.loadSource(corsProxyUrl + streamUrl); // Use CORS proxy
+                }
+                hls.attachMedia(player.tech().el()); // Attach to Video.js player
+            });
+
+            hls.on(Hls.Events.MANIFEST_PARSED, function() {
+                logMessage('HLS.js is parsing the manifest...');
+            });
+            hls.on(Hls.Events.LEVEL_SWITCHED, function(event, data) {
+                logMessage('Switched to level ' + data.level);
+            });
+        } else {
+            logMessage('HLS.js is not supported in this browser.');
+            errorMessage.innerText = 'Error: HLS.js is not supported.';
+        }
+
+        // If the URL is invalid, show an error
+        if (!streamUrl) {
+            errorMessage.innerText = 'Error: Invalid stream URL.';
+        }
+    </script>
+</body>
+</html>
