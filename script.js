@@ -1,5 +1,3 @@
-
-// Fetch the local M3U playlist
 fetch('M3UPlus-Playlist-20241019222427.m3u')
     .then(response => {
         if (!response.ok) {
@@ -9,29 +7,25 @@ fetch('M3UPlus-Playlist-20241019222427.m3u')
     })
     .then(data => {
         const channels = parseM3U(data);
-        console.log('Parsed Channels:', channels); // Debugging: Logs parsed channels
+        console.log('Parsed Channels:', channels);
         displayChannels(channels);
     })
-    .catch(error => {
-        console.error('Error fetching M3U file:', error);
-        document.getElementById('channel-list').innerHTML = `<p class="error-message">Failed to load channels: ${error.message}</p>`;
-    });
+    .catch(error => console.error('Error fetching M3U file:', error));
 
-// Function to parse the M3U file and extract channel information
 function parseM3U(data) {
-    const lines = data.split('\n'); // Split data by lines
-    const channels = []; // Array to store channel objects
-    let currentChannel = {}; // Temporary object to hold current channel data
-
+    const lines = data.split('\n');
+    const channels = [];
+    let currentChannel = {};
+    
     lines.forEach(line => {
-        line = line.trim(); // Remove whitespace
+        line = line.trim();
         if (line.startsWith('#EXTINF:')) {
             if (currentChannel.name) {
-                channels.push(currentChannel); // Push the completed channel to the list
-                currentChannel = {}; // Reset for the next channel
+                channels.push(currentChannel);
+                currentChannel = {};
             }
-            const nameMatch = line.match(/,(.+)$/); // Extract channel name
-            const logoMatch = line.match(/tvg-logo="([^"]+)"/); // Extract logo URL from M3U
+            const nameMatch = line.match(/,(.+)$/);
+            const logoMatch = line.match(/tvg-logo="([^"]+)"/);
             if (nameMatch) {
                 currentChannel.name = nameMatch[1].trim();
             }
@@ -39,11 +33,10 @@ function parseM3U(data) {
                 currentChannel.logo = logoMatch[1];
             }
         } else if (line && !line.startsWith('#')) {
-            currentChannel.url = line.trim(); // Set the URL of the stream
+            currentChannel.url = line.trim();
         }
     });
 
-    // Push the last channel if exists
     if (currentChannel.name) {
         channels.push(currentChannel);
     }
@@ -51,30 +44,25 @@ function parseM3U(data) {
     return channels;
 }
 
-// Function to display channels in the HTML
 function displayChannels(channels) {
     const container = document.getElementById('channel-list');
-    container.innerHTML = ''; // Clear any existing content
+    container.innerHTML = '';
 
     if (channels.length === 0) {
         container.innerHTML = '<p>No channels found</p>';
-        console.warn('No channels were parsed from the M3U file.');
     } else {
         channels.forEach(channel => {
-            console.log('Displaying channel:', channel); // Debug each channel
             const channelDiv = document.createElement('div');
             channelDiv.classList.add('channel');
-            channelDiv.innerHTML = 
-                `<img src="${channel.logo || 'path/to/default_logo.png'}" alt="${channel.name}" class="channel-logo" onclick="playStream('${encodeURIComponent(channel.url)}', '${encodeURIComponent(channel.name)}')">
-                <p>${channel.name}</p>`;
+            channelDiv.innerHTML = `
+                <img src="${channel.logo || 'path/to/default_logo.png'}" alt="${channel.name}" class="channel-logo" onclick="playStream('${encodeURIComponent(channel.url)}', '${encodeURIComponent(channel.name)}')">
+                <p>${channel.name}</p>
+            `;
             container.appendChild(channelDiv);
         });
     }
 }
 
-// Function to navigate to player.html with URL parameters for streaming
 function playStream(url, name) {
-    // Redirect to the proxy page, which will bypass CORS
-    const proxyUrl = `proxy.html?url=${encodeURIComponent(url)}&name=${encodeURIComponent(name)}`;
-    window.location.href = proxyUrl;
+    window.location.href = `proxy.html?url=${url}&name=${name}`;
 }
