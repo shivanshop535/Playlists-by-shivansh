@@ -32,8 +32,11 @@ https://dplus.gammacdn.workers.dev/videos/113.m3u8
 #EXTINF:-1 tvg-id="Sony Yay" tvg-name="Sony Yay" tvg-logo="https://sonypicturesnetworks.com/images/logos/SONY%20YAY.png" group-title="Kids",Sony Yay
 https://fifabd.xyz/KIDxRANAPK/play.m3u8?id=26187
 
+#EXTINF:-1 tvg-id="Sony Yay 2" tvg-name="Sony Yay 2" tvg-logo="https://sonypicturesnetworks.com/images/logos/SONY%20YAY.png" group-title="Kids",Sony Yay 2
+https://unknown-playlists.vercel.app/sonyyay!.m3u8
+
 #EXTINF:-1 tvg-id="SUPER HUNGAMA" tvg-name="SUPER HUNGAMA" tvg-logo="https://upload.wikimedia.org/wikipedia/en/7/74/Super_Hungama_Logo.png?20220302022636" group-title="Kids", SUPER HUNGAMA
-https://livetvbox.live:443/live/15008/15008/66162.ts
+https://mykids.vercel.app/super-hungama.m3u8
 
 #EXTINF:-1 tvg-id="Gubbare" tvg-name="Gubbare" tvg-logo="https://www.epicon.in/img/gubbare-logo.png" group-title="Kids",Gubbare
 https://epiconvh.s.llnwi.net/gubbare/master.m3u8
@@ -49,6 +52,9 @@ http://tgaadi-web.tech/portal/sg-iptv.php?watch=111083
 
 #EXTINF:-1 tvg-id="POGO" tvg-name="POGO" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/POGO-logo.png/250px-POGO-logo.png" group-title="Kids",POGO
 https://tgaadi-web.tech/stalker/portal.m3u8?id=973
+
+#EXTINF:-1 tvg-id="ETV Bal Bharat" tvg-name="ETV Bal Bharat" tvg-logo="https://upload.wikimedia.org/wikipedia/en/6/65/ETV_Bal_Bharat.jpg?20210508020308" group-title="Kids",ETV Bal Bharat
+https://mykids.vercel.app/etv-bal-bharat-shivansh-tplay.m3u8
 
 #EXTINF:-1 tvg-id="Zoo Moo" tvg-name="Zoo Moo" tvg-logo="https://cdn.prod.website-files.com/64e961c3862892bff815289d/667534c959673c60d0418dad_logo_ZM_web_crop.webp" group-title="Kids",Zoo Moo
 https://amg01553-blueantmediaasi-zoomoonz-samsungnz-rdufn.amagi.tv/playlist/amg01553-blueantmediaasi-zoomoonz-samsungnz/playlist.m3u8
