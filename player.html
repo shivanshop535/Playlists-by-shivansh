@@ -58,16 +58,4 @@
         const params = new URLSearchParams(window.location.search);
         const streamUrl = decodeURIComponent(params.get('url'));
         const channelName = decodeURIComponent(params.get('name'));
-        document.getElementById('channel-name').innerText = channelName;
-
-        const logMessage = (message) => {
-            const logContainer = document.getElementById('debug-log');
-            const logEntry = document.createElement('p');
-            logEntry.innerText = message;
-            logContainer.appendChild(logEntry);
-        };
-
-        const errorMessage = document.getElementById('error-message');
-
-        let videoElement = document.getElementById('video');
-      
+        document.getElementById('channel
