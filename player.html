@@ -12,10 +12,15 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            min-height: 100vh;
         }
         #videoContainer {
             max-width: 800px;
-            margin: auto;
+            width: 100%;
             text-align: center;
             padding: 20px;
         }
@@ -36,8 +41,7 @@
         #debug-log p {
             margin: 5px 0;
         }
-        .audio-selector,
-        .quality-selector {
+        .audio-selector {
             position: absolute;
             top: 10px;
             right: 10px;
@@ -47,8 +51,26 @@
             border-radius: 5px;
             font-size: 14px;
         }
-        .quality-selector {
-            top: 50px;
+        #redirect-container {
+            text-align: center;
+            margin: 20px;
+        }
+        #redirect-button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        #redirect-button:hover {
+            background-color: #0056b3;
+        }
+        #info-text {
+            font-size: 14px;
+            color: #aaa;
+            margin-top: 10px;
         }
     </style>
 </head>
@@ -60,12 +82,14 @@
             <div class="audio-selector" id="audio-selector" style="display: none;">
                 <select id="audioTrackSelector"></select>
             </div>
-            <div class="quality-selector" id="quality-selector" style="display: none;">
-                <select id="qualitySelector"></select>
-            </div>
         </div>
         <div id="debug-log"></div>
         <div class="error-message" id="error-message"></div>
+    </div>
+
+    <div id="redirect-container">
+        <button id="redirect-button">Redirect to HTTP page (Better Experience)</button>
+        <p id="info-text">If it shows that the site is not secure, it is because it is hosted on HTTP. We love your safety. Please trust us...</p>
     </div>
 
     <script src="https://vjs.zencdn.net/7.21.1/video.min.js"></script>
@@ -84,8 +108,9 @@
         };
 
         const errorMessage = document.getElementById('error-message');
-        let videoElement = document.getElementById('video');
 
+        let videoElement = document.getElementById('video');
+        
         // Initialize Video.js player
         const player = videojs(videoElement, {
             techOrder: ['html5', 'hls'],
@@ -98,14 +123,9 @@
         // Add HLS.js for custom streams
         if (Hls.isSupported()) {
             const hls = new Hls({
-                startLevel: -1,
-                capLevelToPlayerSize: true,
-                maxMaxBufferLength: 30,
-                xhrSetup: function(xhr, url) {
-                    if (url.includes('.ts')) {
-                        xhr.setRequestHeader('Origin', window.location.origin);
-                    }
-                }
+                startLevel: -1, // Auto-detect level
+                capLevelToPlayerSize: true, // Ensure proper scaling
+                maxMaxBufferLength: 30, // Prevents buffering delays
             });
 
             hls.on(Hls.Events.ERROR, function(event, data) {
@@ -113,10 +133,8 @@
                 if (data.fatal) {
                     if (data.fatal === 'networkError') {
                         errorMessage.innerText = 'Network Error: Unable to fetch the stream.';
-                        console.error('Network error:', data);
                     } else if (data.fatal === 'mediaError') {
                         errorMessage.innerText = 'Media Error: Unable to decode the media.';
-                        console.error('Media error:', data);
                     } else {
                         errorMessage.innerText = 'Error: Unable to load HLS stream.';
                     }
@@ -125,28 +143,6 @@
 
             hls.on(Hls.Events.MANIFEST_PARSED, function(event, data) {
                 logMessage('HLS.js is parsing the manifest...');
-
-                // Enable quality track switching
-                if (data.levels && data.levels.length > 1) {
-                    const qualitySelector = document.getElementById('qualitySelector');
-                    data.levels.forEach((level, index) => {
-                        const option = document.createElement('option');
-                        option.value = index;
-                        option.innerText = level.height ? `${level.height}p` : `Level ${index + 1}`;
-                        qualitySelector.appendChild(option);
-                    });
-
-                    // Show the quality selector
-                    document.getElementById('quality-selector').style.display = 'block';
-
-                    qualitySelector.addEventListener('change', function() {
-                        const qualityIndex = parseInt(qualitySelector.value);
-                        hls.currentLevel = qualityIndex;
-                        logMessage('Switched to quality level: ' + qualityIndex);
-                    });
-                }
-
-                // Enable audio track switching if multiple audio tracks are present
                 if (data.audioTracks && data.audioTracks.length > 1) {
                     logMessage('Multiple audio tracks found.');
                     const audioTrackSelector = document.getElementById('audioTrackSelector');
@@ -158,44 +154,28 @@
                     });
 
                     document.getElementById('audio-selector').style.display = 'block';
-
                     audioTrackSelector.addEventListener('change', function() {
-                        hls.audioTrack = parseInt(audioTrackSelector.value);
-                        logMessage('Switched to audio track: ' + audioTrackSelector.value);
+                        const trackIndex = audioTrackSelector.value;
+                        hls.audioTrack = trackIndex;
+                        logMessage('Switched to audio track: ' + trackIndex);
                     });
                 }
             });
 
-            const corsProxyUrl = "https://cors-anywhere.herokuapp.com/";
-
-            const checkCors = (url) => {
-                return fetch(url, {
-                    method: 'HEAD', 
-                    mode: 'cors',
-                    headers: {
-                        'Origin': window.location.origin,
-                    },
-                }).then(response => response.ok)
-                .catch(error => false);
-            };
-
-            checkCors(streamUrl).then(isCorsEnabled => {
-                if (isCorsEnabled) {
-                    logMessage('CORS is enabled, loading stream...');
-                    hls.loadSource(streamUrl);
-                    player.src({ src: streamUrl, type: 'application/x-mpegURL' });
-                } else {
-                    logMessage('CORS is not enabled, using the CORS proxy...');
-                    hls.loadSource(corsProxyUrl + streamUrl);
-                    player.src({ src: corsProxyUrl + streamUrl, type: 'application/x-mpegURL' });
-                }
-            });
-
+            // Load stream without CORS proxy
+            hls.loadSource(streamUrl);
+            player.src({ src: streamUrl, type: 'application/x-mpegURL' });
             hls.attachMedia(videoElement);
         } else {
             errorMessage.innerText = 'HLS.js is not supported in this browser.';
             logMessage('HLS.js is not supported in this browser.');
         }
+
+        // Redirect button handler
+        document.getElementById('redirect-button').onclick = function() {
+            const httpUrl = `http://unknown-playlists.sportsontheweb.net/player.html?url=${encodeURIComponent(streamUrl)}&name=${encodeURIComponent(channelName)}`;
+            window.location.href = httpUrl;
+        };
     </script>
 </body>
 </html>
