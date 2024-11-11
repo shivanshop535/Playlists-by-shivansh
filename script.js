@@ -1,71 +1,3 @@
-fetch('M3UPlus-Playlist-20241019222427.m3u')
-    .then(response => {
-        if (!response.ok) {
-            throw new Error('Network response was not ok: ' + response.statusText);
-        }
-        return response.text();
-    })
-    .then(data => {
-        const channels = parseM3U(data);
-        console.log('Parsed Channels:', channels);
-        displayChannels(channels);
-    })
-    .catch(error => console.error('Error fetching M3U file:', error));
-
-function parseM3U(data) {
-    const lines = data.split('\n');
-    const channels = [];
-    let currentChannel = {};
-    
-    lines.forEach(line => {
-        line = line.trim();
-        if (line.startsWith('#EXTINF:')) {
-            if (currentChannel.name) {
-                channels.push(currentChannel);
-                currentChannel = {};
-            }
-            const nameMatch = line.match(/,(.+)$/);
-            const logoMatch = line.match(/tvg-logo="([^"]+)"/);
-            if (nameMatch) {
-                currentChannel.name = nameMatch[1].trim();
-            }
-            if (logoMatch) {
-                currentChannel.logo = logoMatch[1];
-            }
-        } else if (line && !line.startsWith('#')) {
-            currentChannel.url = line.trim();
-        }
-    });
-
-    if (currentChannel.name) {
-        channels.push(currentChannel);
-    }
-
-    return channels;
-}
-
-function displayChannels(channels) {
-    const container = document.getElementById('channel-list');
-    container.innerHTML = '';
-
-    if (channels.length === 0) {
-        container.innerHTML = '<p>No channels found</p>';
-    } else {
-        channels.forEach(channel => {
-            const channelDiv = document.createElement('div');
-            channelDiv.classList.add('channel');
-            channelDiv.innerHTML = `
-                <img src="${channel.logo || 'path/to/default_logo.png'}" alt="${channel.name}" class="channel-logo" onclick="playStream('${encodeURIComponent(channel.url)}', '${encodeURIComponent(channel.name)}')">
-                <p>${channel.name}</p>
-            `;
-            container.appendChild(channelDiv);
-        });
-    }
-}
-
-function playStream(url, name) {
-    window.location.href = `proxy.html?url=${url}&name=${name}`;
-}
 const params = new URLSearchParams(window.location.search);
 const streamUrl = decodeURIComponent(params.get('url'));
 const channelName = decodeURIComponent(params.get('name'));
@@ -102,3 +34,25 @@ if (streamUrl) {
 } else {
     errorMessage.innerText = 'Error: Invalid stream URL.';
 }
+
+// Example channel data
+const channels = [
+    { name: "Nobita Aur Dinosaur Yoddha", url: "https://dcoolf2l-b0e5bd96bf18.herokuapp.com/dl/671b2f5349786ef3e4a92b68", img: "path/to/image1.jpg" },
+    { name: "Nobita Bana Superhero", url: "https://dcoolf2l-b0e5bd96bf18.herokuapp.com/dl/671b2f9e49786ef3e4a92b6a", img: "path/to/image2.jpg" },
+    // Add more channels here
+];
+
+const channelList = document.getElementById('channel-list');
+
+channels.forEach(channel => {
+    const channelItem = document.createElement('div');
+    channelItem.className = 'channel-item';
+    channelItem.innerHTML = `
+        <img src="${channel.img}" alt="${channel.name}">
+        <h3>${channel.name}</h3>
+        <button onclick="playChannel('${channel.url}', '${channel.name}')">Play</button>
+    `;
+    channelList.appendChild(channelItem);
+});
+
+function playChannel(url, name) {
