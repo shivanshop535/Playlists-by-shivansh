@@ -16,14 +16,12 @@
             <a href="#">Contact</a>
         </nav>
     </header>
-    <div class="container">
-        <input type="text" id="search-bar" placeholder="Search for a channel...">
-        <select id="category-select">
-            <option value="all">All Categories</option>
-            <option value="movies">Kids</option>
-            <option value="shows">Entertenment</option>
-            <option value="cartoons">24/7 Channel</option>
-        </select>
+   /* Grid setup for channels (4 columns per row) */
+#channel-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns for each row */
+    gap: 15px; /* Reduced the gap between boxes */
+}
         <div id="channel-list"></div>
         <div id="videoContainer">
             <h2 id="channel-name"></h2>
