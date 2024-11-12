@@ -1,75 +1,58 @@
-// Fetch the local M3U playlist
-fetch('M3UPlus-Playlist-20241019222427.m3u')
-    .then(response => {
-        if (!response.ok) {
-            throw new Error('Network response was not ok: ' + response.statusText);
-        }
-        return response.text();
-    })
-    .then(data => {
-        const channels = parseM3U(data);
-        console.log('Parsed Channels:', channels); // Debugging: Logs parsed channels
-        displayChannels(channels);
-    })
-    .catch(error => console.error('Error fetching M3U file:', error));
+ // Fetch the M3U playlist (replace with actual URL or local path)
+    fetch('path_to_your_playlist.m3u')
+      .then(response => response.text())
+      .then(m3uContent => {
+        channels = parseM3U(m3uContent);
+        displayChannels(channels); // Display channels once the M3U is parsed
+      })
+      .catch(err => console.error('Error loading M3U file:', err));
 
-// Function to parse the M3U file
-function parseM3U(data) {
-    const lines = data.split('\n');
-    const channels = [];
-    let currentChannel = {};
+    // Function to parse M3U playlist
+    function parseM3U(content) {
+      const lines = content.split('\n');
+      const channelList = [];
+      let channelName = '';
+      let channelUrl = '';
 
-    lines.forEach(line => {
-        line = line.trim();
+      lines.forEach(line => {
         if (line.startsWith('#EXTINF:')) {
-            if (currentChannel.name) {
-                channels.push(currentChannel);
-                currentChannel = {};
-            }
-            const nameMatch = line.match(/,(.+)$/);
-            const logoMatch = line.match(/tvg-logo="([^"]+)"/); // Extracts logo from M3U
-            if (nameMatch) {
-                currentChannel.name = nameMatch[1].trim();
-            }
-            if (logoMatch) {
-                currentChannel.logo = logoMatch[1];
-            }
-        } else if (line && !line.startsWith('#')) {
-            currentChannel.url = line.trim();
+          // Extract the channel name (assuming the name is in the metadata line)
+          const nameMatch = line.match(/,(.*)$/);
+          if (nameMatch) {
+            channelName = nameMatch[1].trim();
+          }
+        } else if (line.startsWith('http')) {
+          // Extract the URL (assuming the URL is on the next line)
+          channelUrl = line.trim();
+          if (channelName && channelUrl) {
+            channelList.push({ name: channelName, url: channelUrl });
+            channelName = ''; // Reset for next channel
+            channelUrl = '';
+          }
         }
-    });
+      });
 
-    // Push last channel if exists
-    if (currentChannel.name) {
-        channels.push(currentChannel);
+      return channelList;
     }
 
-    return channels;
-}
+    // Display channels in the list
+    function displayChannels(filteredChannels) {
+      const channelList = document.getElementById('channelList');
+      channelList.innerHTML = ''; // Clear the current list
 
-// Display channels in the HTML
-function displayChannels(channels) {
-    const container = document.getElementById('channel-list');
-    container.innerHTML = ''; // Clear any existing content
-
-    if (channels.length === 0) {
-        container.innerHTML = '<p>No channels found</p>';
-        console.warn('No channels were parsed from the M3U file.');
-    } else {
-        channels.forEach(channel => {
-            console.log('Displaying channel:', channel); // Debug each channel
-            const channelDiv = document.createElement('div');
-            channelDiv.classList.add('channel');
-            channelDiv.innerHTML = `
-                <img src="${channel.logo || 'path/to/default_logo.png'}" alt="${channel.name}" class="channel-logo" onclick="playStream('${encodeURIComponent(channel.url)}', '${encodeURIComponent(channel.name)}')">
-                <p>${channel.name}</p>
-            `;
-            container.appendChild(channelDiv);
-        });
+      filteredChannels.forEach(channel => {
+        const li = document.createElement('li');
+        li.classList.add('channel-item');
+        li.innerHTML = `<a href="${channel.url}" target="_blank">${channel.name}</a>`;
+        channelList.appendChild(li);
+      });
     }
-}
 
-function playStream(url, name) {
-    const proxyUrl = `proxy.html?url=${encodeURIComponent(url)}&name=${encodeURIComponent(name)}`;
-    window.location.href = proxyUrl;
-}
+    // Search function to filter the channels
+    function searchChannels() {
+      const searchInput = document.getElementById('searchInput').value.toLowerCase();
+      const filteredChannels = channels.filter(channel => channel.name.toLowerCase().includes(searchInput));
+      displayChannels(filteredChannels);
+    }
+  </script>
+
