@@ -1,36 +1,89 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MY KIDS CHANNEL</title>
-    <link rel="stylesheet" href="https://vjs.zencdn.net/7.21.1/video-js.css" />
-    <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-    <header>
-        <h1>MY KIDS CHANNEL</h1>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
-        </nav>
-    </header>
-   /* Grid setup for channels (4 columns per row) */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#videoContainer {
+    margin-top: 2rem;
+}
+
+.error-message {
+    color: red;
+    margin-top: 20px;
+}
+
+#debug-log {
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+#debug-log p {
+    margin: 5px 0;
+}
+
+#search-bar {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
 #channel-list {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columns for each row */
-    gap: 15px; /* Reduced the gap between boxes */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
 }
-        <div id="channel-list"></div>
-        <div id="videoContainer">
-            <h2 id="channel-name"></h2>
-            <video id="video" class="video-js vjs-default-skin" controls crossorigin="anonymous" playsinline style="width: 100%;"></video>
-            <div id="debug-log"></div>
-            <div class="error-message" id="error-message"></div>
-        </div>
-    </div>
-    <script src="https://vjs.zencdn.net/7.21.1/video.min.js"></script>
-    <script src="script.js"></script>
-</body>
-</html>
+
+.channel-item {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 1rem;
+    text-align: center;
+}
