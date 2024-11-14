@@ -46,45 +46,7 @@ const channels = [
     { name: "PINK PANTHER 24/7", url: "#" },
 ];
 
-// Function to load channels into the grid
-const loadChannels = () => {
-    const channelList = document.getElementById("channel-list");
-    channelList.innerHTML = '';  // Clear existing list
-    channels.forEach(channel => {
-        const channelItem = document.createElement("div");
-        channelItem.classList.add("channel-item");
-        channelItem.innerText = channel.name;
-        channelItem.onclick = () => window.open(channel.url, "_blank");
-        channelList.appendChild(channelItem);
-    });
-};
-
-// Function to filter channels based on search input
-const filterChannels = () => {
-    const searchInput = document.getElementById("searchInput").value.toLowerCase();
-    const filteredChannels = channels.filter(channel =>
-        channel.name.toLowerCase().includes(searchInput)
-    );
-    displayChannels(filteredChannels); // Call displayChannels to update the UI
-};
-
-// Function to display channels dynamically
-const displayChannels = (channelArray) => {
-    const channelList = document.getElementById("channel-list");
-    channelList.innerHTML = ''; // Clear previous content
-    if (channelArray.length === 0) {
-        channelList.innerHTML = '<p>No channels found</p>';
-    } else {
-        channelArray.forEach(channel => {
-            const channelItem = document.createElement("div");
-            channelItem.classList.add("channel-item");
-            channelItem.innerText = channel.name;
-            channelItem.onclick = () => window.open(channel.url, "_blank");
-            channelList.appendChild(channelItem);
-        });
-    }
-    
-    // Fetch the local M3U playlist
+// Fetch the local M3U playlist
 fetch('M3UPlus-Playlist-20241019222427.m3u')
     .then(response => {
         if (!response.ok) {
@@ -94,14 +56,12 @@ fetch('M3UPlus-Playlist-20241019222427.m3u')
     })
     .then(data => {
         const channels = parseM3U(data);
-        const groups = getGroups(channels);
-        setupGroupFilter(groups);
-        setupPagination(channels);
-        displayChannels(channels.slice(0, 7)); // Display first 7 channels by default
+        console.log('Parsed Channels:', channels); // Debugging: Logs parsed channels
+        displayChannels(channels); // Display the parsed channels
     })
     .catch(error => console.error('Error fetching M3U file:', error));
 
-    // Parse M3U file
+// Function to parse the M3U file
 function parseM3U(data) {
     const lines = data.split('\n');
     const channels = [];
@@ -115,19 +75,59 @@ function parseM3U(data) {
                 currentChannel = {};
             }
             const nameMatch = line.match(/,(.+)$/);
-            const logoMatch = line.match(/tvg-logo="([^"]+)"/);
-            const groupMatch = line.match(/group-title="([^"]+)"/);
-            if (nameMatch) currentChannel.name = nameMatch[1].trim();
-            if (logoMatch) currentChannel.logo = logoMatch[1];
-            if (groupMatch) currentChannel.group = groupMatch[1];
+            const logoMatch = line.match(/tvg-logo="([^"]+)"/); // Extracts logo from M3U
+            if (nameMatch) {
+                currentChannel.name = nameMatch[1].trim();
+            }
+            if (logoMatch) {
+                currentChannel.logo = logoMatch[1];
+            }
         } else if (line && !line.startsWith('#')) {
             currentChannel.url = line.trim();
         }
     });
 
-    if (currentChannel.name) channels.push(currentChannel);
+    // Push last channel if exists
+    if (currentChannel.name) {
+        channels.push(currentChannel);
+    }
+
     return channels;
 }
 
-// Initial load of channels
-loadChannels();
+// Display channels in the HTML
+function displayChannels(channels) {
+    const container = document.getElementById('channel-list');
+    container.innerHTML = ''; // Clear any existing content
+
+    if (channels.length === 0) {
+        container.innerHTML = '<p>No channels found</p>';
+        console.warn('No channels were parsed from the M3U file.');
+    } else {
+        channels.forEach(channel => {
+            console.log('Displaying channel:', channel); // Debug each channel
+            const channelDiv = document.createElement('div');
+            channelDiv.classList.add('channel-item');
+            channelDiv.innerHTML = `
+                <img src="${channel.logo || 'path/to/default_logo.png'}" alt="${channel.name}" class="channel-logo" onclick="playStream('${encodeURIComponent(channel.url)}', '${encodeURIComponent(channel.name)}')">
+                <p>${channel.name}</p>
+            `;
+            container.appendChild(channelDiv);
+        });
+    }
+}
+
+// Play stream by redirecting to proxy page
+function playStream(url, name) {
+    const proxyUrl = `proxy.html?url=${encodeURIComponent(url)}&name=${encodeURIComponent(name)}`;
+    window.location.href = proxyUrl;
+}
+
+// Function to filter channels based on search input
+function filterChannels() {
+    const searchInput = document.getElementById("searchInput").value.toLowerCase();
+    const filteredChannels = channels.filter(channel =>
+        channel.name.toLowerCase().includes(searchInput)
+    );
+    displayChannels(filteredChannels); // Call displayChannels to update the UI
+}
