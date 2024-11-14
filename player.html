@@ -17,6 +17,11 @@
             justify-content: center;
             min-height: 100vh;
             overflow: hidden;
+            transition: background-color 0.3s ease;
+        }
+        .light-theme {
+            background-color: #fafafa;
+            color: #101010;
         }
         #videoContainer {
             max-width: 900px;
@@ -27,6 +32,7 @@
             border-radius: 8px;
             background: #1a1a1a;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+            overflow: hidden;
         }
         .video-header {
             display: flex;
@@ -36,13 +42,29 @@
             color: #ffdd57;
             font-size: 1.2em;
         }
-        .loading-message {
-            color: #ffdd57;
-            margin-top: 10px;
-        }
-        .error-message {
+        .loading-message, .error-message {
             color: red;
             margin-top: 10px;
+        }
+        #video-controls {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .control-button, .control-select {
+            background-color: #333;
+            color: #f5f5f5;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+            border: none;
+            font-size: 0.9em;
+        }
+        .control-button:hover, .control-select:hover {
+            background-color: #ff8800;
         }
         #redirect-button {
             background-color: #ff5500;
@@ -50,11 +72,9 @@
             border-radius: 5px;
             margin-top: 15px;
             cursor: pointer;
+            border: none;
         }
-        .vjs-control-bar {
-            background-color: rgba(0, 0, 0, 0.7) !important;
-        }
-        .vjs-play-control.vjs-paused { 
+        .vjs-play-control.vjs-paused {
             background-color: #ff5500 !important;
         }
     </style>
@@ -68,6 +88,17 @@
             <video id="video" class="video-js vjs-default-skin" controls crossorigin="anonymous" playsinline style="width: 100%;"></video>
             <div class="loading-message" id="loading-spinner" style="display:none;">Buffering...</div>
         </div>
+        <div id="video-controls">
+            <button class="control-button" id="playback-speed">Speed: 1x</button>
+            <button class="control-button" id="theme-toggle">Toggle Theme</button>
+            <button class="control-button" id="pip-mode">Picture-in-Picture</button>
+            <button class="control-button" id="fullscreen-toggle">Fullscreen</button>
+            <button class="control-button" id="volume-toggle">Mute</button>
+            <select class="control-select" id="subtitle-selector">
+                <option value="off">Subtitles Off</option>
+            </select>
+            <select class="control-select" id="quality-selector">Quality: Auto</select>
+        </div>
         <div class="error-message" id="error-message"></div>
         <button id="redirect-button">Redirect to HTTP (Enhanced Experience)</button>
     </div>
@@ -75,6 +106,8 @@
     <!-- Video.js and streaming libraries -->
     <script src="https://vjs.zencdn.net/7.21.1/video.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <script src="https://cdn.dashjs.org/latest/dash.all.min.js"></script>
+
     <script>
         const params = new URLSearchParams(window.location.search);
         const streamUrl = decodeURIComponent(params.get('url'));
@@ -89,55 +122,77 @@
             controls: true,
             preload: 'auto',
             fluid: true,
-            plugins: {
-                hlsjs: {
-                    startLevel: -1, // Start at the best quality
-                    liveSyncDurationCount: 3,
-                    capLevelToPlayerSize: true, // Automatically adjust based on screen size
-                },
-            },
         });
 
         // Loading spinner while buffering
         player.on('waiting', () => document.getElementById('loading-spinner').style.display = 'block');
         player.on('playing', () => document.getElementById('loading-spinner').style.display = 'none');
 
-        // HLS.js Integration
-        if (Hls.isSupported()) {
-            const hls = new Hls();
-            hls.loadSource(streamUrl);
-            hls.attachMedia(videoElement);
+        // Playback Speed Control
+        let currentSpeed = 1;
+        document.getElementById('playback-speed').onclick = () => {
+            currentSpeed = currentSpeed >= 2 ? 0.5 : currentSpeed + 0.5;
+            player.playbackRate(currentSpeed);
+            document.getElementById('playback-speed').innerText = `Speed: ${currentSpeed}x`;
+        };
 
-            hls.on(Hls.Events.MANIFEST_PARSED, (_, data) => {
-                console.log('Manifest parsed', data);
-                // Add options for quality levels
-                const qualitySelector = document.createElement('select');
-                qualitySelector.id = 'quality-selector';
-                qualitySelector.style.marginTop = '10px';
-                data.levels.forEach((level, i) => {
-                    const option = document.createElement('option');
-                    option.value = i;
-                    option.text = `Quality ${i + 1}`;
-                    qualitySelector.appendChild(option);
+        // Theme Toggle
+        document.getElementById('theme-toggle').onclick = () => {
+            document.body.classList.toggle('light-theme');
+            document.body.style.backgroundColor = document.body.classList.contains('light-theme') ? '#fafafa' : '#101010';
+        };
+
+        // Picture-in-Picture Mode
+        document.getElementById('pip-mode').onclick = async () => {
+            if (document.pictureInPictureElement) {
+                await document.exitPictureInPicture();
+            } else {
+                await videoElement.requestPictureInPicture();
+            }
+        };
+
+        // Fullscreen Toggle
+        document.getElementById('fullscreen-toggle').onclick = () => {
+            if (!document.fullscreenElement) {
+                videoElement.requestFullscreen();
+            } else {
+                document.exitFullscreen();
+            }
+        };
+
+        // Volume Mute Toggle
+        document.getElementById('volume-toggle').onclick = () => {
+            player.muted(!player.muted());
+            document.getElementById('volume-toggle').innerText = player.muted() ? 'Unmute' : 'Mute';
+        };
+
+        // Load subtitles and quality options if available
+        const loadExtras = () => {
+            if (Hls.isSupported()) {
+                const hls = new Hls();
+                hls.loadSource(streamUrl);
+                hls.attachMedia(videoElement);
+                
+                hls.on(Hls.Events.MANIFEST_PARSED, (_, data) => {
+                    data.levels.forEach((level, i) => {
+                        const option = document.createElement('option');
+                        option.value = i;
+                        option.text = `Quality ${i + 1}`;
+                        document.getElementById('quality-selector').appendChild(option);
+                    });
                 });
-                document.getElementById('videoContainer').appendChild(qualitySelector);
-                qualitySelector.addEventListener('change', () => {
-                    hls.startLevel = parseInt(qualitySelector.value);
+
+                hls.on(Hls.Events.SUBTITLE_TRACKS_UPDATED, (_, data) => {
+                    data.subtitleTracks.forEach((track, i) => {
+                        const option = document.createElement('option');
+                        option.value = i;
+                        option.text = track.name || `Subtitle ${i + 1}`;
+                        document.getElementById('subtitle-selector').appendChild(option);
+                    });
                 });
-            });
-
-            hls.on(Hls.Events.LEVEL_SWITCHED, (_, data) => {
-                console.log('Switched to level', data.level);
-            });
-
-            hls.on(Hls.Events.ERROR, (_, data) => {
-                if (data.fatal) {
-                    document.getElementById('error-message').innerText = `Error: ${data.type} - ${data.details}`;
-                }
-            });
-        } else {
-            document.getElementById('error-message').innerText = 'HLS is not supported in this browser.';
-        }
+            }
+        };
+        loadExtras();
 
         // Redirect button handler
         document.getElementById('redirect-button').onclick = function() {
