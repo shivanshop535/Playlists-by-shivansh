@@ -3,97 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Playing Channel...</title>
+    <title>Advanced Video Player</title>
     <link rel="stylesheet" href="https://vjs.zencdn.net/7.21.1/video-js.css">
     <style>
+        /* Main Body Styles */
         body {
-            background-color: #121212;
+            background-color: #181818;
             color: white;
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: space-between;
+            justify-content: center;
             min-height: 100vh;
+            overflow: hidden;
         }
         #videoContainer {
-            max-width: 800px;
+            max-width: 900px;
             width: 100%;
             text-align: center;
             padding: 20px;
-            position: relative;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
         }
         h1 {
-            color: #ffffff;
+            color: #e0e0e0;
+            font-size: 1.5em;
+            margin-bottom: 20px;
         }
         .error-message {
-            color: red;
-            margin-top: 20px;
+            color: #ff4c4c;
+            margin-top: 10px;
         }
-        #debug-log {
-            background-color: #333;
-            padding: 10px;
-            border-radius: 5px;
-            margin-top: 20px;
-            text-align: left;
+        #loading-spinner {
+            display: none;
+            font-size: 1em;
+            color: #ccc;
         }
-        #debug-log p {
-            margin: 5px 0;
-        }
+        /* Custom Controls */
         .controls-container {
             display: flex;
             justify-content: space-between;
-            padding: 10px 0;
+            align-items: center;
+            padding: 10px;
+            gap: 10px;
+            background-color: #202020;
+            border-radius: 5px;
+            margin-top: 15px;
         }
-        .speed-selector, .theme-toggle {
-            background-color: #444;
+        .button, .select {
+            background-color: #333;
             color: white;
-            padding: 8px;
+            padding: 8px 15px;
             border-radius: 5px;
             cursor: pointer;
+            font-size: 0.9em;
+            border: none;
+            transition: background-color 0.3s;
         }
-        #redirect-container {
-            text-align: center;
-            margin: 20px;
-        }
-        #redirect-button {
+        .button:hover, .select:hover {
             background-color: #007bff;
+        }
+        .redirect-button {
+            background-color: #0062cc;
             color: white;
             padding: 10px 20px;
-            border: none;
             border-radius: 5px;
             cursor: pointer;
-            font-size: 16px;
+            font-size: 1em;
+            border: none;
+            transition: background-color 0.3s;
         }
-        #redirect-button:hover {
-            background-color: #0056b3;
-        }
-        #info-text {
-            font-size: 14px;
-            color: #aaa;
-            margin-top: 10px;
+        .redirect-button:hover {
+            background-color: #004a99;
         }
     </style>
 </head>
 <body>
     <div id="videoContainer">
-        <h1 id="channel-name"></h1>
+        <h1 id="channel-name">Channel Name</h1>
         <div style="position: relative;">
             <video id="video" class="video-js vjs-default-skin" controls crossorigin="anonymous" playsinline style="width: 100%;"></video>
+            <div id="loading-spinner">Loading...</div>
         </div>
         <div class="controls-container">
-            <div class="speed-selector" id="speed-selector">Speed: 1x</div>
-            <div class="theme-toggle" id="theme-toggle">Toggle Theme</div>
+            <div class="button" id="speed-selector">Speed: 1x</div>
+            <div class="button" id="theme-toggle">Toggle Theme</div>
+            <div class="button" id="quality-selector">Quality: Auto</div>
+            <div class="button" id="audio-track-toggle">Audio: Default</div>
+            <div class="button" id="fullscreen-toggle">Fullscreen</div>
         </div>
-        <div id="debug-log"></div>
-        <div class="error-message" id="error-message"></div>
+        <div id="debug-log" class="error-message"></div>
     </div>
 
     <div id="redirect-container">
-        <button id="redirect-button">Redirect to HTTP page (Better Experience)</button>
-        <p id="info-text">If it shows that the site is not secure, it is because it is hosted on HTTP. We love your safety. Please trust us...</p>
+        <button class="redirect-button" id="redirect-button">Redirect to HTTP (Improved Experience)</button>
     </div>
 
     <!-- Video.js and streaming libraries -->
@@ -107,6 +113,7 @@
         const channelName = decodeURIComponent(params.get('name'));
         document.getElementById('channel-name').innerText = channelName;
 
+        const loadingSpinner = document.getElementById('loading-spinner');
         const logMessage = (message) => {
             const logContainer = document.getElementById('debug-log');
             const logEntry = document.createElement('p');
@@ -114,7 +121,6 @@
             logContainer.appendChild(logEntry);
         };
 
-        const errorMessage = document.getElementById('error-message');
         let videoElement = document.getElementById('video');
         
         // Initialize Video.js player
@@ -125,6 +131,10 @@
             preload: 'auto',
             fluid: true,
         });
+
+        // Show loader while buffering
+        player.on('waiting', () => loadingSpinner.style.display = 'block');
+        player.on('playing', () => loadingSpinner.style.display = 'none');
 
         // Playback speed control
         document.getElementById('speed-selector').onclick = () => {
@@ -141,33 +151,66 @@
             document.body.style.color = document.body.classList.contains('light-theme') ? '#333' : 'white';
         };
 
-        // Function to load HLS stream
-        const loadHlsStream = () => {
-            const hls = new Hls({ startLevel: -1, capLevelToPlayerSize: true, maxMaxBufferLength: 30 });
-            hls.on(Hls.Events.ERROR, function(event, data) {
-                logMessage('HLS.js encountered an error: ' + data.type);
-                if (data.fatal) {
-                    errorMessage.innerText = 'Error: Unable to load HLS stream.';
-                }
-            });
-            hls.loadSource(streamUrl);
-            player.src({ src: streamUrl, type: 'application/x-mpegURL' });
-            hls.attachMedia(videoElement);
+        // Quality selector (for HLS streams)
+        document.getElementById('quality-selector').onclick = () => {
+            if (Hls.isSupported()) {
+                const hls = new Hls();
+                hls.loadSource(streamUrl);
+                hls.attachMedia(videoElement);
+                hls.on(Hls.Events.MANIFEST_PARSED, (event, data) => {
+                    const levels = data.levels;
+                    const qualityOptions = levels.map((level, i) => ({ label: `Quality ${i+1}`, index: i }));
+                    // Add an 'auto' option
+                    qualityOptions.push({ label: "Auto", index: -1 });
+                    const newQuality = prompt('Choose quality', qualityOptions.map(opt => opt.label).join(", "));
+                    const chosenQuality = qualityOptions.find(opt => opt.label === newQuality);
+                    hls.currentLevel = chosenQuality.index;
+                });
+            }
         };
 
+        // Audio track selector
+        document.getElementById('audio-track-toggle').onclick = () => {
+            const audioTracks = player.audioTracks();
+            if (audioTracks.length > 1) {
+                let currentTrack = audioTracks[0];
+                audioTracks.forEach(track => track.enabled = false);
+                currentTrack.enabled = !currentTrack.enabled;
+                document.getElementById('audio-track-toggle').innerText = `Audio: ${currentTrack.label}`;
+            }
+        };
+
+        // Fullscreen toggle
+        document.getElementById('fullscreen-toggle').onclick = () => {
+            if (!document.fullscreenElement) {
+                videoElement.requestFullscreen();
+            } else {
+                document.exitFullscreen();
+            }
+        };
+
+        // Load HLS or DASH stream based on format
         const loadStream = () => {
             if (streamUrl.endsWith('.m3u8') && Hls.isSupported()) {
-                logMessage('Loading HLS stream...');
-                loadHlsStream();
+                const hls = new Hls();
+                hls.loadSource(streamUrl);
+                hls.attachMedia(videoElement);
+                hls.on(Hls.Events.MANIFEST_PARSED, () => logMessage('HLS Stream Loaded'));
+                hls.on(Hls.Events.ERROR, (_, data) => {
+                    if (data.fatal) {
+                        logMessage('Fatal error: Reloading stream');
+                        hls.loadSource(streamUrl);
+                    }
+                });
             } else {
-                errorMessage.innerText = 'Error: Unsupported stream format.';
-                logMessage('Error: Unsupported stream format.');
+                logMessage('Error: Unsupported stream format');
             }
         };
         loadStream();
 
-        document.getElementById('redirect-button').onclick = function() {
-            const httpUrl = `http://unknown-playlists.sportsontheweb.net/player.html?url=${encodeURIComponent(streamUrl)}&name=${encodeURIComponent(channelName)}`;
+        // Redirect button action
+        document.getElementById('redirect-button').onclick = () => {
+            const httpUrl = `http://all-channels-by-shivansh.sportsontheweb.net/player.html?url=${encodeURIComponent(streamUrl)}&name=${encodeURIComponent(channelName)}`;
             window.location.href = httpUrl;
         };
     </script>
