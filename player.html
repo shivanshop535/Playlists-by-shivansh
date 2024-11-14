@@ -40,12 +40,22 @@
             color: #ffdd57;
             margin-top: 10px;
         }
+        .error-message {
+            color: red;
+            margin-top: 10px;
+        }
         #redirect-button {
             background-color: #ff5500;
             padding: 10px 20px;
             border-radius: 5px;
             margin-top: 15px;
             cursor: pointer;
+        }
+        .vjs-control-bar {
+            background-color: rgba(0, 0, 0, 0.7) !important;
+        }
+        .vjs-play-control.vjs-paused { 
+            background-color: #ff5500 !important;
         }
     </style>
 </head>
@@ -83,6 +93,7 @@
                 hlsjs: {
                     startLevel: -1, // Start at the best quality
                     liveSyncDurationCount: 3,
+                    capLevelToPlayerSize: true, // Automatically adjust based on screen size
                 },
             },
         });
@@ -99,6 +110,20 @@
 
             hls.on(Hls.Events.MANIFEST_PARSED, (_, data) => {
                 console.log('Manifest parsed', data);
+                // Add options for quality levels
+                const qualitySelector = document.createElement('select');
+                qualitySelector.id = 'quality-selector';
+                qualitySelector.style.marginTop = '10px';
+                data.levels.forEach((level, i) => {
+                    const option = document.createElement('option');
+                    option.value = i;
+                    option.text = `Quality ${i + 1}`;
+                    qualitySelector.appendChild(option);
+                });
+                document.getElementById('videoContainer').appendChild(qualitySelector);
+                qualitySelector.addEventListener('change', () => {
+                    hls.startLevel = parseInt(qualitySelector.value);
+                });
             });
 
             hls.on(Hls.Events.LEVEL_SWITCHED, (_, data) => {
