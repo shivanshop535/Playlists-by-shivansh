@@ -83,7 +83,25 @@ const displayChannels = (channelArray) => {
             channelList.appendChild(channelItem);
         });
     }
-// Parse M3U file
+    
+    // Fetch the local M3U playlist
+fetch('M3UPlus-Playlist-20241019222427.m3u')
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok: ' + response.statusText);
+        }
+        return response.text();
+    })
+    .then(data => {
+        const channels = parseM3U(data);
+        const groups = getGroups(channels);
+        setupGroupFilter(groups);
+        setupPagination(channels);
+        displayChannels(channels.slice(0, 7)); // Display first 7 channels by default
+    })
+    .catch(error => console.error('Error fetching M3U file:', error));
+
+    // Parse M3U file
 function parseM3U(data) {
     const lines = data.split('\n');
     const channels = [];
