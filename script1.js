@@ -39,41 +39,6 @@ function parseM3U(data) {
         }
     });
 
-    // Push last channel if exists
-    if (currentChannel.name) {
-        channels.push(currentChannel);
-    }
-
-    return channels;
-}
-
-// Display channels in the HTML
-function displayChannels(channels) {
-    const container = document.getElementById('channel-list');
-    container.innerHTML = ''; // Clear any existing content
-
-    if (channels.length === 0) {
-        container.innerHTML = '<p>No channels found</p>';
-        console.warn('No channels were parsed from the M3U file.');
-    } else {
-        channels.forEach(channel => {
-            console.log('Displaying channel:', channel); // Debug each channel
-            const channelDiv = document.createElement('div');
-            channelDiv.classList.add('channel');
-            channelDiv.innerHTML = `
-                <img src="${channel.logo || 'path/to/default_logo.png'}" alt="${channel.name}" class="channel-logo" onclick="playStream('${encodeURIComponent(channel.url)}', '${encodeURIComponent(channel.name)}')">
-                <p>${channel.name}</p>
-            `;
-            container.appendChild(channelDiv);
-        });
-    }
-}
-
-function playStream(url, name) {
-    const proxyUrl = `proxy.html?url=${encodeURIComponent(url)}&name=${encodeURIComponent(name)}`;
-    window.location.href = proxyUrl;
-}
-
 // List of channels with placeholder URLs for each
 const channels = [
     { name: "Disney India SD", url: "#" },
