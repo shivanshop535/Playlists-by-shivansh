@@ -83,7 +83,33 @@ const displayChannels = (channelArray) => {
             channelList.appendChild(channelItem);
         });
     }
-};
+// Parse M3U file
+function parseM3U(data) {
+    const lines = data.split('\n');
+    const channels = [];
+    let currentChannel = {};
+
+    lines.forEach(line => {
+        line = line.trim();
+        if (line.startsWith('#EXTINF:')) {
+            if (currentChannel.name) {
+                channels.push(currentChannel);
+                currentChannel = {};
+            }
+            const nameMatch = line.match(/,(.+)$/);
+            const logoMatch = line.match(/tvg-logo="([^"]+)"/);
+            const groupMatch = line.match(/group-title="([^"]+)"/);
+            if (nameMatch) currentChannel.name = nameMatch[1].trim();
+            if (logoMatch) currentChannel.logo = logoMatch[1];
+            if (groupMatch) currentChannel.group = groupMatch[1];
+        } else if (line && !line.startsWith('#')) {
+            currentChannel.url = line.trim();
+        }
+    });
+
+    if (currentChannel.name) channels.push(currentChannel);
+    return channels;
+}
 
 // Initial load of channels
 loadChannels();
