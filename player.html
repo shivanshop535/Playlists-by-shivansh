@@ -1,219 +1,219 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enhanced Video Player</title>
+    <title>Live Stream</title>
     <link rel="stylesheet" href="https://vjs.zencdn.net/7.21.1/video-js.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
-        /* General Reset */
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-
-        /* Body Styling */
+        /* General Styling */
         body {
-            background-color: #101010;
-            color: #e4e4e4;
-            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(145deg, #000, #1c1c1c);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: space-between;
+            justify-content: center;
             min-height: 100vh;
-            padding: 10px;
-            transition: background-color 0.5s ease;
-        }
-
-        .light-theme {
-            background-color: #fafafa;
-            color: #333;
+            overflow: hidden;
         }
 
         #videoContainer {
-            width: 100%;
-            max-width: 1200px;
-            padding: 20px;
-            text-align: center;
-            position: relative;
-            background-color: #2a2a2a;
-            border-radius: 12px;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+            max-width: 900px;
+            width: 95%;
+            background: rgba(30, 30, 30, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7), 0 0 20px rgba(255, 255, 255, 0.1);
             overflow: hidden;
-            transition: all 0.3s ease-in-out;
+            padding: 30px 20px 40px 20px;
+            animation: fadeIn 0.8s ease-out;
+            position: relative;
         }
 
-        /* Header */
-        .video-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+        h1 {
+            color: #ffffff;
+            font-size: 2.5rem;
+            text-align: center;
             margin-bottom: 20px;
-            color: #ffbb33;
-            font-size: 1.4em;
-            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 0 3px 6px rgba(0, 0, 0, 0.7), 0 0 8px rgba(255, 255, 255, 0.3);
         }
 
-        /* Controls Styling */
-        #video-controls {
-            display: flex;
-            gap: 15px;
-            justify-content: center;
-            margin-top: 15px;
-            flex-wrap: wrap;
+        .video-js {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8), 0 0 15px rgba(255, 255, 255, 0.1);
         }
 
-        .control-button, .control-select {
-            background-color: #333;
-            color: #f5f5f5;
-            padding: 10px 20px;
-            border-radius: 6px;
-            cursor: pointer;
-            font-size: 1em;
-            border: none;
-            transition: all 0.3s ease;
-            outline: none;
-        }
-
-        .control-button:hover, .control-select:hover {
-            background-color: #ff9933;
-            transform: scale(1.1);
-        }
-
-        .control-button:focus, .control-select:focus {
-            box-shadow: 0 0 10px #ff8800;
-        }
-
-        #redirect-button {
-            background-color: #ff5500;
-            padding: 12px 25px;
-            border-radius: 8px;
-            margin-top: 20px;
-            font-size: 1.2em;
-            cursor: pointer;
-            border: none;
-            transition: all 0.3s ease;
-        }
-
-        #redirect-button:hover {
-            background-color: #e64a19;
-        }
-
-        /* Footer */
-        footer {
+        .error-message {
+            color: #FF5A5A;
+            font-size: 1.2rem;
             text-align: center;
             margin-top: 20px;
-            padding: 10px 0;
-            background-color: #222;
-            color: #ffbb33;
-            font-size: 1em;
-            border-radius: 10px;
-            width: 100%;
-            max-width: 1200px;
-            transition: all 0.3s ease-in-out;
+            font-weight: 500;
         }
 
-        .light-theme footer {
-            background-color: #e0e0e0;
-            color: #ff5500;
+        .refresh-btn {
+            display: block;
+            background: linear-gradient(135deg, #ff6600, #ff3333);
+            color: white;
+            font-weight: bold;
+            padding: 15px 30px;
+            border-radius: 15px;
+            text-transform: uppercase;
+            font-size: 1.1rem;
+            margin: 20px auto;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            box-shadow: 0 5px 15px rgba(255, 99, 71, 0.5), 0 0 15px rgba(255, 140, 0, 0.3);
+            max-width: 90%;
+            text-align: center;
+        }
+
+        .refresh-btn:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 10px 25px rgba(255, 99, 71, 0.8), 0 0 25px rgba(255, 140, 0, 0.6);
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.9rem;
+            letter-spacing: 0.5px;
+        }
+
+        /* Telegram Button Styles */
+        .telegram-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 30px;
+            padding: 10px 20px;
+            background: linear-gradient(135deg, #0088cc, #005d99); /* Blue gradient */
+            color: white;
+            font-weight: bold;
+            border-radius: 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-decoration: none;
+            box-shadow: 0px 4px 10px rgba(0, 136, 204, 0.4);
+        }
+
+        .telegram-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 6px 15px rgba(0, 136, 204, 0.6);
+        }
+
+        .telegram-btn img {
+            width: 20px;
+            height: 20px;
+            margin-right: 8px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
     </style>
 </head>
 <body>
     <div id="videoContainer">
-        <div class="video-header">
-            <span id="channel-name">Channel Name</span>
-            <div id="time-left"></div>
-        </div>
-        <div>
-            <video id="video" class="video-js vjs-default-skin" controls crossorigin="anonymous" playsinline style="width: 100%;"></video>
-            <div class="loading-message" id="loading-spinner" style="display:none;">Buffering...</div>
-        </div>
-        <div id="video-controls">
-            <button class="control-button" id="playback-speed">Speed: 1x</button>
-            <button class="control-button" id="theme-toggle">Toggle Theme</button>
-            <button class="control-button" id="pip-mode">Picture-in-Picture</button>
-            <button class="control-button" id="fullscreen-toggle">Fullscreen</button>
-            <button class="control-button" id="volume-toggle">Mute</button>
-            <select class="control-select" id="subtitle-selector">
-                <option value="off">Subtitles Off</option>
-            </select>
-            <select class="control-select" id="quality-selector">Quality: Auto</select>
-        </div>
-        <button id="redirect-button">Redirect to HTTP (Enhanced Experience)</button>
+        <h1 id="channel-name">Live Stream</h1>
+        <video id="video" class="video-js vjs-default-skin vjs-big-play-centered" controls autoplay playsinline></video>
+        <div class="error-message" id="error-message"></div>
+        <div id="refresh" class="refresh-btn" onclick="reloadStream()">Refresh Stream</div>
     </div>
 
-    <!-- Footer -->
-    <footer>
-        Made with ❤️ by Shivansh
-    </footer>
+    <a href="https://t.me/JUSTM3U535" class="telegram-btn" target="_blank" rel="noopener noreferrer">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram Logo">
+        Join Our Telegram Channel
+    </a>
 
-    <!-- Video.js and Streaming Libraries -->
+    <div class="footer">Crafted with ❤️ by SHIVANSH</div>
+
     <script src="https://vjs.zencdn.net/7.21.1/video.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-    <script src="https://cdn.dashjs.org/latest/dash.all.min.js"></script>
 
     <script>
         const params = new URLSearchParams(window.location.search);
-        const streamUrl = decodeURIComponent(params.get('url')) || '';
-        const channelName = decodeURIComponent(params.get('name')) || 'Default Channel';
+        const streamUrl = decodeURIComponent(params.get('url'));
+        const channelName = decodeURIComponent(params.get('name')) || "Live Stream";
         document.getElementById('channel-name').innerText = channelName;
 
-        // Initialize Video.js player
+        const errorMessage = document.getElementById('error-message');
         const videoElement = document.getElementById('video');
+
         const player = videojs(videoElement, {
-            techOrder: ['html5', 'hls', 'dash'],
             autoplay: true,
             controls: true,
             preload: 'auto',
-            fluid: true,
-            responsive: true
+            liveui: true,
+            fluid: true
         });
 
-        // Loading spinner while buffering
-        player.on('waiting', () => document.getElementById('loading-spinner').style.display = 'block');
-        player.on('playing', () => document.getElementById('loading-spinner').style.display = 'none');
-
-        // Playback Speed Control
-        let currentSpeed = 1;
-        document.getElementById('playback-speed').onclick = () => {
-            currentSpeed = currentSpeed >= 2 ? 0.5 : currentSpeed + 0.5;
-            player.playbackRate(currentSpeed);
-            document.getElementById('playback-speed').innerText = `Speed: ${currentSpeed}x`;
-        };
-
-        // Theme Toggle
-        document.getElementById('theme-toggle').onclick = () => {
-            document.body.classList.toggle('light-theme');
-        };
-
-        // Picture-in-Picture Mode
-        document.getElementById('pip-mode').onclick = async () => {
-            if (document.pictureInPictureElement) {
-                await document.exitPictureInPicture();
+        function loadStream() {
+            if (Hls.isSupported() && streamUrl.includes(".m3u8")) {
+                const hls = new Hls({
+                    startLevel: -1,
+                    liveSyncDurationCount: 3,
+                    liveMaxLatencyDurationCount: 5,
+                    autoStartLoad: true,  // Ensures stream starts loading immediately
+                    maxMaxBufferLength: 30,  // Increase buffer size for smoother playback
+                    maxBufferLength: 60, // Ensure sufficient buffer
+                    maxBufferSize: 30 * 1000 * 1000, // Limit the maximum buffer size
+                });
+                
+                hls.on(Hls.Events.MEDIA_ATTACHED, () => console.log("HLS attached."));
+                hls.on(Hls.Events.ERROR, (event, data) => {
+                    console.error("HLS error:", data);
+                    if (data.fatal) {
+                        if (data.type === Hls.ErrorTypes.NETWORK_ERROR) {
+                            console.error("Network error, retrying...");
+                            hls.startLoad();
+                        } else if (data.type === Hls.ErrorTypes.MEDIA_ERROR) {
+                            console.error("Media error, trying to recover...");
+                            hls.recoverMediaError();
+                        } else {
+                            errorMessage.innerText = "Stream error. Please refresh.";
+                            hls.destroy();
+                        }
+                    }
+                });
+                hls.loadSource(streamUrl);
+                hls.attachMedia(videoElement);
+            } else if (videoElement.canPlayType('application/vnd.apple.mpegurl')) {
+                videoElement.src = streamUrl;
+                videoElement.addEventListener('loadedmetadata', () => {
+                    videoElement.play();
+                });
             } else {
-                await videoElement.requestPictureInPicture();
+                errorMessage.innerText = "Error: Unsupported stream format.";
             }
-        };
+        }
 
-        // Fullscreen Toggle
-        document.getElementById('fullscreen-toggle').onclick = () => {
-            if (!document.fullscreenElement) {
-                videoElement.requestFullscreen();
-            } else {
-                document.exitFullscreen();
-            }
-        };
+        function reloadStream() {
+            errorMessage.innerText = "";
+            loadStream();
+        }
 
-        // Volume Mute Toggle
-        document.getElementById('volume-toggle').onclick = () => {
-            player.muted(!player.muted());
-            document.getElementById('volume-toggle').innerText = player.muted() ? 'Unmute' : 'Mute';
-        };
-
-        // Redirect button handler
-        document.getElementById('redirect-button').onclick = function() {
-            const httpUrl = `http://unknown-playlists.sportsontheweb.net/player.html?url=${encodeURIComponent(streamUrl)}&name=${encodeURIComponent(channelName)}`;
-            window.location.href = httpUrl;
-        };
+        loadStream();
     </script>
 </body>
 </html>
