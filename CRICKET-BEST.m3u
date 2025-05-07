@@ -1,0 +1,1183 @@
+#EXTM3U
+
+#EXTINF:-1 tvg-id="" tvg-name="ASTRO CRICKET HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/b/b7/Astro_Cricket.png" group-title="CRICKET",ASTRO 1080p HD
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=03c2e0af2f8159f9f0ce9b5dbc865f10:cd84ed136b0cc71f8ab8cd4d4f6a2e4c
+#EXTVLCOPT:http-origin=https://livecricketsl.kesug.com
+https://copy.livecricketsl.xyz/proxy/sg.php/https://linearjitp-playback.astro.com.my/dash-wv/linear/2504/default_ott.mpd?|drmScheme=clearkey&drmLicense=03c2e0af2f8159f9f0ce9b5dbc865f10:cd84ed136b0cc71f8ab8cd4d4f6a2e4c|origin=https://livecricketsl.kesug.com
+#https://streamdog.site/astro/stream.php/linearjitp-playback.astro.com.my/dash-wv/linear/2504/default_ott.mpd?|drmScheme=clearkey&drmLicense=03c2e0af2f8159f9f0ce9b5dbc865f10:cd84ed136b0cc71f8ab8cd4d4f6a2e4c|origin=https://streamdog.site
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2Risht9Vyoio0132HWiiYqNd31NntV2Fclw5TvoIuj1okmFjHG4HVmXhr&s=10" group-title="GitTv",ICC TV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=ae7076b647133606b704d33e4cef5134:810251515584cf71216d9a2d1ebf04bb
+https://mix.drmlive.net/mix/icctv1.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk7VG5YzN1WdlLRqMKL9rkhSzDfk2nXX1L7za4tXU6nlOPjI7WQSCPjp4&s=10" group-title="Champions Trophy", Toffee Live
+#https://tf.kyni.us/live.php?id=match-1&e=.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="Hotstar Hindi" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN6oMyTk1I9MQHw637eQLkFeBzP7XwAz-h8zwC2QMmh37sugi0ws5r4iU&s=10" group-title="Sports",Hotstar Hindi
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=ae7076b647133606b704d33e4cef5134:810251515584cf71216d9a2d1ebf04bb
+#https://mix.drmlive.au/mix/icctv1.mpd?|User-Agent=@Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 YGX/537.36?|drmScheme=clearkey&drmLicense=ae7076b647133606b704d33e4cef5134:810251515584cf71216d9a2d1ebf04bb
+#https://cdnt20.t20hd.cfd/live/m3-index.m3u8
+#https://sendgbxt.ruscfd.lat/720p.m3u8
+https://ee4ee8c03a26.eu-central-1.playback.live-video.net/api/video/v1/eu-central-1.755921704393.channel.LOohfipmCQDP.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGcOxZampz9U9qMXLYrItEoZl9fiAyTD2tEQ&usqp=CAU" group-title="Champions Trophy",Shoq Live
+#https://live-hw-stream.starzplayarabia.com/ICC_Champions_Trophy_2025/dash/drm/index.mpd?|drmScheme=clearkey&drmLicense=f108f8cb08c765aedf55d5b5eae58f4c:04a4ed8c992d291ce2097663b2adb677
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpcB-U7zUTfFHc1QpbTptROn7cXYjJ7qEenrFhZ9WM4p0suhNecEY5HnM&s=10" group-title="Champions Trophy", MyCo
+#https://ml-pull-hwc.myco.io/stream1/hls/stream1.m3u8
+
+#EXTINF:-1 tvg-id="Cric" tvg-name="star sports 4k" tvg-logo="https://raw.githubusercontent.com/rahul979854/logo/main/images%20(13).jpeg" group-title="CRICKET",Star Sports 4k
+https://github.com/rahul979854/Channels/raw/main/StarSports4k.m3u8
+
+#EXTINF:-1 tvg-id="Cric" tvg-name="Amazon prime" tvg-logo="https://1000logos.net/wp-content/uploads/2022/10/Amazon-Prime-Video-Logo-2022.png" group-title="CRICKET",Prime English 4k
+#https://aba5sdmaaaaaaaamjyr2xiy4rbicb.otte.live.cf.ww.aiv-cdn.net/pdx-nitro/live/clients/dash/enc/wr8i0xhnut/out/v1/190f1d69a3d5467f8fb7d9df4339bc49/cenc.mpd?|drmScheme=clearkey&drmLicense=cb8daf414566aa17d06f8294f3f3b444:89d58908a57d70ef87bf16c9b5821ca2
+#https://a201aivottlinear-a.akamaihd.net/OTTB/pdx-nitro/live/clients/dash/enc/xko28jj0cp/out/v1/190f1d69a3d5467f8fb7d9df4339bc49/cenc.mpd?|drmScheme=clearkey&drmLicense=7aa124253d518f18740c5bd932d581a3:1819c82fc27225f5e79ae189ddece0ea
+#https://aba5sdmaaaaaaaamidug47tdi5buy.otte.live.cf.ww.aiv-cdn.net/pdx-nitro/live/clients/dash/enc/iowtj5wfb1/out/v1/190f1d69a3d5467f8fb7d9df4339bc49/cenc.mpd?|drmScheme=clearkey&drmLicense=7aa124253d518f18740c5bd932d581a3:1819c82fc27225f5e79ae189ddece0ea
+#https://abhvfwoaaaaaaaamge5xi5icfzq64.otte.live.cf.ww.aiv-cdn.net/iad-nitro/live/clients/dash/enc/xjrxodbgeh/out/v1/69b95861163a42d9a34a1d4ceece7a7a/cenc.mpd?|drmScheme=clearkey&drmLicense=867ab2da044bcc1e4cc1a9252b03ce3e:0db59352d361b0a132c0a64bb231750a
+#https://a170aivottlinear-a.akamaihd.net/OTTB/sin-nitro/live/clients/dash/enc/tsrm0zirxz/out/v1/190f1d69a3d5467f8fb7d9df4339bc49/cenc.mpd?|drmScheme=clearkey&drmLicense=9cb6b6283487afe392adcffebf3cd6be:05f4eb67381e0c173954603518ce84c3
+
+#EXTINF:-1 tvg-id="Cric" tvg-name="Amazon prime" tvg-logo="https://1000logos.net/wp-content/uploads/2022/10/Amazon-Prime-Video-Logo-2022.png" group-title="CRICKET",Prime Hindi 4k
+#https://aba5sdmaaaaaaaamidug47tdi5buy.otte.live.cf.ww.aiv-cdn.net/pdx-nitro/live/clients/dash/enc/l0phze3ehz/out/v1/fe9782633a364a6a84c9410f26d9b2c4/cenc.mpd?|drmScheme=clearkey&drmLicense=4a5191838da17a2ab771f4258fad347f:54b7a084437459368eed07d182ad644c
+#https://a170aivottlinear-a.akamaihd.net/OTTB/bom-nitro/live/clients/dash/enc/l0phze3ehz/out/v1/fe9782633a364a6a84c9410f26d9b2c4/cenc.mpd?|drmScheme=clearkey&drmLicense=4a5191838da17a2ab771f4258fad347f:54b7a084437459368eed07d182ad644c
+#https://aba5sdmaaaaaaaammj2q5nkaoee4b.otte.live.cf.ww.aiv-cdn.net/pdx-nitro/live/clients/dash/enc/l2xzhgmjur/out/v1/fe9782633a364a6a84c9410f26d9b2c4/cenc.mpd?|drmScheme=clearkey&drmLicense=4a5191838da17a2ab771f4258fad347f:54b7a084437459368eed07d182ad644c
+#https://a170aivottlinear-a.akamaihd.net/OTTB/sin-nitro/live/clients/dash/enc/1jii7mxinw/out/v1/fe9782633a364a6a84c9410f26d9b2c4/cenc.mpd?|drmScheme=clearkey&drmLicense=553a8e7efc48840b17d03797c023d9b6:05fa313fa73df33f19e0f2d3d047bbaf
+
+#EXTINF:-1 tvg-id="Cricbuzz event" tvg-name="Cricbuzz events" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBlr9akJgC4lGRPCAgNKdBFyM0CfIkIESO77AH2TkWz0ZPIurz439yDu_8&s=10" group-title="CRICKET",Cricbuzz Events UHD
+#https://uselector.cdn.intigral-ott.net/CRL2/CRL2.isml/manifest.mpd?|drmScheme=clearkey&drmLicense=77889c7295e1f113852aa6030242b8e4:ec8c522d46888a15ff6533aa28ccd7f5
+#http://tv.cloudcdn.me:80/live.ts?channelId=125422&uid=4578&deviceMac=00:1A:79:41:70:15
+#https://ev-fuj-dxb-cdn-edge2.aws.playco.com/live/eds/CricLife2/DASH/CricLife2.mpd?|drmScheme=clearkey&drmLicense=48bef83b4c6a3c5189b01b0126210da4:bd085230b7b09e50954fe0af111a8a9f
+
+#EXTINF:-1 tvg-id="fancode event" tvg-name="fancode events" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq6OTWwSCPP67REB8IDYWuZww9j_tvvanCYA&usqp=CAU" group-title="CRICKET",Fancode Events UHD
+https://a166aivottlinear-a.akamaihd.net/OTTB/sin-nitro/live/clients/dash/enc/gdhz5mhnyu/out/v1/fe72171ab2684ab8b9ee3e2ffcc9cff2/cenc.mpd?|drmScheme=clearkey&drmLicense=159a2b4e1d2d7f16892d35d935a2fb34:07809840dd0f511221ca78459167d1b3
+
+#EXTINF:-1 tvg-id="Sony event" tvg-name="Sony events" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5SZB3ssT6NnI78-q1DZZhMF6kTRer2jGWdYE4T1N0K7BFYHC95psDihI&s=10" group-title="CRICKET",Sony Events UHD
+https://dai.google.com/ssai/event/g1cPcUIdSQC_3FXsrgV5iA/master.m3u8
+
+#EXTINF:-1 tvg-id="Tata ipl" tvg-name="Tata ipl" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTboihtL2GYEwRrkF6_ArJmSP-w9ExH7LRMiQ&usqp=CAU" group-title="CRICKET",Tata ipl UHD
+#https://live.drmlive-02.workers.dev/jc/2001.m3u8
+#https://drmlive.in/voot/2001.m3u8
+#https://prod-sports-hin-fa.jiocinema.com/bpk-tv/JV_SportsHD15_DIG_MOB/Fallback/index.m3u8
+
+#EXTINF:-1 tvg-id="starsports1kannada.in" tvg-name="Star Sports 1 Kannada" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhPLxN9JyE1KeREoxGvI9JMBIJSWDDaMbb8U_527S4IMBaaNn42atIpdTI&s=10" group-title="CRICKET",Star Sports 1 Kannada Hd
+http://webhop.xyz:8080/live/bana/bana/380977.m3u8
+
+#EXTINF:-1 tvg-id="starsports1hd.in" tvg-name="STAR SPORTS 1 Hd " tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Star_Sports_1_HD.png/2560px-Star_Sports_1_HD.png" group-title="CRICKET",STAR SPORTS 1 Hd
+#http://starshare.live/live/bana/bana/9397.m3u8
+#http://starshare.live/live/bana/bana/124281.m3u8
+#https://starshare.live/live/bana/bana/148.m3u8
+#https://github.com/rahul979854/Channels/raw/main/StarSport1Hd.m3u8
+https://raw.githubusercontent.com/rahul979854/Channels/refs/heads/main/StarSport1Hd.m3u8
+
+#EXTINF:-1 tvg-id="starsports2hd.in" tvg-name="STAR SPORTS 2 Hd" tvg-logo="https://tvschedule.today/_next/image?url=https%3A%2F%2Fltsk-cdn.s3.eu-west-1.amazonaws.com%2Fjumpstart%2FTemp_Live%2Fcdn%2FHLS%2FChannel%2FimageContent-1021-j5nj3c68-v1%2FimageContent-1021-j5nj3c68-m1.png&w=256&q=75" group-title="CRICKET",STAR SPORTS 2 Hd
+#http://starshare.live/live/bana/bana/239.m3u8
+https://github.com/rahul979854/Channels/raw/main/StarSport2Hd.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="Star Sport 2 HD" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Sports18_1_HD.png" group-title="cricket",STAR SPORTS 2 HD
+#https://live.drmlive-02.workers.dev/jc/122.m3u8
+https://github.com/rahul979854/Channels/raw/main/Sports18Hd.m3u8
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
+#https://mix.drmlive.au/mix/jc-122.m3u8
+#https://airplay.bgrid.in/IPTVS/live/voot/1033.m3u8
+
+#EXTINF:-1 tvg-id="starsports1hdhindi.in" tvg-name="Star Sport 1 HINDI HD "tvg-logo="https://static.epg.best/in/StarSports1Hindi.in.png" group-title="CRICKET",Star Sports 1 HINDI HD
+#http://starshare.live/live/bana/bana/9399.m3u8
+#https://starshare.live/live/bana/bana/211.m3u8
+https://github.com/rahul979854/Channels/raw/main/StarSportsHindi.m3u8
+#http://tv.cloudcdn.me:80/live.ts?channelId=295&uid=4578&deviceMac=00:1A:79:41:70:15
+#http://line.dinott.com:80/play/live.php?mac=00:1A:79:74:99:55&stream=1114582&extension=m3u8&play_token=J1f0wPBeSb
+
+#EXTINF:-1 tvg-id="starsportsselect1hd.in" tvg-name="Star Sports Select 1 HD" tvg-logo="https://vignette.wikia.nocookie.net/logopedia/images/b/b5/Star_Sports_Select_1_HD.jpg/revision/latest/scale-to-width-down/340?cb=20180806112709" group-title="INDIA SPORTS",Star Sports Select 1 HD
+#http://starshare.live/live/bana/bana/238.m3u8
+https://github.com/rahul979854/Channels/raw/main/StarSportSelect1Hd.m3u8
+
+#EXTINF:-1 tvg-id="starsportsselecthd2.in" tvg-name="Star Sports Select 2 HD" tvg-logo="https://vignette.wikia.nocookie.net/logopedia/images/4/46/Sss-hd2-bronze.png/revision/latest/top-crop/width/220/height/220?cb=20170728104956" group-title="INDIA SPORTS",Star Sports Select 2 HD
+#http://starshare.live/live/bana/bana/148801.m3u8
+https://github.com/rahul979854/Channels/raw/main/StarSportSelect2Hd.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="ASTRO CRICKET HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/b/b7/Astro_Cricket.png" group-title="CRICKET",ASTRO CRICKET HD
+#http://starshare.live/live/bana/bana/2494.m3u8
+https://github.com/rahul979854/Channels/raw/main/AstroCricketHd.m3u8
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=03c2e0af2f8159f9f0ce9b5dbc865f10:cd84ed136b0cc71f8ab8cd4d4f6a2e4c
+#https://linearjitp-playback.astro.com.my/dash-wv/linear/2504/default_primary.mpd
+#https://astro-gbj7.vercel.app/2504/default_ott.mpd?|drmScheme=clearkey&drmLicense=03c2e0af2f8159f9f0ce9b5dbc865f10:cd84ed136b0cc71f8ab8cd4d4f6a2e4c
+#https://sg-cors.onrender.com/https://linearjitp-playback.astro.com.my/dash-wv/linear/2504/default_ott.mpd
+
+
+#EXTINF:-1 tvg-id="820" ch-number="820" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe45nwhlekrvx-UczVPFC0Cv5eBSHtsZsTZQ&usqp=CAU" group-title="SPORTS",Eurosport
+#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","k":"0OeU48/1ZO0scgoJjrF3xw","kid":"TbI6Qbq/6a/CIqWMWYKDEA"}],"type":"temporary"}
+https://linearjitp-playback.astro.com.my/dash-wv/linear/2100/default_primary.mpd
+
+#EXTINF:-1 tvg-id="" tvg-name="EUROSPORTS HD" tvg-logo="https://www.logotypes101.com/logos/921/A0E9CD5BCC9176DE238B630F5A474D6F/eurosporthd.png" group-title="INDIA SPORTS",EUROSPORTS HD
+#EXTVLCOPT:http-user-agent=
+#EXTHTTP:{"cookie":"Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29tLw:Expires=1739766049:KeyName=prod_linear:Signature=z1yiV7FJx3ZTRUgQKEByo5YapPVlMzad-09uMrJ0eZ6bjUE8vqqJ_qRPf89oHohbI1H-SypiQleVkChHFIVhCw"}
+#https://bldcmprod-cdn.toffeelive.com/cdn/live/euro_sports_hd/playlist.m3u8
+https://github.com/rahul979854/Channels/raw/main/EuroSportsHd.m3u8
+
+#EXTINF:-1 tvg-id="cric" tvg-name="WILLOW CRICKET HD" tvg-logo="http://stariptv.fun/logos/WLLOW.png" group-title="CRICKET",WILLOW CRICKET HD
+#https://abmyxykaaaaaaaamkyvb65fuqebyg.7a77200bf98444ac997a89ed83775793.emt.cf.ww.aiv-cdn.net/gru-nitro/live/clients/dash-sd/enc/vodez4h7i9/out/v1/e929aee089864ce98e4c335d19f41e16/cenc-sd.mpd?|drmScheme=clearkey&drmLicense=7ec6d225c1d219152933378e75e1c466:304eec31418fb552a0b57fdac515d101
+#http://starshare.live/live/bana/bana/215.m3u8
+https://github.com/rahul979854/Channels/raw/main/WillowCricketHd.m3u8
+
+
+#EXTINF:-1 tvg-id="cric" tvg-name="Tsports HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/T_Sports_logo.svg/1200px-T_Sports_logo.svg.png" group-title="CRICKET",Tsports HD
+#https://github.com/rahul979854/Channels/raw/main/TsportsHd.m3u8
+#https://cdn.hoichoi24.com/TSportsHD/video.m3u8
+https://live.tsports.com/mobile_hls/tsports_live_2/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQagsNGVuAJyaMS65cDa-V-Sz2jwlckaF0dbncZ6twaaaXP3cyoN11QPTPx&s=10" group-title="Sports",Willow Sports ᴴᴰ
+https://abmyxykaaaaaaaamkyvb65fuqebyg.7a77200bf98444ac997a89ed83775793.emt.cf.ww.aiv-cdn.net/iad-nitro/live/clients/dash/enc/f60kqesunw/out/v1/a435ed7a00f947deb4369b46d8f2fb70/cenc.mpd?|drmScheme=clearkey&drmLicense=1779c27b9d077a3ba0c9cc1bb9a94b9f:cc5cf3b7928fb9e0a1ee6a8b566f0a8e
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgz6OLpOm-iE31-BQ3JgW-vxcdo-b_2R8HTFq6xF6abK1uYuK9xU28JGc&s=10" group-title="Sports",Willow 2 Sports ᴴᴰ
+#https://d1bz14289ojrvl.cloudfront.net/out/v1/828288b4f25c407189eb6104893fad9e/index.m3u8
+https://github.com/rahul979854/Channels/raw/main/Willow2Hd.m3u8
+
+#EXTINF:-1 tvg-id="cric" tvg-name="Fox Sport 501 HD" tvg-logo="https://media.info/l/o/6/6550.1489223922.png" group-title="CRICKET",Fox Sports 501 HD
+#http://tv.cloudcdn.me:80/live.ts?channelId=36128&uid=4578&deviceMac=00:1A:79:41:70:15
+https://github.com/rahul979854/Channels/raw/main/FoxSports501Hd.m3u8
+
+#EXTINF:-1 tvg-id=ts1070 tvg-logo="https://tv.assets.pressassociation.io/f55b110f-8046-5273-a249-badfe915e918.png" group-title="Sports",TNT 1
+https://ottb.live.cf.ww.aiv-cdn.net/lhr-nitro/live/clients/dash/enc/wf8usag51e/out/v1/bd3b0c314fff4bb1ab4693358f3cd2d3/cenc.mpd?|drmScheme=clearkey&drmLicense=ae26845bd33038a9c0774a0981007294:63ac662dde310cfb4cc6f9b43b34196d
+#https://github.com/rahul979854/Channels/raw/main/TNSports1Hd.m3u8
+#https://abfdm2saaaaaaaamljqrv7ybrrx7h.47348d5020154bfaac6dd4418cd23c5d.emt.cf.ww.aiv-cdn.net/pdx-nitro/live/clients/dash/enc/rdznpzcmct/out/v1/355324ed98a94cbebbaff4bad0cd28ce/cenc.mpd|drmScheme=clearkey&drmLicense=ae26845bd33038a9c0774a0981007294:63ac662dde310cfb4cc6f9b43b34196d
+
+#EXTINF:-1 tvg-id=ts1070 tvg-logo="https://tv.assets.pressassociation.io/77f422fa-d4a2-5687-953c-34f4da7d8b91.png" group-title="Sports",TNT 2
+https://ottb.live.cf.ww.aiv-cdn.net/lhr-nitro/live/clients/dash/enc/f0qvkrra8j/out/v1/f8fa17f087564f51aa4d5c700be43ec4/cenc.mpd?|drmScheme=clearkey&drmLicense=6d1708b185c6c4d7b37600520c7cc93c:1aace05f58d8edef9697fd52cb09f441
+
+#EXTINF:-1 tvg-id=ts1070 tvg-logo="https://tv.assets.pressassociation.io/75c9df5d-d2d8-5d04-92ac-d9973c082c72.png" group-title="Sports",TNT 3
+https://ottb.live.cf.ww.aiv-cdn.net/lhr-nitro/live/clients/dash/enc/lsdasbvglv/out/v1/bb548a3626cd4708afbb94a58d71dce9/cenc.mpd?|drmScheme=clearkey&drmLicense=4e993aa8c1f295f8b94e8e9e6f6d0bfe:86a1ed6e96caab8eb1009fe530d2cf4f
+
+#EXTINF:-1 tvg-id=ts1070 tvg-logo="https://tv.assets.pressassociation.io/056d00c0-1629-5388-857c-f1a9ebdec5b8.png" group-title="Sports",TNT 4
+https://ottb.live.cf.ww.aiv-cdn.net/lhr-nitro/live/clients/dash/enc/i2pcjr4pe5/out/v1/912e9db56d75403b8a9ac0a719110f36/cenc.mpd?|drmScheme=clearkey&drmLicense=e31a5a81caff5d07ea2411a571fc2e59:96c5ef69479732ae734f962748c19729
+
+#EXTINF:-1 tvg-id=ts1070 tvg-logo="https://tv.assets.pressassociation.io/dbf92dca-857c-5522-bbc6-2bda4e23ff31.png" group-title="Sports",TNT 5
+https://github.com/rahul979854/Channels/raw/main/TNTsports5Hd.m3u8?|drmScheme=clearkey&drmLicense=60c0d9b41475e01db4ffb91ed557fbcc:36ee40e58948ca15e3caba8d47b8f34b
+
+#EXTINF:-1 tvg-id=ts1070 tvg-logo="https://assets.tv24.co/channels/bt-sport-ultimate-uhd-l.webp" group-title="Sports",TNT Ultimate
+#https://github.com/rahul979854/Channels/raw/main/TntUltimate4k.m3u8
+#https://7pal.short.gy/TNTUltimate
+http://krooztv.live:80/live/676767/767676/276789.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/hgVx5GL/Bein-1.png" group-title="Sports" tvg-id="beINSports",beIN Sports 1 ᴴᴰ
+https://linearjitp-playback.astro.com.my/dash-wv/linear/408/default_primary.mpd?|drmScheme=clearkey&drmLicense={ "keys":[ { "kty":"oct", "k":"PEUIrzSIRBB/XgJqT9axbg", "kid":"GmVRiatcSesjUwjCsannEA" } ], "type":"temporary" }
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Lpk9gnv/Bein-2.png" group-title="Sports" tvg-id="beINSports2",beIN Sports 2 ᴴᴰ
+https://linearjitp-playback.astro.com.my/dash-wv/linear/5066/default_primary.mpd?|drmScheme=clearkey&drmLicense={ "keys":[ { "kty":"oct", "k":"UQKxKqx3VsZdy0ahAdlg0w", "kid":"OcF1WB4jfv+VWWB+ubI8EA" } ], "type":"temporary" }
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/kQvKn0B/Bein-3.png" group-title="Sports" tvg-id="beINSports3",beIN Sports 3 ᴴᴰ
+https://linearjitp-playback.astro.com.my/dash-wv/linear/2705/default_primary.mpd?|drmScheme=clearkey&drmLicense={ "keys":[ { "kty":"oct", "k":"BCohvyNspymx40PtbgpjNw", "kid":"IMiE747Saydi+LGnjy0ZEA" } ], "type":"temporary" }
+
+#EXTINF:-1 tvg-id="skysportscricket.uk" tvg-name="Sky Sports Cricket" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2L1XzAytScLX1kNIcd5Fg8cPPW5ASZAA17l2eoZj59Df2D3rk9PcyuDOm&s=10" group-title="SKY SPORTS",Sky Sports Cricket
+#http://starshare.live/live/bana/bana/124269.m3u8
+https://github.com/rahul979854/Channels/raw/main/SkySportsCricketHd.m3u8
+
+#EXTINF:-1 tvg-id="skysports" tvg-name="Sky Sports" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeXRyzuz4-DcPeUHtU2OxWXda4-lZjO0Pivg&usqp=CAU" group-title="SKY SPORTS",Sky Sport 3 Nz
+https://github.com/rahul979854/Channels/raw/main/SkySport3Nz.m3u8
+#https://7pal.short.gy/skyspt3nz
+
+
+#EXTINF:-1 tvg-id="1000009276" tvg-logo="https://sonypicturesnetworks.com/images/logos/SONY_SportsTen1_HD_Logo_CLR.png" group-title="SonyLiv", Sony Sports TEN 1 HD
+https://dai.google.com/ssai/event/yeYP86THQ4yl7US8Zx5eug/master.m3u8
+#https://live.drmlive-02.workers.dev/sliv/ten1hd.m3u8
+
+#EXTINF:-1 tvg-id="1000009277" tvg-logo="https://sonypicturesnetworks.com/images/logos/SONY_SportsTen2_HD_Logo_CLR.png" group-title="SonyLiv", Sony Sports TEN 2 HD
+https://dai.google.com/ssai/event/Syu8F41-R1y_JmQ7x0oNxQ/master.m3u8
+#https://live.drmlive-02.workers.dev/sliv/ten2hd.m3u8
+
+#EXTINF:-1 tvg-id="1000009278" tvg-logo="https://sonypicturesnetworks.com/images/logos/SONY_SportsTen3_HD_Logo_CLR.png" group-title="SonyLiv", Sony Sports TEN 3 HD
+https://dai.google.com/ssai/event/nmQFuHURTYGQBNdUG-2Qdw/master.m3u8
+#https://live.drmlive-02.workers.dev/sliv/ten3hd.m3u8
+
+#EXTINF:-1 tvg-id="1000119186" tvg-logo="https://sonypicturesnetworks.com/images/logos/SONY_SportsTen4_HD_Logo_CLR.png" group-title#EXTM3U
+
+#EXTINF:-1 tvg-id="" tvg-name="ASTRO CRICKET HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/b/b7/Astro_Cricket.png" group-title="CRICKET",ASTRO 1080p HD
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=03c2e0af2f8159f9f0ce9b5dbc865f10:cd84ed136b0cc71f8ab8cd4d4f6a2e4c
+#EXTVLCOPT:http-origin=https://livecricketsl.kesug.com
+https://copy.livecricketsl.xyz/proxy/sg.php/https://linearjitp-playback.astro.com.my/dash-wv/linear/2504/default_ott.mpd?|drmScheme=clearkey&drmLicense=03c2e0af2f8159f9f0ce9b5dbc865f10:cd84ed136b0cc71f8ab8cd4d4f6a2e4c|origin=https://livecricketsl.kesug.com
+#https://streamdog.site/astro/stream.php/linearjitp-playback.astro.com.my/dash-wv/linear/2504/default_ott.mpd?|drmScheme=clearkey&drmLicense=03c2e0af2f8159f9f0ce9b5dbc865f10:cd84ed136b0cc71f8ab8cd4d4f6a2e4c|origin=https://streamdog.site
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2Risht9Vyoio0132HWiiYqNd31NntV2Fclw5TvoIuj1okmFjHG4HVmXhr&s=10" group-title="GitTv",ICC TV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=ae7076b647133606b704d33e4cef5134:810251515584cf71216d9a2d1ebf04bb
+https://mix.drmlive.net/mix/icctv1.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk7VG5YzN1WdlLRqMKL9rkhSzDfk2nXX1L7za4tXU6nlOPjI7WQSCPjp4&s=10" group-title="Champions Trophy", Toffee Live
+#https://tf.kyni.us/live.php?id=match-1&e=.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="Hotstar Hindi" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN6oMyTk1I9MQHw637eQLkFeBzP7XwAz-h8zwC2QMmh37sugi0ws5r4iU&s=10" group-title="Sports",Hotstar Hindi
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=ae7076b647133606b704d33e4cef5134:810251515584cf71216d9a2d1ebf04bb
+#https://mix.drmlive.au/mix/icctv1.mpd?|User-Agent=@Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 YGX/537.36?|drmScheme=clearkey&drmLicense=ae7076b647133606b704d33e4cef5134:810251515584cf71216d9a2d1ebf04bb
+#https://cdnt20.t20hd.cfd/live/m3-index.m3u8
+#https://sendgbxt.ruscfd.lat/720p.m3u8
+https://ee4ee8c03a26.eu-central-1.playback.live-video.net/api/video/v1/eu-central-1.755921704393.channel.LOohfipmCQDP.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGcOxZampz9U9qMXLYrItEoZl9fiAyTD2tEQ&usqp=CAU" group-title="Champions Trophy",Shoq Live
+#https://live-hw-stream.starzplayarabia.com/ICC_Champions_Trophy_2025/dash/drm/index.mpd?|drmScheme=clearkey&drmLicense=f108f8cb08c765aedf55d5b5eae58f4c:04a4ed8c992d291ce2097663b2adb677
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpcB-U7zUTfFHc1QpbTptROn7cXYjJ7qEenrFhZ9WM4p0suhNecEY5HnM&s=10" group-title="Champions Trophy", MyCo
+#https://ml-pull-hwc.myco.io/stream1/hls/stream1.m3u8
+
+#EXTINF:-1 tvg-id="Cric" tvg-name="star sports 4k" tvg-logo="https://raw.githubusercontent.com/rahul979854/logo/main/images%20(13).jpeg" group-title="CRICKET",Star Sports 4k
+https://github.com/rahul979854/Channels/raw/main/StarSports4k.m3u8
+
+#EXTINF:-1 tvg-id="Cric" tvg-name="Amazon prime" tvg-logo="https://1000logos.net/wp-content/uploads/2022/10/Amazon-Prime-Video-Logo-2022.png" group-title="CRICKET",Prime English 4k
+#https://aba5sdmaaaaaaaamjyr2xiy4rbicb.otte.live.cf.ww.aiv-cdn.net/pdx-nitro/live/clients/dash/enc/wr8i0xhnut/out/v1/190f1d69a3d5467f8fb7d9df4339bc49/cenc.mpd?|drmScheme=clearkey&drmLicense=cb8daf414566aa17d06f8294f3f3b444:89d58908a57d70ef87bf16c9b5821ca2
+#https://a201aivottlinear-a.akamaihd.net/OTTB/pdx-nitro/live/clients/dash/enc/xko28jj0cp/out/v1/190f1d69a3d5467f8fb7d9df4339bc49/cenc.mpd?|drmScheme=clearkey&drmLicense=7aa124253d518f18740c5bd932d581a3:1819c82fc27225f5e79ae189ddece0ea
+#https://aba5sdmaaaaaaaamidug47tdi5buy.otte.live.cf.ww.aiv-cdn.net/pdx-nitro/live/clients/dash/enc/iowtj5wfb1/out/v1/190f1d69a3d5467f8fb7d9df4339bc49/cenc.mpd?|drmScheme=clearkey&drmLicense=7aa124253d518f18740c5bd932d581a3:1819c82fc27225f5e79ae189ddece0ea
+#https://abhvfwoaaaaaaaamge5xi5icfzq64.otte.live.cf.ww.aiv-cdn.net/iad-nitro/live/clients/dash/enc/xjrxodbgeh/out/v1/69b95861163a42d9a34a1d4ceece7a7a/cenc.mpd?|drmScheme=clearkey&drmLicense=867ab2da044bcc1e4cc1a9252b03ce3e:0db59352d361b0a132c0a64bb231750a
+#https://a170aivottlinear-a.akamaihd.net/OTTB/sin-nitro/live/clients/dash/enc/tsrm0zirxz/out/v1/190f1d69a3d5467f8fb7d9df4339bc49/cenc.mpd?|drmScheme=clearkey&drmLicense=9cb6b6283487afe392adcffebf3cd6be:05f4eb67381e0c173954603518ce84c3
+
+#EXTINF:-1 tvg-id="Cric" tvg-name="Amazon prime" tvg-logo="https://1000logos.net/wp-content/uploads/2022/10/Amazon-Prime-Video-Logo-2022.png" group-title="CRICKET",Prime Hindi 4k
+#https://aba5sdmaaaaaaaamidug47tdi5buy.otte.live.cf.ww.aiv-cdn.net/pdx-nitro/live/clients/dash/enc/l0phze3ehz/out/v1/fe9782633a364a6a84c9410f26d9b2c4/cenc.mpd?|drmScheme=clearkey&drmLicense=4a5191838da17a2ab771f4258fad347f:54b7a084437459368eed07d182ad644c
+#https://a170aivottlinear-a.akamaihd.net/OTTB/bom-nitro/live/clients/dash/enc/l0phze3ehz/out/v1/fe9782633a364a6a84c9410f26d9b2c4/cenc.mpd?|drmScheme=clearkey&drmLicense=4a5191838da17a2ab771f4258fad347f:54b7a084437459368eed07d182ad644c
+#https://aba5sdmaaaaaaaammj2q5nkaoee4b.otte.live.cf.ww.aiv-cdn.net/pdx-nitro/live/clients/dash/enc/l2xzhgmjur/out/v1/fe9782633a364a6a84c9410f26d9b2c4/cenc.mpd?|drmScheme=clearkey&drmLicense=4a5191838da17a2ab771f4258fad347f:54b7a084437459368eed07d182ad644c
+#https://a170aivottlinear-a.akamaihd.net/OTTB/sin-nitro/live/clients/dash/enc/1jii7mxinw/out/v1/fe9782633a364a6a84c9410f26d9b2c4/cenc.mpd?|drmScheme=clearkey&drmLicense=553a8e7efc48840b17d03797c023d9b6:05fa313fa73df33f19e0f2d3d047bbaf
+
+#EXTINF:-1 tvg-id="Cricbuzz event" tvg-name="Cricbuzz events" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBlr9akJgC4lGRPCAgNKdBFyM0CfIkIESO77AH2TkWz0ZPIurz439yDu_8&s=10" group-title="CRICKET",Cricbuzz Events UHD
+#https://uselector.cdn.intigral-ott.net/CRL2/CRL2.isml/manifest.mpd?|drmScheme=clearkey&drmLicense=77889c7295e1f113852aa6030242b8e4:ec8c522d46888a15ff6533aa28ccd7f5
+#http://tv.cloudcdn.me:80/live.ts?channelId=125422&uid=4578&deviceMac=00:1A:79:41:70:15
+#https://ev-fuj-dxb-cdn-edge2.aws.playco.com/live/eds/CricLife2/DASH/CricLife2.mpd?|drmScheme=clearkey&drmLicense=48bef83b4c6a3c5189b01b0126210da4:bd085230b7b09e50954fe0af111a8a9f
+
+#EXTINF:-1 tvg-id="fancode event" tvg-name="fancode events" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq6OTWwSCPP67REB8IDYWuZww9j_tvvanCYA&usqp=CAU" group-title="CRICKET",Fancode Events UHD
+https://a166aivottlinear-a.akamaihd.net/OTTB/sin-nitro/live/clients/dash/enc/gdhz5mhnyu/out/v1/fe72171ab2684ab8b9ee3e2ffcc9cff2/cenc.mpd?|drmScheme=clearkey&drmLicense=159a2b4e1d2d7f16892d35d935a2fb34:07809840dd0f511221ca78459167d1b3
+
+#EXTINF:-1 tvg-id="Sony event" tvg-name="Sony events" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5SZB3ssT6NnI78-q1DZZhMF6kTRer2jGWdYE4T1N0K7BFYHC95psDihI&s=10" group-title="CRICKET",Sony Events UHD
+https://dai.google.com/ssai/event/g1cPcUIdSQC_3FXsrgV5iA/master.m3u8
+
+#EXTINF:-1 tvg-id="Tata ipl" tvg-name="Tata ipl" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTboihtL2GYEwRrkF6_ArJmSP-w9ExH7LRMiQ&usqp=CAU" group-title="CRICKET",Tata ipl UHD
+#https://live.drmlive-02.workers.dev/jc/2001.m3u8
+#https://drmlive.in/voot/2001.m3u8
+#https://prod-sports-hin-fa.jiocinema.com/bpk-tv/JV_SportsHD15_DIG_MOB/Fallback/index.m3u8
+
+#EXTINF:-1 tvg-id="starsports1kannada.in" tvg-name="Star Sports 1 Kannada" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhPLxN9JyE1KeREoxGvI9JMBIJSWDDaMbb8U_527S4IMBaaNn42atIpdTI&s=10" group-title="CRICKET",Star Sports 1 Kannada Hd
+http://webhop.xyz:8080/live/bana/bana/380977.m3u8
+
+#EXTINF:-1 tvg-id="starsports1hd.in" tvg-name="STAR SPORTS 1 Hd " tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Star_Sports_1_HD.png/2560px-Star_Sports_1_HD.png" group-title="CRICKET",STAR SPORTS 1 Hd
+#http://starshare.live/live/bana/bana/9397.m3u8
+#http://starshare.live/live/bana/bana/124281.m3u8
+#https://starshare.live/live/bana/bana/148.m3u8
+#https://github.com/rahul979854/Channels/raw/main/StarSport1Hd.m3u8
+https://raw.githubusercontent.com/rahul979854/Channels/refs/heads/main/StarSport1Hd.m3u8
+
+#EXTINF:-1 tvg-id="starsports2hd.in" tvg-name="STAR SPORTS 2 Hd" tvg-logo="https://tvschedule.today/_next/image?url=https%3A%2F%2Fltsk-cdn.s3.eu-west-1.amazonaws.com%2Fjumpstart%2FTemp_Live%2Fcdn%2FHLS%2FChannel%2FimageContent-1021-j5nj3c68-v1%2FimageContent-1021-j5nj3c68-m1.png&w=256&q=75" group-title="CRICKET",STAR SPORTS 2 Hd
+#http://starshare.live/live/bana/bana/239.m3u8
+https://github.com/rahul979854/Channels/raw/main/StarSport2Hd.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="Star Sport 2 HD" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Sports18_1_HD.png" group-title="cricket",STAR SPORTS 2 HD
+#https://live.drmlive-02.workers.dev/jc/122.m3u8
+https://github.com/rahul979854/Channels/raw/main/Sports18Hd.m3u8
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
+#https://mix.drmlive.au/mix/jc-122.m3u8
+#https://airplay.bgrid.in/IPTVS/live/voot/1033.m3u8
+
+#EXTINF:-1 tvg-id="starsports1hdhindi.in" tvg-name="Star Sport 1 HINDI HD "tvg-logo="https://static.epg.best/in/StarSports1Hindi.in.png" group-title="CRICKET",Star Sports 1 HINDI HD
+#http://starshare.live/live/bana/bana/9399.m3u8
+#https://starshare.live/live/bana/bana/211.m3u8
+https://github.com/rahul979854/Channels/raw/main/StarSportsHindi.m3u8
+#http://tv.cloudcdn.me:80/live.ts?channelId=295&uid=4578&deviceMac=00:1A:79:41:70:15
+#http://line.dinott.com:80/play/live.php?mac=00:1A:79:74:99:55&stream=1114582&extension=m3u8&play_token=J1f0wPBeSb
+
+#EXTINF:-1 tvg-id="starsportsselect1hd.in" tvg-name="Star Sports Select 1 HD" tvg-logo="https://vignette.wikia.nocookie.net/logopedia/images/b/b5/Star_Sports_Select_1_HD.jpg/revision/latest/scale-to-width-down/340?cb=20180806112709" group-title="INDIA SPORTS",Star Sports Select 1 HD
+#http://starshare.live/live/bana/bana/238.m3u8
+https://github.com/rahul979854/Channels/raw/main/StarSportSelect1Hd.m3u8
+
+#EXTINF:-1 tvg-id="starsportsselecthd2.in" tvg-name="Star Sports Select 2 HD" tvg-logo="https://vignette.wikia.nocookie.net/logopedia/images/4/46/Sss-hd2-bronze.png/revision/latest/top-crop/width/220/height/220?cb=20170728104956" group-title="INDIA SPORTS",Star Sports Select 2 HD
+#http://starshare.live/live/bana/bana/148801.m3u8
+https://github.com/rahul979854/Channels/raw/main/StarSportSelect2Hd.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="ASTRO CRICKET HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/b/b7/Astro_Cricket.png" group-title="CRICKET",ASTRO CRICKET HD
+#http://starshare.live/live/bana/bana/2494.m3u8
+https://github.com/rahul979854/Channels/raw/main/AstroCricketHd.m3u8
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=03c2e0af2f8159f9f0ce9b5dbc865f10:cd84ed136b0cc71f8ab8cd4d4f6a2e4c
+#https://linearjitp-playback.astro.com.my/dash-wv/linear/2504/default_primary.mpd
+#https://astro-gbj7.vercel.app/2504/default_ott.mpd?|drmScheme=clearkey&drmLicense=03c2e0af2f8159f9f0ce9b5dbc865f10:cd84ed136b0cc71f8ab8cd4d4f6a2e4c
+#https://sg-cors.onrender.com/https://linearjitp-playback.astro.com.my/dash-wv/linear/2504/default_ott.mpd
+
+
+#EXTINF:-1 tvg-id="820" ch-number="820" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe45nwhlekrvx-UczVPFC0Cv5eBSHtsZsTZQ&usqp=CAU" group-title="SPORTS",Eurosport
+#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","k":"0OeU48/1ZO0scgoJjrF3xw","kid":"TbI6Qbq/6a/CIqWMWYKDEA"}],"type":"temporary"}
+https://linearjitp-playback.astro.com.my/dash-wv/linear/2100/default_primary.mpd
+
+#EXTINF:-1 tvg-id="" tvg-name="EUROSPORTS HD" tvg-logo="https://www.logotypes101.com/logos/921/A0E9CD5BCC9176DE238B630F5A474D6F/eurosporthd.png" group-title="INDIA SPORTS",EUROSPORTS HD
+#EXTVLCOPT:http-user-agent=
+#EXTHTTP:{"cookie":"Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29tLw:Expires=1739766049:KeyName=prod_linear:Signature=z1yiV7FJx3ZTRUgQKEByo5YapPVlMzad-09uMrJ0eZ6bjUE8vqqJ_qRPf89oHohbI1H-SypiQleVkChHFIVhCw"}
+#https://bldcmprod-cdn.toffeelive.com/cdn/live/euro_sports_hd/playlist.m3u8
+https://github.com/rahul979854/Channels/raw/main/EuroSportsHd.m3u8
+
+#EXTINF:-1 tvg-id="cric" tvg-name="WILLOW CRICKET HD" tvg-logo="http://stariptv.fun/logos/WLLOW.png" group-title="CRICKET",WILLOW CRICKET HD
+#https://abmyxykaaaaaaaamkyvb65fuqebyg.7a77200bf98444ac997a89ed83775793.emt.cf.ww.aiv-cdn.net/gru-nitro/live/clients/dash-sd/enc/vodez4h7i9/out/v1/e929aee089864ce98e4c335d19f41e16/cenc-sd.mpd?|drmScheme=clearkey&drmLicense=7ec6d225c1d219152933378e75e1c466:304eec31418fb552a0b57fdac515d101
+#http://starshare.live/live/bana/bana/215.m3u8
+https://github.com/rahul979854/Channels/raw/main/WillowCricketHd.m3u8
+
+
+#EXTINF:-1 tvg-id="cric" tvg-name="Tsports HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/T_Sports_logo.svg/1200px-T_Sports_logo.svg.png" group-title="CRICKET",Tsports HD
+#https://github.com/rahul979854/Channels/raw/main/TsportsHd.m3u8
+#https://cdn.hoichoi24.com/TSportsHD/video.m3u8
+https://live.tsports.com/mobile_hls/tsports_live_2/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQagsNGVuAJyaMS65cDa-V-Sz2jwlckaF0dbncZ6twaaaXP3cyoN11QPTPx&s=10" group-title="Sports",Willow Sports ᴴᴰ
+https://abmyxykaaaaaaaamkyvb65fuqebyg.7a77200bf98444ac997a89ed83775793.emt.cf.ww.aiv-cdn.net/iad-nitro/live/clients/dash/enc/f60kqesunw/out/v1/a435ed7a00f947deb4369b46d8f2fb70/cenc.mpd?|drmScheme=clearkey&drmLicense=1779c27b9d077a3ba0c9cc1bb9a94b9f:cc5cf3b7928fb9e0a1ee6a8b566f0a8e
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgz6OLpOm-iE31-BQ3JgW-vxcdo-b_2R8HTFq6xF6abK1uYuK9xU28JGc&s=10" group-title="Sports",Willow 2 Sports ᴴᴰ
+#https://d1bz14289ojrvl.cloudfront.net/out/v1/828288b4f25c407189eb6104893fad9e/index.m3u8
+https://github.com/rahul979854/Channels/raw/main/Willow2Hd.m3u8
+
+#EXTINF:-1 tvg-id="cric" tvg-name="Fox Sport 501 HD" tvg-logo="https://media.info/l/o/6/6550.1489223922.png" group-title="CRICKET",Fox Sports 501 HD
+#http://tv.cloudcdn.me:80/live.ts?channelId=36128&uid=4578&deviceMac=00:1A:79:41:70:15
+https://github.com/rahul979854/Channels/raw/main/FoxSports501Hd.m3u8
+
+#EXTINF:-1 tvg-id=ts1070 tvg-logo="https://tv.assets.pressassociation.io/f55b110f-8046-5273-a249-badfe915e918.png" group-title="Sports",TNT 1
+https://ottb.live.cf.ww.aiv-cdn.net/lhr-nitro/live/clients/dash/enc/wf8usag51e/out/v1/bd3b0c314fff4bb1ab4693358f3cd2d3/cenc.mpd?|drmScheme=clearkey&drmLicense=ae26845bd33038a9c0774a0981007294:63ac662dde310cfb4cc6f9b43b34196d
+#https://github.com/rahul979854/Channels/raw/main/TNSports1Hd.m3u8
+#https://abfdm2saaaaaaaamljqrv7ybrrx7h.47348d5020154bfaac6dd4418cd23c5d.emt.cf.ww.aiv-cdn.net/pdx-nitro/live/clients/dash/enc/rdznpzcmct/out/v1/355324ed98a94cbebbaff4bad0cd28ce/cenc.mpd|drmScheme=clearkey&drmLicense=ae26845bd33038a9c0774a0981007294:63ac662dde310cfb4cc6f9b43b34196d
+
+#EXTINF:-1 tvg-id=ts1070 tvg-logo="https://tv.assets.pressassociation.io/77f422fa-d4a2-5687-953c-34f4da7d8b91.png" group-title="Sports",TNT 2
+https://ottb.live.cf.ww.aiv-cdn.net/lhr-nitro/live/clients/dash/enc/f0qvkrra8j/out/v1/f8fa17f087564f51aa4d5c700be43ec4/cenc.mpd?|drmScheme=clearkey&drmLicense=6d1708b185c6c4d7b37600520c7cc93c:1aace05f58d8edef9697fd52cb09f441
+
+#EXTINF:-1 tvg-id=ts1070 tvg-logo="https://tv.assets.pressassociation.io/75c9df5d-d2d8-5d04-92ac-d9973c082c72.png" group-title="Sports",TNT 3
+https://ottb.live.cf.ww.aiv-cdn.net/lhr-nitro/live/clients/dash/enc/lsdasbvglv/out/v1/bb548a3626cd4708afbb94a58d71dce9/cenc.mpd?|drmScheme=clearkey&drmLicense=4e993aa8c1f295f8b94e8e9e6f6d0bfe:86a1ed6e96caab8eb1009fe530d2cf4f
+
+#EXTINF:-1 tvg-id=ts1070 tvg-logo="https://tv.assets.pressassociation.io/056d00c0-1629-5388-857c-f1a9ebdec5b8.png" group-title="Sports",TNT 4
+https://ottb.live.cf.ww.aiv-cdn.net/lhr-nitro/live/clients/dash/enc/i2pcjr4pe5/out/v1/912e9db56d75403b8a9ac0a719110f36/cenc.mpd?|drmScheme=clearkey&drmLicense=e31a5a81caff5d07ea2411a571fc2e59:96c5ef69479732ae734f962748c19729
+
+#EXTINF:-1 tvg-id=ts1070 tvg-logo="https://tv.assets.pressassociation.io/dbf92dca-857c-5522-bbc6-2bda4e23ff31.png" group-title="Sports",TNT 5
+https://github.com/rahul979854/Channels/raw/main/TNTsports5Hd.m3u8?|drmScheme=clearkey&drmLicense=60c0d9b41475e01db4ffb91ed557fbcc:36ee40e58948ca15e3caba8d47b8f34b
+
+#EXTINF:-1 tvg-id=ts1070 tvg-logo="https://assets.tv24.co/channels/bt-sport-ultimate-uhd-l.webp" group-title="Sports",TNT Ultimate
+#https://github.com/rahul979854/Channels/raw/main/TntUltimate4k.m3u8
+#https://7pal.short.gy/TNTUltimate
+http://krooztv.live:80/live/676767/767676/276789.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/hgVx5GL/Bein-1.png" group-title="Sports" tvg-id="beINSports",beIN Sports 1 ᴴᴰ
+https://linearjitp-playback.astro.com.my/dash-wv/linear/408/default_primary.mpd?|drmScheme=clearkey&drmLicense={ "keys":[ { "kty":"oct", "k":"PEUIrzSIRBB/XgJqT9axbg", "kid":"GmVRiatcSesjUwjCsannEA" } ], "type":"temporary" }
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Lpk9gnv/Bein-2.png" group-title="Sports" tvg-id="beINSports2",beIN Sports 2 ᴴᴰ
+https://linearjitp-playback.astro.com.my/dash-wv/linear/5066/default_primary.mpd?|drmScheme=clearkey&drmLicense={ "keys":[ { "kty":"oct", "k":"UQKxKqx3VsZdy0ahAdlg0w", "kid":"OcF1WB4jfv+VWWB+ubI8EA" } ], "type":"temporary" }
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/kQvKn0B/Bein-3.png" group-title="Sports" tvg-id="beINSports3",beIN Sports 3 ᴴᴰ
+https://linearjitp-playback.astro.com.my/dash-wv/linear/2705/default_primary.mpd?|drmScheme=clearkey&drmLicense={ "keys":[ { "kty":"oct", "k":"BCohvyNspymx40PtbgpjNw", "kid":"IMiE747Saydi+LGnjy0ZEA" } ], "type":"temporary" }
+
+#EXTINF:-1 tvg-id="skysportscricket.uk" tvg-name="Sky Sports Cricket" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2L1XzAytScLX1kNIcd5Fg8cPPW5ASZAA17l2eoZj59Df2D3rk9PcyuDOm&s=10" group-title="SKY SPORTS",Sky Sports Cricket
+#http://starshare.live/live/bana/bana/124269.m3u8
+https://github.com/rahul979854/Channels/raw/main/SkySportsCricketHd.m3u8
+
+#EXTINF:-1 tvg-id="skysports" tvg-name="Sky Sports" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeXRyzuz4-DcPeUHtU2OxWXda4-lZjO0Pivg&usqp=CAU" group-title="SKY SPORTS",Sky Sport 3 Nz
+https://github.com/rahul979854/Channels/raw/main/SkySport3Nz.m3u8
+#https://7pal.short.gy/skyspt3nz
+
+
+#EXTINF:-1 tvg-id="1000009276" tvg-logo="https://sonypicturesnetworks.com/images/logos/SONY_SportsTen1_HD_Logo_CLR.png" group-title="SonyLiv", Sony Sports TEN 1 HD
+https://dai.google.com/ssai/event/yeYP86THQ4yl7US8Zx5eug/master.m3u8
+#https://live.drmlive-02.workers.dev/sliv/ten1hd.m3u8
+
+#EXTINF:-1 tvg-id="1000009277" tvg-logo="https://sonypicturesnetworks.com/images/logos/SONY_SportsTen2_HD_Logo_CLR.png" group-title="SonyLiv", Sony Sports TEN 2 HD
+https://dai.google.com/ssai/event/Syu8F41-R1y_JmQ7x0oNxQ/master.m3u8
+#https://live.drmlive-02.workers.dev/sliv/ten2hd.m3u8
+
+#EXTINF:-1 tvg-id="1000009278" tvg-logo="https://sonypicturesnetworks.com/images/logos/SONY_SportsTen3_HD_Logo_CLR.png" group-title="SonyLiv", Sony Sports TEN 3 HD
+https://dai.google.com/ssai/event/nmQFuHURTYGQBNdUG-2Qdw/master.m3u8
+#https://live.drmlive-02.workers.dev/sliv/ten3hd.m3u8
+
+#EXTINF:-1 tvg-id="1000119186" tvg-logo="https://sonypicturesnetworks.com/images/logos/SONY_SportsTen4_HD_Logo_CLR.png" group-title#EXTM3U
+
+#EXTINF:-1 tvg-id="" tvg-name="ASTRO CRICKET HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/b/b7/Astro_Cricket.png" group-title="CRICKET",ASTRO 1080p HD
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=03c2e0af2f8159f9f0ce9b5dbc865f10:cd84ed136b0cc71f8ab8cd4d4f6a2e4c
+#EXTVLCOPT:http-origin=https://livecricketsl.kesug.com
+https://copy.livecricketsl.xyz/proxy/sg.php/https://linearjitp-playback.astro.com.my/dash-wv/linear/2504/default_ott.mpd?|drmScheme=clearkey&drmLicense=03c2e0af2f8159f9f0ce9b5dbc865f10:cd84ed136b0cc71f8ab8cd4d4f6a2e4c|origin=https://livecricketsl.kesug.com
+#https://streamdog.site/astro/stream.php/linearjitp-playback.astro.com.my/dash-wv/linear/2504/default_ott.mpd?|drmScheme=clearkey&drmLicense=03c2e0af2f8159f9f0ce9b5dbc865f10:cd84ed136b0cc71f8ab8cd4d4f6a2e4c|origin=https://streamdog.site
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2Risht9Vyoio0132HWiiYqNd31NntV2Fclw5TvoIuj1okmFjHG4HVmXhr&s=10" group-title="GitTv",ICC TV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=ae7076b647133606b704d33e4cef5134:810251515584cf71216d9a2d1ebf04bb
+https://mix.drmlive.net/mix/icctv1.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk7VG5YzN1WdlLRqMKL9rkhSzDfk2nXX1L7za4tXU6nlOPjI7WQSCPjp4&s=10" group-title="Champions Trophy", Toffee Live
+#https://tf.kyni.us/live.php?id=match-1&e=.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="Hotstar Hindi" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN6oMyTk1I9MQHw637eQLkFeBzP7XwAz-h8zwC2QMmh37sugi0ws5r4iU&s=10" group-title="Sports",Hotstar Hindi
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=ae7076b647133606b704d33e4cef5134:810251515584cf71216d9a2d1ebf04bb
+#https://mix.drmlive.au/mix/icctv1.mpd?|User-Agent=@Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 YGX/537.36?|drmScheme=clearkey&drmLicense=ae7076b647133606b704d33e4cef5134:810251515584cf71216d9a2d1ebf04bb
+#https://cdnt20.t20hd.cfd/live/m3-index.m3u8
+#https://sendgbxt.ruscfd.lat/720p.m3u8
+https://ee4ee8c03a26.eu-central-1.playback.live-video.net/api/video/v1/eu-central-1.755921704393.channel.LOohfipmCQDP.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGcOxZampz9U9qMXLYrItEoZl9fiAyTD2tEQ&usqp=CAU" group-title="Champions Trophy",Shoq Live
+#https://live-hw-stream.starzplayarabia.com/ICC_Champions_Trophy_2025/dash/drm/index.mpd?|drmScheme=clearkey&drmLicense=f108f8cb08c765aedf55d5b5eae58f4c:04a4ed8c992d291ce2097663b2adb677
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpcB-U7zUTfFHc1QpbTptROn7cXYjJ7qEenrFhZ9WM4p0suhNecEY5HnM&s=10" group-title="Champions Trophy", MyCo
+#https://ml-pull-hwc.myco.io/stream1/hls/stream1.m3u8
+
+#EXTINF:-1 tvg-id="Cric" tvg-name="star sports 4k" tvg-logo="https://raw.githubusercontent.com/rahul979854/logo/main/images%20(13).jpeg" group-title="CRICKET",Star Sports 4k
+https://github.com/rahul979854/Channels/raw/main/StarSports4k.m3u8
+
+#EXTINF:-1 tvg-id="Cric" tvg-name="Amazon prime" tvg-logo="https://1000logos.net/wp-content/uploads/2022/10/Amazon-Prime-Video-Logo-2022.png" group-title="CRICKET",Prime English 4k
+#https://aba5sdmaaaaaaaamjyr2xiy4rbicb.otte.live.cf.ww.aiv-cdn.net/pdx-nitro/live/clients/dash/enc/wr8i0xhnut/out/v1/190f1d69a3d5467f8fb7d9df4339bc49/cenc.mpd?|drmScheme=clearkey&drmLicense=cb8daf414566aa17d06f8294f3f3b444:89d58908a57d70ef87bf16c9b5821ca2
+#https://a201aivottlinear-a.akamaihd.net/OTTB/pdx-nitro/live/clients/dash/enc/xko28jj0cp/out/v1/190f1d69a3d5467f8fb7d9df4339bc49/cenc.mpd?|drmScheme=clearkey&drmLicense=7aa124253d518f18740c5bd932d581a3:1819c82fc27225f5e79ae189ddece0ea
+#https://aba5sdmaaaaaaaamidug47tdi5buy.otte.live.cf.ww.aiv-cdn.net/pdx-nitro/live/clients/dash/enc/iowtj5wfb1/out/v1/190f1d69a3d5467f8fb7d9df4339bc49/cenc.mpd?|drmScheme=clearkey&drmLicense=7aa124253d518f18740c5bd932d581a3:1819c82fc27225f5e79ae189ddece0ea
+#https://abhvfwoaaaaaaaamge5xi5icfzq64.otte.live.cf.ww.aiv-cdn.net/iad-nitro/live/clients/dash/enc/xjrxodbgeh/out/v1/69b95861163a42d9a34a1d4ceece7a7a/cenc.mpd?|drmScheme=clearkey&drmLicense=867ab2da044bcc1e4cc1a9252b03ce3e:0db59352d361b0a132c0a64bb231750a
+#https://a170aivottlinear-a.akamaihd.net/OTTB/sin-nitro/live/clients/dash/enc/tsrm0zirxz/out/v1/190f1d69a3d5467f8fb7d9df4339bc49/cenc.mpd?|drmScheme=clearkey&drmLicense=9cb6b6283487afe392adcffebf3cd6be:05f4eb67381e0c173954603518ce84c3
+
+#EXTINF:-1 tvg-id="Cric" tvg-name="Amazon prime" tvg-logo="https://1000logos.net/wp-content/uploads/2022/10/Amazon-Prime-Video-Logo-2022.png" group-title="CRICKET",Prime Hindi 4k
+#https://aba5sdmaaaaaaaamidug47tdi5buy.otte.live.cf.ww.aiv-cdn.net/pdx-nitro/live/clients/dash/enc/l0phze3ehz/out/v1/fe9782633a364a6a84c9410f26d9b2c4/cenc.mpd?|drmScheme=clearkey&drmLicense=4a5191838da17a2ab771f4258fad347f:54b7a084437459368eed07d182ad644c
+#https://a170aivottlinear-a.akamaihd.net/OTTB/bom-nitro/live/clients/dash/enc/l0phze3ehz/out/v1/fe9782633a364a6a84c9410f26d9b2c4/cenc.mpd?|drmScheme=clearkey&drmLicense=4a5191838da17a2ab771f4258fad347f:54b7a084437459368eed07d182ad644c
+#https://aba5sdmaaaaaaaammj2q5nkaoee4b.otte.live.cf.ww.aiv-cdn.net/pdx-nitro/live/clients/dash/enc/l2xzhgmjur/out/v1/fe9782633a364a6a84c9410f26d9b2c4/cenc.mpd?|drmScheme=clearkey&drmLicense=4a5191838da17a2ab771f4258fad347f:54b7a084437459368eed07d182ad644c
+#https://a170aivottlinear-a.akamaihd.net/OTTB/sin-nitro/live/clients/dash/enc/1jii7mxinw/out/v1/fe9782633a364a6a84c9410f26d9b2c4/cenc.mpd?|drmScheme=clearkey&drmLicense=553a8e7efc48840b17d03797c023d9b6:05fa313fa73df33f19e0f2d3d047bbaf
+
+#EXTINF:-1 tvg-id="Cricbuzz event" tvg-name="Cricbuzz events" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBlr9akJgC4lGRPCAgNKdBFyM0CfIkIESO77AH2TkWz0ZPIurz439yDu_8&s=10" group-title="CRICKET",Cricbuzz Events UHD
+#https://uselector.cdn.intigral-ott.net/CRL2/CRL2.isml/manifest.mpd?|drmScheme=clearkey&drmLicense=77889c7295e1f113852aa6030242b8e4:ec8c522d46888a15ff6533aa28ccd7f5
+#http://tv.cloudcdn.me:80/live.ts?channelId=125422&uid=4578&deviceMac=00:1A:79:41:70:15
+#https://ev-fuj-dxb-cdn-edge2.aws.playco.com/live/eds/CricLife2/DASH/CricLife2.mpd?|drmScheme=clearkey&drmLicense=48bef83b4c6a3c5189b01b0126210da4:bd085230b7b09e50954fe0af111a8a9f
+
+#EXTINF:-1 tvg-id="fancode event" tvg-name="fancode events" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq6OTWwSCPP67REB8IDYWuZww9j_tvvanCYA&usqp=CAU" group-title="CRICKET",Fancode Events UHD
+https://a166aivottlinear-a.akamaihd.net/OTTB/sin-nitro/live/clients/dash/enc/gdhz5mhnyu/out/v1/fe72171ab2684ab8b9ee3e2ffcc9cff2/cenc.mpd?|drmScheme=clearkey&drmLicense=159a2b4e1d2d7f16892d35d935a2fb34:07809840dd0f511221ca78459167d1b3
+
+#EXTINF:-1 tvg-id="Sony event" tvg-name="Sony events" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5SZB3ssT6NnI78-q1DZZhMF6kTRer2jGWdYE4T1N0K7BFYHC95psDihI&s=10" group-title="CRICKET",Sony Events UHD
+https://dai.google.com/ssai/event/g1cPcUIdSQC_3FXsrgV5iA/master.m3u8
+
+#EXTINF:-1 tvg-id="Tata ipl" tvg-name="Tata ipl" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTboihtL2GYEwRrkF6_ArJmSP-w9ExH7LRMiQ&usqp=CAU" group-title="CRICKET",Tata ipl UHD
+#https://live.drmlive-02.workers.dev/jc/2001.m3u8
+#https://drmlive.in/voot/2001.m3u8
+#https://prod-sports-hin-fa.jiocinema.com/bpk-tv/JV_SportsHD15_DIG_MOB/Fallback/index.m3u8
+
+#EXTINF:-1 tvg-id="starsports1kannada.in" tvg-name="Star Sports 1 Kannada" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhPLxN9JyE1KeREoxGvI9JMBIJSWDDaMbb8U_527S4IMBaaNn42atIpdTI&s=10" group-title="CRICKET",Star Sports 1 Kannada Hd
+http://webhop.xyz:8080/live/bana/bana/380977.m3u8
+
+#EXTINF:-1 tvg-id="starsports1hd.in" tvg-name="STAR SPORTS 1 Hd " tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Star_Sports_1_HD.png/2560px-Star_Sports_1_HD.png" group-title="CRICKET",STAR SPORTS 1 Hd
+#http://starshare.live/live/bana/bana/9397.m3u8
+#http://starshare.live/live/bana/bana/124281.m3u8
+#https://starshare.live/live/bana/bana/148.m3u8
+#https://github.com/rahul979854/Channels/raw/main/StarSport1Hd.m3u8
+https://raw.githubusercontent.com/rahul979854/Channels/refs/heads/main/StarSport1Hd.m3u8
+
+#EXTINF:-1 tvg-id="starsports2hd.in" tvg-name="STAR SPORTS 2 Hd" tvg-logo="https://tvschedule.today/_next/image?url=https%3A%2F%2Fltsk-cdn.s3.eu-west-1.amazonaws.com%2Fjumpstart%2FTemp_Live%2Fcdn%2FHLS%2FChannel%2FimageContent-1021-j5nj3c68-v1%2FimageContent-1021-j5nj3c68-m1.png&w=256&q=75" group-title="CRICKET",STAR SPORTS 2 Hd
+#http://starshare.live/live/bana/bana/239.m3u8
+https://github.com/rahul979854/Channels/raw/main/StarSport2Hd.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="Star Sport 2 HD" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Sports18_1_HD.png" group-title="cricket",STAR SPORTS 2 HD
+#https://live.drmlive-02.workers.dev/jc/122.m3u8
+https://github.com/rahul979854/Channels/raw/main/Sports18Hd.m3u8
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
+#https://mix.drmlive.au/mix/jc-122.m3u8
+#https://airplay.bgrid.in/IPTVS/live/voot/1033.m3u8
+
+#EXTINF:-1 tvg-id="starsports1hdhindi.in" tvg-name="Star Sport 1 HINDI HD "tvg-logo="https://static.epg.best/in/StarSports1Hindi.in.png" group-title="CRICKET",Star Sports 1 HINDI HD
+#http://starshare.live/live/bana/bana/9399.m3u8
+#https://starshare.live/live/bana/bana/211.m3u8
+https://github.com/rahul979854/Channels/raw/main/StarSportsHindi.m3u8
+#http://tv.cloudcdn.me:80/live.ts?channelId=295&uid=4578&deviceMac=00:1A:79:41:70:15
+#http://line.dinott.com:80/play/live.php?mac=00:1A:79:74:99:55&stream=1114582&extension=m3u8&play_token=J1f0wPBeSb
+
+#EXTINF:-1 tvg-id="starsportsselect1hd.in" tvg-name="Star Sports Select 1 HD" tvg-logo="https://vignette.wikia.nocookie.net/logopedia/images/b/b5/Star_Sports_Select_1_HD.jpg/revision/latest/scale-to-width-down/340?cb=20180806112709" group-title="INDIA SPORTS",Star Sports Select 1 HD
+#http://starshare.live/live/bana/bana/238.m3u8
+https://github.com/rahul979854/Channels/raw/main/StarSportSelect1Hd.m3u8
+
+#EXTINF:-1 tvg-id="starsportsselecthd2.in" tvg-name="Star Sports Select 2 HD" tvg-logo="https://vignette.wikia.nocookie.net/logopedia/images/4/46/Sss-hd2-bronze.png/revision/latest/top-crop/width/220/height/220?cb=20170728104956" group-title="INDIA SPORTS",Star Sports Select 2 HD
+#http://starshare.live/live/bana/bana/148801.m3u8
+https://github.com/rahul979854/Channels/raw/main/StarSportSelect2Hd.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="ASTRO CRICKET HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/b/b7/Astro_Cricket.png" group-title="CRICKET",ASTRO CRICKET HD
+#http://starshare.live/live/bana/bana/2494.m3u8
+https://github.com/rahul979854/Channels/raw/main/AstroCricketHd.m3u8
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=03c2e0af2f8159f9f0ce9b5dbc865f10:cd84ed136b0cc71f8ab8cd4d4f6a2e4c
+#https://linearjitp-playback.astro.com.my/dash-wv/linear/2504/default_primary.mpd
+#https://astro-gbj7.vercel.app/2504/default_ott.mpd?|drmScheme=clearkey&drmLicense=03c2e0af2f8159f9f0ce9b5dbc865f10:cd84ed136b0cc71f8ab8cd4d4f6a2e4c
+#https://sg-cors.onrender.com/https://linearjitp-playback.astro.com.my/dash-wv/linear/2504/default_ott.mpd
+
+
+#EXTINF:-1 tvg-id="820" ch-number="820" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe45nwhlekrvx-UczVPFC0Cv5eBSHtsZsTZQ&usqp=CAU" group-title="SPORTS",Eurosport
+#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","k":"0OeU48/1ZO0scgoJjrF3xw","kid":"TbI6Qbq/6a/CIqWMWYKDEA"}],"type":"temporary"}
+https://linearjitp-playback.astro.com.my/dash-wv/linear/2100/default_primary.mpd
+
+#EXTINF:-1 tvg-id="" tvg-name="EUROSPORTS HD" tvg-logo="https://www.logotypes101.com/logos/921/A0E9CD5BCC9176DE238B630F5A474D6F/eurosporthd.png" group-title="INDIA SPORTS",EUROSPORTS HD
+#EXTVLCOPT:http-user-agent=
+#EXTHTTP:{"cookie":"Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29tLw:Expires=1739766049:KeyName=prod_linear:Signature=z1yiV7FJx3ZTRUgQKEByo5YapPVlMzad-09uMrJ0eZ6bjUE8vqqJ_qRPf89oHohbI1H-SypiQleVkChHFIVhCw"}
+#https://bldcmprod-cdn.toffeelive.com/cdn/live/euro_sports_hd/playlist.m3u8
+https://github.com/rahul979854/Channels/raw/main/EuroSportsHd.m3u8
+
+#EXTINF:-1 tvg-id="cric" tvg-name="WILLOW CRICKET HD" tvg-logo="http://stariptv.fun/logos/WLLOW.png" group-title="CRICKET",WILLOW CRICKET HD
+#https://abmyxykaaaaaaaamkyvb65fuqebyg.7a77200bf98444ac997a89ed83775793.emt.cf.ww.aiv-cdn.net/gru-nitro/live/clients/dash-sd/enc/vodez4h7i9/out/v1/e929aee089864ce98e4c335d19f41e16/cenc-sd.mpd?|drmScheme=clearkey&drmLicense=7ec6d225c1d219152933378e75e1c466:304eec31418fb552a0b57fdac515d101
+#http://starshare.live/live/bana/bana/215.m3u8
+https://github.com/rahul979854/Channels/raw/main/WillowCricketHd.m3u8
+
+
+#EXTINF:-1 tvg-id="cric" tvg-name="Tsports HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/T_Sports_logo.svg/1200px-T_Sports_logo.svg.png" group-title="CRICKET",Tsports HD
+#https://github.com/rahul979854/Channels/raw/main/TsportsHd.m3u8
+#https://cdn.hoichoi24.com/TSportsHD/video.m3u8
+https://live.tsports.com/mobile_hls/tsports_live_2/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQagsNGVuAJyaMS65cDa-V-Sz2jwlckaF0dbncZ6twaaaXP3cyoN11QPTPx&s=10" group-title="Sports",Willow Sports ᴴᴰ
+https://abmyxykaaaaaaaamkyvb65fuqebyg.7a77200bf98444ac997a89ed83775793.emt.cf.ww.aiv-cdn.net/iad-nitro/live/clients/dash/enc/f60kqesunw/out/v1/a435ed7a00f947deb4369b46d8f2fb70/cenc.mpd?|drmScheme=clearkey&drmLicense=1779c27b9d077a3ba0c9cc1bb9a94b9f:cc5cf3b7928fb9e0a1ee6a8b566f0a8e
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgz6OLpOm-iE31-BQ3JgW-vxcdo-b_2R8HTFq6xF6abK1uYuK9xU28JGc&s=10" group-title="Sports",Willow 2 Sports ᴴᴰ
+#https://d1bz14289ojrvl.cloudfront.net/out/v1/828288b4f25c407189eb6104893fad9e/index.m3u8
+https://github.com/rahul979854/Channels/raw/main/Willow2Hd.m3u8
+
+#EXTINF:-1 tvg-id="cric" tvg-name="Fox Sport 501 HD" tvg-logo="https://media.info/l/o/6/6550.1489223922.png" group-title="CRICKET",Fox Sports 501 HD
+#http://tv.cloudcdn.me:80/live.ts?channelId=36128&uid=4578&deviceMac=00:1A:79:41:70:15
+https://github.com/rahul979854/Channels/raw/main/FoxSports501Hd.m3u8
+
+#EXTINF:-1 tvg-id=ts1070 tvg-logo="https://tv.assets.pressassociation.io/f55b110f-8046-5273-a249-badfe915e918.png" group-title="Sports",TNT 1
+https://ottb.live.cf.ww.aiv-cdn.net/lhr-nitro/live/clients/dash/enc/wf8usag51e/out/v1/bd3b0c314fff4bb1ab4693358f3cd2d3/cenc.mpd?|drmScheme=clearkey&drmLicense=ae26845bd33038a9c0774a0981007294:63ac662dde310cfb4cc6f9b43b34196d
+#https://github.com/rahul979854/Channels/raw/main/TNSports1Hd.m3u8
+#https://abfdm2saaaaaaaamljqrv7ybrrx7h.47348d5020154bfaac6dd4418cd23c5d.emt.cf.ww.aiv-cdn.net/pdx-nitro/live/clients/dash/enc/rdznpzcmct/out/v1/355324ed98a94cbebbaff4bad0cd28ce/cenc.mpd|drmScheme=clearkey&drmLicense=ae26845bd33038a9c0774a0981007294:63ac662dde310cfb4cc6f9b43b34196d
+
+#EXTINF:-1 tvg-id=ts1070 tvg-logo="https://tv.assets.pressassociation.io/77f422fa-d4a2-5687-953c-34f4da7d8b91.png" group-title="Sports",TNT 2
+https://ottb.live.cf.ww.aiv-cdn.net/lhr-nitro/live/clients/dash/enc/f0qvkrra8j/out/v1/f8fa17f087564f51aa4d5c700be43ec4/cenc.mpd?|drmScheme=clearkey&drmLicense=6d1708b185c6c4d7b37600520c7cc93c:1aace05f58d8edef9697fd52cb09f441
+
+#EXTINF:-1 tvg-id=ts1070 tvg-logo="https://tv.assets.pressassociation.io/75c9df5d-d2d8-5d04-92ac-d9973c082c72.png" group-title="Sports",TNT 3
+https://ottb.live.cf.ww.aiv-cdn.net/lhr-nitro/live/clients/dash/enc/lsdasbvglv/out/v1/bb548a3626cd4708afbb94a58d71dce9/cenc.mpd?|drmScheme=clearkey&drmLicense=4e993aa8c1f295f8b94e8e9e6f6d0bfe:86a1ed6e96caab8eb1009fe530d2cf4f
+
+#EXTINF:-1 tvg-id=ts1070 tvg-logo="https://tv.assets.pressassociation.io/056d00c0-1629-5388-857c-f1a9ebdec5b8.png" group-title="Sports",TNT 4
+https://ottb.live.cf.ww.aiv-cdn.net/lhr-nitro/live/clients/dash/enc/i2pcjr4pe5/out/v1/912e9db56d75403b8a9ac0a719110f36/cenc.mpd?|drmScheme=clearkey&drmLicense=e31a5a81caff5d07ea2411a571fc2e59:96c5ef69479732ae734f962748c19729
+
+#EXTINF:-1 tvg-id=ts1070 tvg-logo="https://tv.assets.pressassociation.io/dbf92dca-857c-5522-bbc6-2bda4e23ff31.png" group-title="Sports",TNT 5
+https://github.com/rahul979854/Channels/raw/main/TNTsports5Hd.m3u8?|drmScheme=clearkey&drmLicense=60c0d9b41475e01db4ffb91ed557fbcc:36ee40e58948ca15e3caba8d47b8f34b
+
+#EXTINF:-1 tvg-id=ts1070 tvg-logo="https://assets.tv24.co/channels/bt-sport-ultimate-uhd-l.webp" group-title="Sports",TNT Ultimate
+#https://github.com/rahul979854/Channels/raw/main/TntUltimate4k.m3u8
+#https://7pal.short.gy/TNTUltimate
+http://krooztv.live:80/live/676767/767676/276789.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/hgVx5GL/Bein-1.png" group-title="Sports" tvg-id="beINSports",beIN Sports 1 ᴴᴰ
+https://linearjitp-playback.astro.com.my/dash-wv/linear/408/default_primary.mpd?|drmScheme=clearkey&drmLicense={ "keys":[ { "kty":"oct", "k":"PEUIrzSIRBB/XgJqT9axbg", "kid":"GmVRiatcSesjUwjCsannEA" } ], "type":"temporary" }
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Lpk9gnv/Bein-2.png" group-title="Sports" tvg-id="beINSports2",beIN Sports 2 ᴴᴰ
+https://linearjitp-playback.astro.com.my/dash-wv/linear/5066/default_primary.mpd?|drmScheme=clearkey&drmLicense={ "keys":[ { "kty":"oct", "k":"UQKxKqx3VsZdy0ahAdlg0w", "kid":"OcF1WB4jfv+VWWB+ubI8EA" } ], "type":"temporary" }
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/kQvKn0B/Bein-3.png" group-title="Sports" tvg-id="beINSports3",beIN Sports 3 ᴴᴰ
+https://linearjitp-playback.astro.com.my/dash-wv/linear/2705/default_primary.mpd?|drmScheme=clearkey&drmLicense={ "keys":[ { "kty":"oct", "k":"BCohvyNspymx40PtbgpjNw", "kid":"IMiE747Saydi+LGnjy0ZEA" } ], "type":"temporary" }
+
+#EXTINF:-1 tvg-id="skysportscricket.uk" tvg-name="Sky Sports Cricket" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2L1XzAytScLX1kNIcd5Fg8cPPW5ASZAA17l2eoZj59Df2D3rk9PcyuDOm&s=10" group-title="SKY SPORTS",Sky Sports Cricket
+#http://starshare.live/live/bana/bana/124269.m3u8
+https://github.com/rahul979854/Channels/raw/main/SkySportsCricketHd.m3u8
+
+#EXTINF:-1 tvg-id="skysports" tvg-name="Sky Sports" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeXRyzuz4-DcPeUHtU2OxWXda4-lZjO0Pivg&usqp=CAU" group-title="SKY SPORTS",Sky Sport 3 Nz
+https://github.com/rahul979854/Channels/raw/main/SkySport3Nz.m3u8
+#https://7pal.short.gy/skyspt3nz
+
+
+#EXTINF:-1 tvg-id="1000009276" tvg-logo="https://sonypicturesnetworks.com/images/logos/SONY_SportsTen1_HD_Logo_CLR.png" group-title="SonyLiv", Sony Sports TEN 1 HD
+https://dai.google.com/ssai/event/yeYP86THQ4yl7US8Zx5eug/master.m3u8
+#https://live.drmlive-02.workers.dev/sliv/ten1hd.m3u8
+
+#EXTINF:-1 tvg-id="1000009277" tvg-logo="https://sonypicturesnetworks.com/images/logos/SONY_SportsTen2_HD_Logo_CLR.png" group-title="SonyLiv", Sony Sports TEN 2 HD
+https://dai.google.com/ssai/event/Syu8F41-R1y_JmQ7x0oNxQ/master.m3u8
+#https://live.drmlive-02.workers.dev/sliv/ten2hd.m3u8
+
+#EXTINF:-1 tvg-id="1000009278" tvg-logo="https://sonypicturesnetworks.com/images/logos/SONY_SportsTen3_HD_Logo_CLR.png" group-title="SonyLiv", Sony Sports TEN 3 HD
+https://dai.google.com/ssai/event/nmQFuHURTYGQBNdUG-2Qdw/master.m3u8
+#https://live.drmlive-02.workers.dev/sliv/ten3hd.m3u8
+
+#EXTINF:-1 tvg-id="1000119186" tvg-logo="https://sonypicturesnetworks.com/images/logos/SONY_SportsTen4_HD_Logo_CLR.png" group-title#EXTM3U
+
+#EXTINF:-1 tvg-id="" tvg-name="ASTRO CRICKET HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/b/b7/Astro_Cricket.png" group-title="CRICKET",ASTRO 1080p HD
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=03c2e0af2f8159f9f0ce9b5dbc865f10:cd84ed136b0cc71f8ab8cd4d4f6a2e4c
+#EXTVLCOPT:http-origin=https://livecricketsl.kesug.com
+https://copy.livecricketsl.xyz/proxy/sg.php/https://linearjitp-playback.astro.com.my/dash-wv/linear/2504/default_ott.mpd?|drmScheme=clearkey&drmLicense=03c2e0af2f8159f9f0ce9b5dbc865f10:cd84ed136b0cc71f8ab8cd4d4f6a2e4c|origin=https://livecricketsl.kesug.com
+#https://streamdog.site/astro/stream.php/linearjitp-playback.astro.com.my/dash-wv/linear/2504/default_ott.mpd?|drmScheme=clearkey&drmLicense=03c2e0af2f8159f9f0ce9b5dbc865f10:cd84ed136b0cc71f8ab8cd4d4f6a2e4c|origin=https://streamdog.site
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2Risht9Vyoio0132HWiiYqNd31NntV2Fclw5TvoIuj1okmFjHG4HVmXhr&s=10" group-title="GitTv",ICC TV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=ae7076b647133606b704d33e4cef5134:810251515584cf71216d9a2d1ebf04bb
+https://mix.drmlive.net/mix/icctv1.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk7VG5YzN1WdlLRqMKL9rkhSzDfk2nXX1L7za4tXU6nlOPjI7WQSCPjp4&s=10" group-title="Champions Trophy", Toffee Live
+#https://tf.kyni.us/live.php?id=match-1&e=.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="Hotstar Hindi" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN6oMyTk1I9MQHw637eQLkFeBzP7XwAz-h8zwC2QMmh37sugi0ws5r4iU&s=10" group-title="Sports",Hotstar Hindi
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=ae7076b647133606b704d33e4cef5134:810251515584cf71216d9a2d1ebf04bb
+#https://mix.drmlive.au/mix/icctv1.mpd?|User-Agent=@Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 YGX/537.36?|drmScheme=clearkey&drmLicense=ae7076b647133606b704d33e4cef5134:810251515584cf71216d9a2d1ebf04bb
+#https://cdnt20.t20hd.cfd/live/m3-index.m3u8
+#https://sendgbxt.ruscfd.lat/720p.m3u8
+https://ee4ee8c03a26.eu-central-1.playback.live-video.net/api/video/v1/eu-central-1.755921704393.channel.LOohfipmCQDP.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGcOxZampz9U9qMXLYrItEoZl9fiAyTD2tEQ&usqp=CAU" group-title="Champions Trophy",Shoq Live
+#https://live-hw-stream.starzplayarabia.com/ICC_Champions_Trophy_2025/dash/drm/index.mpd?|drmScheme=clearkey&drmLicense=f108f8cb08c765aedf55d5b5eae58f4c:04a4ed8c992d291ce2097663b2adb677
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpcB-U7zUTfFHc1QpbTptROn7cXYjJ7qEenrFhZ9WM4p0suhNecEY5HnM&s=10" group-title="Champions Trophy", MyCo
+#https://ml-pull-hwc.myco.io/stream1/hls/stream1.m3u8
+
+#EXTINF:-1 tvg-id="Cric" tvg-name="star sports 4k" tvg-logo="https://raw.githubusercontent.com/rahul979854/logo/main/images%20(13).jpeg" group-title="CRICKET",Star Sports 4k
+https://github.com/rahul979854/Channels/raw/main/StarSports4k.m3u8
+
+#EXTINF:-1 tvg-id="Cric" tvg-name="Amazon prime" tvg-logo="https://1000logos.net/wp-content/uploads/2022/10/Amazon-Prime-Video-Logo-2022.png" group-title="CRICKET",Prime English 4k
+#https://aba5sdmaaaaaaaamjyr2xiy4rbicb.otte.live.cf.ww.aiv-cdn.net/pdx-nitro/live/clients/dash/enc/wr8i0xhnut/out/v1/190f1d69a3d5467f8fb7d9df4339bc49/cenc.mpd?|drmScheme=clearkey&drmLicense=cb8daf414566aa17d06f8294f3f3b444:89d58908a57d70ef87bf16c9b5821ca2
+#https://a201aivottlinear-a.akamaihd.net/OTTB/pdx-nitro/live/clients/dash/enc/xko28jj0cp/out/v1/190f1d69a3d5467f8fb7d9df4339bc49/cenc.mpd?|drmScheme=clearkey&drmLicense=7aa124253d518f18740c5bd932d581a3:1819c82fc27225f5e79ae189ddece0ea
+#https://aba5sdmaaaaaaaamidug47tdi5buy.otte.live.cf.ww.aiv-cdn.net/pdx-nitro/live/clients/dash/enc/iowtj5wfb1/out/v1/190f1d69a3d5467f8fb7d9df4339bc49/cenc.mpd?|drmScheme=clearkey&drmLicense=7aa124253d518f18740c5bd932d581a3:1819c82fc27225f5e79ae189ddece0ea
+#https://abhvfwoaaaaaaaamge5xi5icfzq64.otte.live.cf.ww.aiv-cdn.net/iad-nitro/live/clients/dash/enc/xjrxodbgeh/out/v1/69b95861163a42d9a34a1d4ceece7a7a/cenc.mpd?|drmScheme=clearkey&drmLicense=867ab2da044bcc1e4cc1a9252b03ce3e:0db59352d361b0a132c0a64bb231750a
+#https://a170aivottlinear-a.akamaihd.net/OTTB/sin-nitro/live/clients/dash/enc/tsrm0zirxz/out/v1/190f1d69a3d5467f8fb7d9df4339bc49/cenc.mpd?|drmScheme=clearkey&drmLicense=9cb6b6283487afe392adcffebf3cd6be:05f4eb67381e0c173954603518ce84c3
+
+#EXTINF:-1 tvg-id="Cric" tvg-name="Amazon prime" tvg-logo="https://1000logos.net/wp-content/uploads/2022/10/Amazon-Prime-Video-Logo-2022.png" group-title="CRICKET",Prime Hindi 4k
+#https://aba5sdmaaaaaaaamidug47tdi5buy.otte.live.cf.ww.aiv-cdn.net/pdx-nitro/live/clients/dash/enc/l0phze3ehz/out/v1/fe9782633a364a6a84c9410f26d9b2c4/cenc.mpd?|drmScheme=clearkey&drmLicense=4a5191838da17a2ab771f4258fad347f:54b7a084437459368eed07d182ad644c
+#https://a170aivottlinear-a.akamaihd.net/OTTB/bom-nitro/live/clients/dash/enc/l0phze3ehz/out/v1/fe9782633a364a6a84c9410f26d9b2c4/cenc.mpd?|drmScheme=clearkey&drmLicense=4a5191838da17a2ab771f4258fad347f:54b7a084437459368eed07d182ad644c
+#https://aba5sdmaaaaaaaammj2q5nkaoee4b.otte.live.cf.ww.aiv-cdn.net/pdx-nitro/live/clients/dash/enc/l2xzhgmjur/out/v1/fe9782633a364a6a84c9410f26d9b2c4/cenc.mpd?|drmScheme=clearkey&drmLicense=4a5191838da17a2ab771f4258fad347f:54b7a084437459368eed07d182ad644c
+#https://a170aivottlinear-a.akamaihd.net/OTTB/sin-nitro/live/clients/dash/enc/1jii7mxinw/out/v1/fe9782633a364a6a84c9410f26d9b2c4/cenc.mpd?|drmScheme=clearkey&drmLicense=553a8e7efc48840b17d03797c023d9b6:05fa313fa73df33f19e0f2d3d047bbaf
+
+#EXTINF:-1 tvg-id="Cricbuzz event" tvg-name="Cricbuzz events" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBlr9akJgC4lGRPCAgNKdBFyM0CfIkIESO77AH2TkWz0ZPIurz439yDu_8&s=10" group-title="CRICKET",Cricbuzz Events UHD
+#https://uselector.cdn.intigral-ott.net/CRL2/CRL2.isml/manifest.mpd?|drmScheme=clearkey&drmLicense=77889c7295e1f113852aa6030242b8e4:ec8c522d46888a15ff6533aa28ccd7f5
+#http://tv.cloudcdn.me:80/live.ts?channelId=125422&uid=4578&deviceMac=00:1A:79:41:70:15
+#https://ev-fuj-dxb-cdn-edge2.aws.playco.com/live/eds/CricLife2/DASH/CricLife2.mpd?|drmScheme=clearkey&drmLicense=48bef83b4c6a3c5189b01b0126210da4:bd085230b7b09e50954fe0af111a8a9f
+
+#EXTINF:-1 tvg-id="fancode event" tvg-name="fancode events" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq6OTWwSCPP67REB8IDYWuZww9j_tvvanCYA&usqp=CAU" group-title="CRICKET",Fancode Events UHD
+https://a166aivottlinear-a.akamaihd.net/OTTB/sin-nitro/live/clients/dash/enc/gdhz5mhnyu/out/v1/fe72171ab2684ab8b9ee3e2ffcc9cff2/cenc.mpd?|drmScheme=clearkey&drmLicense=159a2b4e1d2d7f16892d35d935a2fb34:07809840dd0f511221ca78459167d1b3
+
+#EXTINF:-1 tvg-id="Sony event" tvg-name="Sony events" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5SZB3ssT6NnI78-q1DZZhMF6kTRer2jGWdYE4T1N0K7BFYHC95psDihI&s=10" group-title="CRICKET",Sony Events UHD
+https://dai.google.com/ssai/event/g1cPcUIdSQC_3FXsrgV5iA/master.m3u8
+
+#EXTINF:-1 tvg-id="Tata ipl" tvg-name="Tata ipl" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTboihtL2GYEwRrkF6_ArJmSP-w9ExH7LRMiQ&usqp=CAU" group-title="CRICKET",Tata ipl UHD
+#https://live.drmlive-02.workers.dev/jc/2001.m3u8
+#https://drmlive.in/voot/2001.m3u8
+#https://prod-sports-hin-fa.jiocinema.com/bpk-tv/JV_SportsHD15_DIG_MOB/Fallback/index.m3u8
+
+#EXTINF:-1 tvg-id="starsports1kannada.in" tvg-name="Star Sports 1 Kannada" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhPLxN9JyE1KeREoxGvI9JMBIJSWDDaMbb8U_527S4IMBaaNn42atIpdTI&s=10" group-title="CRICKET",Star Sports 1 Kannada Hd
+http://webhop.xyz:8080/live/bana/bana/380977.m3u8
+
+#EXTINF:-1 tvg-id="starsports1hd.in" tvg-name="STAR SPORTS 1 Hd " tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Star_Sports_1_HD.png/2560px-Star_Sports_1_HD.png" group-title="CRICKET",STAR SPORTS 1 Hd
+#http://starshare.live/live/bana/bana/9397.m3u8
+#http://starshare.live/live/bana/bana/124281.m3u8
+#https://starshare.live/live/bana/bana/148.m3u8
+#https://github.com/rahul979854/Channels/raw/main/StarSport1Hd.m3u8
+https://raw.githubusercontent.com/rahul979854/Channels/refs/heads/main/StarSport1Hd.m3u8
+
+#EXTINF:-1 tvg-id="starsports2hd.in" tvg-name="STAR SPORTS 2 Hd" tvg-logo="https://tvschedule.today/_next/image?url=https%3A%2F%2Fltsk-cdn.s3.eu-west-1.amazonaws.com%2Fjumpstart%2FTemp_Live%2Fcdn%2FHLS%2FChannel%2FimageContent-1021-j5nj3c68-v1%2FimageContent-1021-j5nj3c68-m1.png&w=256&q=75" group-title="CRICKET",STAR SPORTS 2 Hd
+#http://starshare.live/live/bana/bana/239.m3u8
+https://github.com/rahul979854/Channels/raw/main/StarSport2Hd.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="Star Sport 2 HD" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Sports18_1_HD.png" group-title="cricket",STAR SPORTS 2 HD
+#https://live.drmlive-02.workers.dev/jc/122.m3u8
+https://github.com/rahul979854/Channels/raw/main/Sports18Hd.m3u8
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
+#https://mix.drmlive.au/mix/jc-122.m3u8
+#https://airplay.bgrid.in/IPTVS/live/voot/1033.m3u8
+
+#EXTINF:-1 tvg-id="starsports1hdhindi.in" tvg-name="Star Sport 1 HINDI HD "tvg-logo="https://static.epg.best/in/StarSports1Hindi.in.png" group-title="CRICKET",Star Sports 1 HINDI HD
+#http://starshare.live/live/bana/bana/9399.m3u8
+#https://starshare.live/live/bana/bana/211.m3u8
+https://github.com/rahul979854/Channels/raw/main/StarSportsHindi.m3u8
+#http://tv.cloudcdn.me:80/live.ts?channelId=295&uid=4578&deviceMac=00:1A:79:41:70:15
+#http://line.dinott.com:80/play/live.php?mac=00:1A:79:74:99:55&stream=1114582&extension=m3u8&play_token=J1f0wPBeSb
+
+#EXTINF:-1 tvg-id="starsportsselect1hd.in" tvg-name="Star Sports Select 1 HD" tvg-logo="https://vignette.wikia.nocookie.net/logopedia/images/b/b5/Star_Sports_Select_1_HD.jpg/revision/latest/scale-to-width-down/340?cb=20180806112709" group-title="INDIA SPORTS",Star Sports Select 1 HD
+#http://starshare.live/live/bana/bana/238.m3u8
+https://github.com/rahul979854/Channels/raw/main/StarSportSelect1Hd.m3u8
+
+#EXTINF:-1 tvg-id="starsportsselecthd2.in" tvg-name="Star Sports Select 2 HD" tvg-logo="https://vignette.wikia.nocookie.net/logopedia/images/4/46/Sss-hd2-bronze.png/revision/latest/top-crop/width/220/height/220?cb=20170728104956" group-title="INDIA SPORTS",Star Sports Select 2 HD
+#http://starshare.live/live/bana/bana/148801.m3u8
+https://github.com/rahul979854/Channels/raw/main/StarSportSelect2Hd.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="ASTRO CRICKET HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/b/b7/Astro_Cricket.png" group-title="CRICKET",ASTRO CRICKET HD
+#http://starshare.live/live/bana/bana/2494.m3u8
+https://github.com/rahul979854/Channels/raw/main/AstroCricketHd.m3u8
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=03c2e0af2f8159f9f0ce9b5dbc865f10:cd84ed136b0cc71f8ab8cd4d4f6a2e4c
+#https://linearjitp-playback.astro.com.my/dash-wv/linear/2504/default_primary.mpd
+#https://astro-gbj7.vercel.app/2504/default_ott.mpd?|drmScheme=clearkey&drmLicense=03c2e0af2f8159f9f0ce9b5dbc865f10:cd84ed136b0cc71f8ab8cd4d4f6a2e4c
+#https://sg-cors.onrender.com/https://linearjitp-playback.astro.com.my/dash-wv/linear/2504/default_ott.mpd
+
+
+#EXTINF:-1 tvg-id="820" ch-number="820" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe45nwhlekrvx-UczVPFC0Cv5eBSHtsZsTZQ&usqp=CAU" group-title="SPORTS",Eurosport
+#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","k":"0OeU48/1ZO0scgoJjrF3xw","kid":"TbI6Qbq/6a/CIqWMWYKDEA"}],"type":"temporary"}
+https://linearjitp-playback.astro.com.my/dash-wv/linear/2100/default_primary.mpd
+
+#EXTINF:-1 tvg-id="" tvg-name="EUROSPORTS HD" tvg-logo="https://www.logotypes101.com/logos/921/A0E9CD5BCC9176DE238B630F5A474D6F/eurosporthd.png" group-title="INDIA SPORTS",EUROSPORTS HD
+#EXTVLCOPT:http-user-agent=
+#EXTHTTP:{"cookie":"Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29tLw:Expires=1739766049:KeyName=prod_linear:Signature=z1yiV7FJx3ZTRUgQKEByo5YapPVlMzad-09uMrJ0eZ6bjUE8vqqJ_qRPf89oHohbI1H-SypiQleVkChHFIVhCw"}
+#https://bldcmprod-cdn.toffeelive.com/cdn/live/euro_sports_hd/playlist.m3u8
+https://github.com/rahul979854/Channels/raw/main/EuroSportsHd.m3u8
+
+#EXTINF:-1 tvg-id="cric" tvg-name="WILLOW CRICKET HD" tvg-logo="http://stariptv.fun/logos/WLLOW.png" group-title="CRICKET",WILLOW CRICKET HD
+#https://abmyxykaaaaaaaamkyvb65fuqebyg.7a77200bf98444ac997a89ed83775793.emt.cf.ww.aiv-cdn.net/gru-nitro/live/clients/dash-sd/enc/vodez4h7i9/out/v1/e929aee089864ce98e4c335d19f41e16/cenc-sd.mpd?|drmScheme=clearkey&drmLicense=7ec6d225c1d219152933378e75e1c466:304eec31418fb552a0b57fdac515d101
+#http://starshare.live/live/bana/bana/215.m3u8
+https://github.com/rahul979854/Channels/raw/main/WillowCricketHd.m3u8
+
+
+#EXTINF:-1 tvg-id="cric" tvg-name="Tsports HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/T_Sports_logo.svg/1200px-T_Sports_logo.svg.png" group-title="CRICKET",Tsports HD
+#https://github.com/rahul979854/Channels/raw/main/TsportsHd.m3u8
+#https://cdn.hoichoi24.com/TSportsHD/video.m3u8
+https://live.tsports.com/mobile_hls/tsports_live_2/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQagsNGVuAJyaMS65cDa-V-Sz2jwlckaF0dbncZ6twaaaXP3cyoN11QPTPx&s=10" group-title="Sports",Willow Sports ᴴᴰ
+https://abmyxykaaaaaaaamkyvb65fuqebyg.7a77200bf98444ac997a89ed83775793.emt.cf.ww.aiv-cdn.net/iad-nitro/live/clients/dash/enc/f60kqesunw/out/v1/a435ed7a00f947deb4369b46d8f2fb70/cenc.mpd?|drmScheme=clearkey&drmLicense=1779c27b9d077a3ba0c9cc1bb9a94b9f:cc5cf3b7928fb9e0a1ee6a8b566f0a8e
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgz6OLpOm-iE31-BQ3JgW-vxcdo-b_2R8HTFq6xF6abK1uYuK9xU28JGc&s=10" group-title="Sports",Willow 2 Sports ᴴᴰ
+#https://d1bz14289ojrvl.cloudfront.net/out/v1/828288b4f25c407189eb6104893fad9e/index.m3u8
+https://github.com/rahul979854/Channels/raw/main/Willow2Hd.m3u8
+
+#EXTINF:-1 tvg-id="cric" tvg-name="Fox Sport 501 HD" tvg-logo="https://media.info/l/o/6/6550.1489223922.png" group-title="CRICKET",Fox Sports 501 HD
+#http://tv.cloudcdn.me:80/live.ts?channelId=36128&uid=4578&deviceMac=00:1A:79:41:70:15
+https://github.com/rahul979854/Channels/raw/main/FoxSports501Hd.m3u8
+
+#EXTINF:-1 tvg-id=ts1070 tvg-logo="https://tv.assets.pressassociation.io/f55b110f-8046-5273-a249-badfe915e918.png" group-title="Sports",TNT 1
+https://ottb.live.cf.ww.aiv-cdn.net/lhr-nitro/live/clients/dash/enc/wf8usag51e/out/v1/bd3b0c314fff4bb1ab4693358f3cd2d3/cenc.mpd?|drmScheme=clearkey&drmLicense=ae26845bd33038a9c0774a0981007294:63ac662dde310cfb4cc6f9b43b34196d
+#https://github.com/rahul979854/Channels/raw/main/TNSports1Hd.m3u8
+#https://abfdm2saaaaaaaamljqrv7ybrrx7h.47348d5020154bfaac6dd4418cd23c5d.emt.cf.ww.aiv-cdn.net/pdx-nitro/live/clients/dash/enc/rdznpzcmct/out/v1/355324ed98a94cbebbaff4bad0cd28ce/cenc.mpd|drmScheme=clearkey&drmLicense=ae26845bd33038a9c0774a0981007294:63ac662dde310cfb4cc6f9b43b34196d
+
+#EXTINF:-1 tvg-id=ts1070 tvg-logo="https://tv.assets.pressassociation.io/77f422fa-d4a2-5687-953c-34f4da7d8b91.png" group-title="Sports",TNT 2
+https://ottb.live.cf.ww.aiv-cdn.net/lhr-nitro/live/clients/dash/enc/f0qvkrra8j/out/v1/f8fa17f087564f51aa4d5c700be43ec4/cenc.mpd?|drmScheme=clearkey&drmLicense=6d1708b185c6c4d7b37600520c7cc93c:1aace05f58d8edef9697fd52cb09f441
+
+#EXTINF:-1 tvg-id=ts1070 tvg-logo="https://tv.assets.pressassociation.io/75c9df5d-d2d8-5d04-92ac-d9973c082c72.png" group-title="Sports",TNT 3
+https://ottb.live.cf.ww.aiv-cdn.net/lhr-nitro/live/clients/dash/enc/lsdasbvglv/out/v1/bb548a3626cd4708afbb94a58d71dce9/cenc.mpd?|drmScheme=clearkey&drmLicense=4e993aa8c1f295f8b94e8e9e6f6d0bfe:86a1ed6e96caab8eb1009fe530d2cf4f
+
+#EXTINF:-1 tvg-id=ts1070 tvg-logo="https://tv.assets.pressassociation.io/056d00c0-1629-5388-857c-f1a9ebdec5b8.png" group-title="Sports",TNT 4
+https://ottb.live.cf.ww.aiv-cdn.net/lhr-nitro/live/clients/dash/enc/i2pcjr4pe5/out/v1/912e9db56d75403b8a9ac0a719110f36/cenc.mpd?|drmScheme=clearkey&drmLicense=e31a5a81caff5d07ea2411a571fc2e59:96c5ef69479732ae734f962748c19729
+
+#EXTINF:-1 tvg-id=ts1070 tvg-logo="https://tv.assets.pressassociation.io/dbf92dca-857c-5522-bbc6-2bda4e23ff31.png" group-title="Sports",TNT 5
+https://github.com/rahul979854/Channels/raw/main/TNTsports5Hd.m3u8?|drmScheme=clearkey&drmLicense=60c0d9b41475e01db4ffb91ed557fbcc:36ee40e58948ca15e3caba8d47b8f34b
+
+#EXTINF:-1 tvg-id=ts1070 tvg-logo="https://assets.tv24.co/channels/bt-sport-ultimate-uhd-l.webp" group-title="Sports",TNT Ultimate
+#https://github.com/rahul979854/Channels/raw/main/TntUltimate4k.m3u8
+#https://7pal.short.gy/TNTUltimate
+http://krooztv.live:80/live/676767/767676/276789.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/hgVx5GL/Bein-1.png" group-title="Sports" tvg-id="beINSports",beIN Sports 1 ᴴᴰ
+https://linearjitp-playback.astro.com.my/dash-wv/linear/408/default_primary.mpd?|drmScheme=clearkey&drmLicense={ "keys":[ { "kty":"oct", "k":"PEUIrzSIRBB/XgJqT9axbg", "kid":"GmVRiatcSesjUwjCsannEA" } ], "type":"temporary" }
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Lpk9gnv/Bein-2.png" group-title="Sports" tvg-id="beINSports2",beIN Sports 2 ᴴᴰ
+https://linearjitp-playback.astro.com.my/dash-wv/linear/5066/default_primary.mpd?|drmScheme=clearkey&drmLicense={ "keys":[ { "kty":"oct", "k":"UQKxKqx3VsZdy0ahAdlg0w", "kid":"OcF1WB4jfv+VWWB+ubI8EA" } ], "type":"temporary" }
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/kQvKn0B/Bein-3.png" group-title="Sports" tvg-id="beINSports3",beIN Sports 3 ᴴᴰ
+https://linearjitp-playback.astro.com.my/dash-wv/linear/2705/default_primary.mpd?|drmScheme=clearkey&drmLicense={ "keys":[ { "kty":"oct", "k":"BCohvyNspymx40PtbgpjNw", "kid":"IMiE747Saydi+LGnjy0ZEA" } ], "type":"temporary" }
+
+#EXTINF:-1 tvg-id="skysportscricket.uk" tvg-name="Sky Sports Cricket" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2L1XzAytScLX1kNIcd5Fg8cPPW5ASZAA17l2eoZj59Df2D3rk9PcyuDOm&s=10" group-title="SKY SPORTS",Sky Sports Cricket
+#http://starshare.live/live/bana/bana/124269.m3u8
+https://github.com/rahul979854/Channels/raw/main/SkySportsCricketHd.m3u8
+
+#EXTINF:-1 tvg-id="skysports" tvg-name="Sky Sports" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeXRyzuz4-DcPeUHtU2OxWXda4-lZjO0Pivg&usqp=CAU" group-title="SKY SPORTS",Sky Sport 3 Nz
+https://github.com/rahul979854/Channels/raw/main/SkySport3Nz.m3u8
+#https://7pal.short.gy/skyspt3nz
+
+
+#EXTINF:-1 tvg-id="1000009276" tvg-logo="https://sonypicturesnetworks.com/images/logos/SONY_SportsTen1_HD_Logo_CLR.png" group-title="SonyLiv", Sony Sports TEN 1 HD
+https://dai.google.com/ssai/event/yeYP86THQ4yl7US8Zx5eug/master.m3u8
+#https://live.drmlive-02.workers.dev/sliv/ten1hd.m3u8
+
+#EXTINF:-1 tvg-id="1000009277" tvg-logo="https://sonypicturesnetworks.com/images/logos/SONY_SportsTen2_HD_Logo_CLR.png" group-title="SonyLiv", Sony Sports TEN 2 HD
+https://dai.google.com/ssai/event/Syu8F41-R1y_JmQ7x0oNxQ/master.m3u8
+#https://live.drmlive-02.workers.dev/sliv/ten2hd.m3u8
+
+#EXTINF:-1 tvg-id="1000009278" tvg-logo="https://sonypicturesnetworks.com/images/logos/SONY_SportsTen3_HD_Logo_CLR.png" group-title="SonyLiv", Sony Sports TEN 3 HD
+https://dai.google.com/ssai/event/nmQFuHURTYGQBNdUG-2Qdw/master.m3u8
+#https://live.drmlive-02.workers.dev/sliv/ten3hd.m3u8
+
+#EXTINF:-1 tvg-id="1000119186" tvg-logo="https://sonypicturesnetworks.com/images/logos/SONY_SportsTen4_HD_Logo_CLR.png" group-title#EXTM3U
+
+#EXTINF:-1 tvg-id="" tvg-name="ASTRO CRICKET HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/b/b7/Astro_Cricket.png" group-title="CRICKET",ASTRO 1080p HD
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=03c2e0af2f8159f9f0ce9b5dbc865f10:cd84ed136b0cc71f8ab8cd4d4f6a2e4c
+#EXTVLCOPT:http-origin=https://livecricketsl.kesug.com
+https://copy.livecricketsl.xyz/proxy/sg.php/https://linearjitp-playback.astro.com.my/dash-wv/linear/2504/default_ott.mpd?|drmScheme=clearkey&drmLicense=03c2e0af2f8159f9f0ce9b5dbc865f10:cd84ed136b0cc71f8ab8cd4d4f6a2e4c|origin=https://livecricketsl.kesug.com
+#https://streamdog.site/astro/stream.php/linearjitp-playback.astro.com.my/dash-wv/linear/2504/default_ott.mpd?|drmScheme=clearkey&drmLicense=03c2e0af2f8159f9f0ce9b5dbc865f10:cd84ed136b0cc71f8ab8cd4d4f6a2e4c|origin=https://streamdog.site
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2Risht9Vyoio0132HWiiYqNd31NntV2Fclw5TvoIuj1okmFjHG4HVmXhr&s=10" group-title="GitTv",ICC TV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=ae7076b647133606b704d33e4cef5134:810251515584cf71216d9a2d1ebf04bb
+https://mix.drmlive.net/mix/icctv1.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk7VG5YzN1WdlLRqMKL9rkhSzDfk2nXX1L7za4tXU6nlOPjI7WQSCPjp4&s=10" group-title="Champions Trophy", Toffee Live
+#https://tf.kyni.us/live.php?id=match-1&e=.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="Hotstar Hindi" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN6oMyTk1I9MQHw637eQLkFeBzP7XwAz-h8zwC2QMmh37sugi0ws5r4iU&s=10" group-title="Sports",Hotstar Hindi
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=ae7076b647133606b704d33e4cef5134:810251515584cf71216d9a2d1ebf04bb
+#https://mix.drmlive.au/mix/icctv1.mpd?|User-Agent=@Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 YGX/537.36?|drmScheme=clearkey&drmLicense=ae7076b647133606b704d33e4cef5134:810251515584cf71216d9a2d1ebf04bb
+#https://cdnt20.t20hd.cfd/live/m3-index.m3u8
+#https://sendgbxt.ruscfd.lat/720p.m3u8
+https://ee4ee8c03a26.eu-central-1.playback.live-video.net/api/video/v1/eu-central-1.755921704393.channel.LOohfipmCQDP.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGcOxZampz9U9qMXLYrItEoZl9fiAyTD2tEQ&usqp=CAU" group-title="Champions Trophy",Shoq Live
+#https://live-hw-stream.starzplayarabia.com/ICC_Champions_Trophy_2025/dash/drm/index.mpd?|drmScheme=clearkey&drmLicense=f108f8cb08c765aedf55d5b5eae58f4c:04a4ed8c992d291ce2097663b2adb677
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpcB-U7zUTfFHc1QpbTptROn7cXYjJ7qEenrFhZ9WM4p0suhNecEY5HnM&s=10" group-title="Champions Trophy", MyCo
+#https://ml-pull-hwc.myco.io/stream1/hls/stream1.m3u8
+
+#EXTINF:-1 tvg-id="Cric" tvg-name="star sports 4k" tvg-logo="https://raw.githubusercontent.com/rahul979854/logo/main/images%20(13).jpeg" group-title="CRICKET",Star Sports 4k
+https://github.com/rahul979854/Channels/raw/main/StarSports4k.m3u8
+
+#EXTINF:-1 tvg-id="Cric" tvg-name="Amazon prime" tvg-logo="https://1000logos.net/wp-content/uploads/2022/10/Amazon-Prime-Video-Logo-2022.png" group-title="CRICKET",Prime English 4k
+#https://aba5sdmaaaaaaaamjyr2xiy4rbicb.otte.live.cf.ww.aiv-cdn.net/pdx-nitro/live/clients/dash/enc/wr8i0xhnut/out/v1/190f1d69a3d5467f8fb7d9df4339bc49/cenc.mpd?|drmScheme=clearkey&drmLicense=cb8daf414566aa17d06f8294f3f3b444:89d58908a57d70ef87bf16c9b5821ca2
+#https://a201aivottlinear-a.akamaihd.net/OTTB/pdx-nitro/live/clients/dash/enc/xko28jj0cp/out/v1/190f1d69a3d5467f8fb7d9df4339bc49/cenc.mpd?|drmScheme=clearkey&drmLicense=7aa124253d518f18740c5bd932d581a3:1819c82fc27225f5e79ae189ddece0ea
+#https://aba5sdmaaaaaaaamidug47tdi5buy.otte.live.cf.ww.aiv-cdn.net/pdx-nitro/live/clients/dash/enc/iowtj5wfb1/out/v1/190f1d69a3d5467f8fb7d9df4339bc49/cenc.mpd?|drmScheme=clearkey&drmLicense=7aa124253d518f18740c5bd932d581a3:1819c82fc27225f5e79ae189ddece0ea
+#https://abhvfwoaaaaaaaamge5xi5icfzq64.otte.live.cf.ww.aiv-cdn.net/iad-nitro/live/clients/dash/enc/xjrxodbgeh/out/v1/69b95861163a42d9a34a1d4ceece7a7a/cenc.mpd?|drmScheme=clearkey&drmLicense=867ab2da044bcc1e4cc1a9252b03ce3e:0db59352d361b0a132c0a64bb231750a
+#https://a170aivottlinear-a.akamaihd.net/OTTB/sin-nitro/live/clients/dash/enc/tsrm0zirxz/out/v1/190f1d69a3d5467f8fb7d9df4339bc49/cenc.mpd?|drmScheme=clearkey&drmLicense=9cb6b6283487afe392adcffebf3cd6be:05f4eb67381e0c173954603518ce84c3
+
+#EXTINF:-1 tvg-id="Cric" tvg-name="Amazon prime" tvg-logo="https://1000logos.net/wp-content/uploads/2022/10/Amazon-Prime-Video-Logo-2022.png" group-title="CRICKET",Prime Hindi 4k
+#https://aba5sdmaaaaaaaamidug47tdi5buy.otte.live.cf.ww.aiv-cdn.net/pdx-nitro/live/clients/dash/enc/l0phze3ehz/out/v1/fe9782633a364a6a84c9410f26d9b2c4/cenc.mpd?|drmScheme=clearkey&drmLicense=4a5191838da17a2ab771f4258fad347f:54b7a084437459368eed07d182ad644c
+#https://a170aivottlinear-a.akamaihd.net/OTTB/bom-nitro/live/clients/dash/enc/l0phze3ehz/out/v1/fe9782633a364a6a84c9410f26d9b2c4/cenc.mpd?|drmScheme=clearkey&drmLicense=4a5191838da17a2ab771f4258fad347f:54b7a084437459368eed07d182ad644c
+#https://aba5sdmaaaaaaaammj2q5nkaoee4b.otte.live.cf.ww.aiv-cdn.net/pdx-nitro/live/clients/dash/enc/l2xzhgmjur/out/v1/fe9782633a364a6a84c9410f26d9b2c4/cenc.mpd?|drmScheme=clearkey&drmLicense=4a5191838da17a2ab771f4258fad347f:54b7a084437459368eed07d182ad644c
+#https://a170aivottlinear-a.akamaihd.net/OTTB/sin-nitro/live/clients/dash/enc/1jii7mxinw/out/v1/fe9782633a364a6a84c9410f26d9b2c4/cenc.mpd?|drmScheme=clearkey&drmLicense=553a8e7efc48840b17d03797c023d9b6:05fa313fa73df33f19e0f2d3d047bbaf
+
+#EXTINF:-1 tvg-id="Cricbuzz event" tvg-name="Cricbuzz events" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBlr9akJgC4lGRPCAgNKdBFyM0CfIkIESO77AH2TkWz0ZPIurz439yDu_8&s=10" group-title="CRICKET",Cricbuzz Events UHD
+#https://uselector.cdn.intigral-ott.net/CRL2/CRL2.isml/manifest.mpd?|drmScheme=clearkey&drmLicense=77889c7295e1f113852aa6030242b8e4:ec8c522d46888a15ff6533aa28ccd7f5
+#http://tv.cloudcdn.me:80/live.ts?channelId=125422&uid=4578&deviceMac=00:1A:79:41:70:15
+#https://ev-fuj-dxb-cdn-edge2.aws.playco.com/live/eds/CricLife2/DASH/CricLife2.mpd?|drmScheme=clearkey&drmLicense=48bef83b4c6a3c5189b01b0126210da4:bd085230b7b09e50954fe0af111a8a9f
+
+#EXTINF:-1 tvg-id="fancode event" tvg-name="fancode events" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq6OTWwSCPP67REB8IDYWuZww9j_tvvanCYA&usqp=CAU" group-title="CRICKET",Fancode Events UHD
+https://a166aivottlinear-a.akamaihd.net/OTTB/sin-nitro/live/clients/dash/enc/gdhz5mhnyu/out/v1/fe72171ab2684ab8b9ee3e2ffcc9cff2/cenc.mpd?|drmScheme=clearkey&drmLicense=159a2b4e1d2d7f16892d35d935a2fb34:07809840dd0f511221ca78459167d1b3
+
+#EXTINF:-1 tvg-id="Sony event" tvg-name="Sony events" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5SZB3ssT6NnI78-q1DZZhMF6kTRer2jGWdYE4T1N0K7BFYHC95psDihI&s=10" group-title="CRICKET",Sony Events UHD
+https://dai.google.com/ssai/event/g1cPcUIdSQC_3FXsrgV5iA/master.m3u8
+
+#EXTINF:-1 tvg-id="Tata ipl" tvg-name="Tata ipl" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTboihtL2GYEwRrkF6_ArJmSP-w9ExH7LRMiQ&usqp=CAU" group-title="CRICKET",Tata ipl UHD
+#https://live.drmlive-02.workers.dev/jc/2001.m3u8
+#https://drmlive.in/voot/2001.m3u8
+#https://prod-sports-hin-fa.jiocinema.com/bpk-tv/JV_SportsHD15_DIG_MOB/Fallback/index.m3u8
+
+#EXTINF:-1 tvg-id="starsports1kannada.in" tvg-name="Star Sports 1 Kannada" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhPLxN9JyE1KeREoxGvI9JMBIJSWDDaMbb8U_527S4IMBaaNn42atIpdTI&s=10" group-title="CRICKET",Star Sports 1 Kannada Hd
+http://webhop.xyz:8080/live/bana/bana/380977.m3u8
+
+#EXTINF:-1 tvg-id="starsports1hd.in" tvg-name="STAR SPORTS 1 Hd " tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Star_Sports_1_HD.png/2560px-Star_Sports_1_HD.png" group-title="CRICKET",STAR SPORTS 1 Hd
+#http://starshare.live/live/bana/bana/9397.m3u8
+#http://starshare.live/live/bana/bana/124281.m3u8
+#https://starshare.live/live/bana/bana/148.m3u8
+#https://github.com/rahul979854/Channels/raw/main/StarSport1Hd.m3u8
+https://raw.githubusercontent.com/rahul979854/Channels/refs/heads/main/StarSport1Hd.m3u8
+
+#EXTINF:-1 tvg-id="starsports2hd.in" tvg-name="STAR SPORTS 2 Hd" tvg-logo="https://tvschedule.today/_next/image?url=https%3A%2F%2Fltsk-cdn.s3.eu-west-1.amazonaws.com%2Fjumpstart%2FTemp_Live%2Fcdn%2FHLS%2FChannel%2FimageContent-1021-j5nj3c68-v1%2FimageContent-1021-j5nj3c68-m1.png&w=256&q=75" group-title="CRICKET",STAR SPORTS 2 Hd
+#http://starshare.live/live/bana/bana/239.m3u8
+https://github.com/rahul979854/Channels/raw/main/StarSport2Hd.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="Star Sport 2 HD" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Sports18_1_HD.png" group-title="cricket",STAR SPORTS 2 HD
+#https://live.drmlive-02.workers.dev/jc/122.m3u8
+https://github.com/rahul979854/Channels/raw/main/Sports18Hd.m3u8
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
+#https://mix.drmlive.au/mix/jc-122.m3u8
+#https://airplay.bgrid.in/IPTVS/live/voot/1033.m3u8
+
+#EXTINF:-1 tvg-id="starsports1hdhindi.in" tvg-name="Star Sport 1 HINDI HD "tvg-logo="https://static.epg.best/in/StarSports1Hindi.in.png" group-title="CRICKET",Star Sports 1 HINDI HD
+#http://starshare.live/live/bana/bana/9399.m3u8
+#https://starshare.live/live/bana/bana/211.m3u8
+https://github.com/rahul979854/Channels/raw/main/StarSportsHindi.m3u8
+#http://tv.cloudcdn.me:80/live.ts?channelId=295&uid=4578&deviceMac=00:1A:79:41:70:15
+#http://line.dinott.com:80/play/live.php?mac=00:1A:79:74:99:55&stream=1114582&extension=m3u8&play_token=J1f0wPBeSb
+
+#EXTINF:-1 tvg-id="starsportsselect1hd.in" tvg-name="Star Sports Select 1 HD" tvg-logo="https://vignette.wikia.nocookie.net/logopedia/images/b/b5/Star_Sports_Select_1_HD.jpg/revision/latest/scale-to-width-down/340?cb=20180806112709" group-title="INDIA SPORTS",Star Sports Select 1 HD
+#http://starshare.live/live/bana/bana/238.m3u8
+https://github.com/rahul979854/Channels/raw/main/StarSportSelect1Hd.m3u8
+
+#EXTINF:-1 tvg-id="starsportsselecthd2.in" tvg-name="Star Sports Select 2 HD" tvg-logo="https://vignette.wikia.nocookie.net/logopedia/images/4/46/Sss-hd2-bronze.png/revision/latest/top-crop/width/220/height/220?cb=20170728104956" group-title="INDIA SPORTS",Star Sports Select 2 HD
+#http://starshare.live/live/bana/bana/148801.m3u8
+https://github.com/rahul979854/Channels/raw/main/StarSportSelect2Hd.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="ASTRO CRICKET HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/b/b7/Astro_Cricket.png" group-title="CRICKET",ASTRO CRICKET HD
+#http://starshare.live/live/bana/bana/2494.m3u8
+https://github.com/rahul979854/Channels/raw/main/AstroCricketHd.m3u8
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=03c2e0af2f8159f9f0ce9b5dbc865f10:cd84ed136b0cc71f8ab8cd4d4f6a2e4c
+#https://linearjitp-playback.astro.com.my/dash-wv/linear/2504/default_primary.mpd
+#https://astro-gbj7.vercel.app/2504/default_ott.mpd?|drmScheme=clearkey&drmLicense=03c2e0af2f8159f9f0ce9b5dbc865f10:cd84ed136b0cc71f8ab8cd4d4f6a2e4c
+#https://sg-cors.onrender.com/https://linearjitp-playback.astro.com.my/dash-wv/linear/2504/default_ott.mpd
+
+
+#EXTINF:-1 tvg-id="820" ch-number="820" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe45nwhlekrvx-UczVPFC0Cv5eBSHtsZsTZQ&usqp=CAU" group-title="SPORTS",Eurosport
+#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","k":"0OeU48/1ZO0scgoJjrF3xw","kid":"TbI6Qbq/6a/CIqWMWYKDEA"}],"type":"temporary"}
+https://linearjitp-playback.astro.com.my/dash-wv/linear/2100/default_primary.mpd
+
+#EXTINF:-1 tvg-id="" tvg-name="EUROSPORTS HD" tvg-logo="https://www.logotypes101.com/logos/921/A0E9CD5BCC9176DE238B630F5A474D6F/eurosporthd.png" group-title="INDIA SPORTS",EUROSPORTS HD
+#EXTVLCOPT:http-user-agent=
+#EXTHTTP:{"cookie":"Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29tLw:Expires=1739766049:KeyName=prod_linear:Signature=z1yiV7FJx3ZTRUgQKEByo5YapPVlMzad-09uMrJ0eZ6bjUE8vqqJ_qRPf89oHohbI1H-SypiQleVkChHFIVhCw"}
+#https://bldcmprod-cdn.toffeelive.com/cdn/live/euro_sports_hd/playlist.m3u8
+https://github.com/rahul979854/Channels/raw/main/EuroSportsHd.m3u8
+
+#EXTINF:-1 tvg-id="cric" tvg-name="WILLOW CRICKET HD" tvg-logo="http://stariptv.fun/logos/WLLOW.png" group-title="CRICKET",WILLOW CRICKET HD
+#https://abmyxykaaaaaaaamkyvb65fuqebyg.7a77200bf98444ac997a89ed83775793.emt.cf.ww.aiv-cdn.net/gru-nitro/live/clients/dash-sd/enc/vodez4h7i9/out/v1/e929aee089864ce98e4c335d19f41e16/cenc-sd.mpd?|drmScheme=clearkey&drmLicense=7ec6d225c1d219152933378e75e1c466:304eec31418fb552a0b57fdac515d101
+#http://starshare.live/live/bana/bana/215.m3u8
+https://github.com/rahul979854/Channels/raw/main/WillowCricketHd.m3u8
+
+
+#EXTINF:-1 tvg-id="cric" tvg-name="Tsports HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/T_Sports_logo.svg/1200px-T_Sports_logo.svg.png" group-title="CRICKET",Tsports HD
+#https://github.com/rahul979854/Channels/raw/main/TsportsHd.m3u8
+#https://cdn.hoichoi24.com/TSportsHD/video.m3u8
+https://live.tsports.com/mobile_hls/tsports_live_2/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQagsNGVuAJyaMS65cDa-V-Sz2jwlckaF0dbncZ6twaaaXP3cyoN11QPTPx&s=10" group-title="Sports",Willow Sports ᴴᴰ
+https://abmyxykaaaaaaaamkyvb65fuqebyg.7a77200bf98444ac997a89ed83775793.emt.cf.ww.aiv-cdn.net/iad-nitro/live/clients/dash/enc/f60kqesunw/out/v1/a435ed7a00f947deb4369b46d8f2fb70/cenc.mpd?|drmScheme=clearkey&drmLicense=1779c27b9d077a3ba0c9cc1bb9a94b9f:cc5cf3b7928fb9e0a1ee6a8b566f0a8e
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgz6OLpOm-iE31-BQ3JgW-vxcdo-b_2R8HTFq6xF6abK1uYuK9xU28JGc&s=10" group-title="Sports",Willow 2 Sports ᴴᴰ
+#https://d1bz14289ojrvl.cloudfront.net/out/v1/828288b4f25c407189eb6104893fad9e/index.m3u8
+https://github.com/rahul979854/Channels/raw/main/Willow2Hd.m3u8
+
+#EXTINF:-1 tvg-id="cric" tvg-name="Fox Sport 501 HD" tvg-logo="https://media.info/l/o/6/6550.1489223922.png" group-title="CRICKET",Fox Sports 501 HD
+#http://tv.cloudcdn.me:80/live.ts?channelId=36128&uid=4578&deviceMac=00:1A:79:41:70:15
+https://github.com/rahul979854/Channels/raw/main/FoxSports501Hd.m3u8
+
+#EXTINF:-1 tvg-id=ts1070 tvg-logo="https://tv.assets.pressassociation.io/f55b110f-8046-5273-a249-badfe915e918.png" group-title="Sports",TNT 1
+https://ottb.live.cf.ww.aiv-cdn.net/lhr-nitro/live/clients/dash/enc/wf8usag51e/out/v1/bd3b0c314fff4bb1ab4693358f3cd2d3/cenc.mpd?|drmScheme=clearkey&drmLicense=ae26845bd33038a9c0774a0981007294:63ac662dde310cfb4cc6f9b43b34196d
+#https://github.com/rahul979854/Channels/raw/main/TNSports1Hd.m3u8
+#https://abfdm2saaaaaaaamljqrv7ybrrx7h.47348d5020154bfaac6dd4418cd23c5d.emt.cf.ww.aiv-cdn.net/pdx-nitro/live/clients/dash/enc/rdznpzcmct/out/v1/355324ed98a94cbebbaff4bad0cd28ce/cenc.mpd|drmScheme=clearkey&drmLicense=ae26845bd33038a9c0774a0981007294:63ac662dde310cfb4cc6f9b43b34196d
+
+#EXTINF:-1 tvg-id=ts1070 tvg-logo="https://tv.assets.pressassociation.io/77f422fa-d4a2-5687-953c-34f4da7d8b91.png" group-title="Sports",TNT 2
+https://ottb.live.cf.ww.aiv-cdn.net/lhr-nitro/live/clients/dash/enc/f0qvkrra8j/out/v1/f8fa17f087564f51aa4d5c700be43ec4/cenc.mpd?|drmScheme=clearkey&drmLicense=6d1708b185c6c4d7b37600520c7cc93c:1aace05f58d8edef9697fd52cb09f441
+
+#EXTINF:-1 tvg-id=ts1070 tvg-logo="https://tv.assets.pressassociation.io/75c9df5d-d2d8-5d04-92ac-d9973c082c72.png" group-title="Sports",TNT 3
+https://ottb.live.cf.ww.aiv-cdn.net/lhr-nitro/live/clients/dash/enc/lsdasbvglv/out/v1/bb548a3626cd4708afbb94a58d71dce9/cenc.mpd?|drmScheme=clearkey&drmLicense=4e993aa8c1f295f8b94e8e9e6f6d0bfe:86a1ed6e96caab8eb1009fe530d2cf4f
+
+#EXTINF:-1 tvg-id=ts1070 tvg-logo="https://tv.assets.pressassociation.io/056d00c0-1629-5388-857c-f1a9ebdec5b8.png" group-title="Sports",TNT 4
+https://ottb.live.cf.ww.aiv-cdn.net/lhr-nitro/live/clients/dash/enc/i2pcjr4pe5/out/v1/912e9db56d75403b8a9ac0a719110f36/cenc.mpd?|drmScheme=clearkey&drmLicense=e31a5a81caff5d07ea2411a571fc2e59:96c5ef69479732ae734f962748c19729
+
+#EXTINF:-1 tvg-id=ts1070 tvg-logo="https://tv.assets.pressassociation.io/dbf92dca-857c-5522-bbc6-2bda4e23ff31.png" group-title="Sports",TNT 5
+https://github.com/rahul979854/Channels/raw/main/TNTsports5Hd.m3u8?|drmScheme=clearkey&drmLicense=60c0d9b41475e01db4ffb91ed557fbcc:36ee40e58948ca15e3caba8d47b8f34b
+
+#EXTINF:-1 tvg-id=ts1070 tvg-logo="https://assets.tv24.co/channels/bt-sport-ultimate-uhd-l.webp" group-title="Sports",TNT Ultimate
+#https://github.com/rahul979854/Channels/raw/main/TntUltimate4k.m3u8
+#https://7pal.short.gy/TNTUltimate
+http://krooztv.live:80/live/676767/767676/276789.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/hgVx5GL/Bein-1.png" group-title="Sports" tvg-id="beINSports",beIN Sports 1 ᴴᴰ
+https://linearjitp-playback.astro.com.my/dash-wv/linear/408/default_primary.mpd?|drmScheme=clearkey&drmLicense={ "keys":[ { "kty":"oct", "k":"PEUIrzSIRBB/XgJqT9axbg", "kid":"GmVRiatcSesjUwjCsannEA" } ], "type":"temporary" }
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Lpk9gnv/Bein-2.png" group-title="Sports" tvg-id="beINSports2",beIN Sports 2 ᴴᴰ
+https://linearjitp-playback.astro.com.my/dash-wv/linear/5066/default_primary.mpd?|drmScheme=clearkey&drmLicense={ "keys":[ { "kty":"oct", "k":"UQKxKqx3VsZdy0ahAdlg0w", "kid":"OcF1WB4jfv+VWWB+ubI8EA" } ], "type":"temporary" }
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/kQvKn0B/Bein-3.png" group-title="Sports" tvg-id="beINSports3",beIN Sports 3 ᴴᴰ
+https://linearjitp-playback.astro.com.my/dash-wv/linear/2705/default_primary.mpd?|drmScheme=clearkey&drmLicense={ "keys":[ { "kty":"oct", "k":"BCohvyNspymx40PtbgpjNw", "kid":"IMiE747Saydi+LGnjy0ZEA" } ], "type":"temporary" }
+
+#EXTINF:-1 tvg-id="skysportscricket.uk" tvg-name="Sky Sports Cricket" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2L1XzAytScLX1kNIcd5Fg8cPPW5ASZAA17l2eoZj59Df2D3rk9PcyuDOm&s=10" group-title="SKY SPORTS",Sky Sports Cricket
+#http://starshare.live/live/bana/bana/124269.m3u8
+https://github.com/rahul979854/Channels/raw/main/SkySportsCricketHd.m3u8
+
+#EXTINF:-1 tvg-id="skysports" tvg-name="Sky Sports" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeXRyzuz4-DcPeUHtU2OxWXda4-lZjO0Pivg&usqp=CAU" group-title="SKY SPORTS",Sky Sport 3 Nz
+https://github.com/rahul979854/Channels/raw/main/SkySport3Nz.m3u8
+#https://7pal.short.gy/skyspt3nz
+
+
+#EXTINF:-1 tvg-id="1000009276" tvg-logo="https://sonypicturesnetworks.com/images/logos/SONY_SportsTen1_HD_Logo_CLR.png" group-title="SonyLiv", Sony Sports TEN 1 HD
+https://dai.google.com/ssai/event/yeYP86THQ4yl7US8Zx5eug/master.m3u8
+#https://live.drmlive-02.workers.dev/sliv/ten1hd.m3u8
+
+#EXTINF:-1 tvg-id="1000009277" tvg-logo="https://sonypicturesnetworks.com/images/logos/SONY_SportsTen2_HD_Logo_CLR.png" group-title="SonyLiv", Sony Sports TEN 2 HD
+https://dai.google.com/ssai/event/Syu8F41-R1y_JmQ7x0oNxQ/master.m3u8
+#https://live.drmlive-02.workers.dev/sliv/ten2hd.m3u8
+
+#EXTINF:-1 tvg-id="1000009278" tvg-logo="https://sonypicturesnetworks.com/images/logos/SONY_SportsTen3_HD_Logo_CLR.png" group-title="SonyLiv", Sony Sports TEN 3 HD
+https://dai.google.com/ssai/event/nmQFuHURTYGQBNdUG-2Qdw/master.m3u8
+#https://live.drmlive-02.workers.dev/sliv/ten3hd.m3u8
+
+#EXTINF:-1 tvg-id="1000119186" tvg-logo="https://sonypicturesnetworks.com/images/logos/SONY_SportsTen4_HD_Logo_CLR.png" group-title#EXTM3U
+
+#EXTINF:-1 tvg-id="" tvg-name="ASTRO CRICKET HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/b/b7/Astro_Cricket.png" group-title="CRICKET",ASTRO 1080p HD
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=03c2e0af2f8159f9f0ce9b5dbc865f10:cd84ed136b0cc71f8ab8cd4d4f6a2e4c
+#EXTVLCOPT:http-origin=https://livecricketsl.kesug.com
+https://copy.livecricketsl.xyz/proxy/sg.php/https://linearjitp-playback.astro.com.my/dash-wv/linear/2504/default_ott.mpd?|drmScheme=clearkey&drmLicense=03c2e0af2f8159f9f0ce9b5dbc865f10:cd84ed136b0cc71f8ab8cd4d4f6a2e4c|origin=https://livecricketsl.kesug.com
+#https://streamdog.site/astro/stream.php/linearjitp-playback.astro.com.my/dash-wv/linear/2504/default_ott.mpd?|drmScheme=clearkey&drmLicense=03c2e0af2f8159f9f0ce9b5dbc865f10:cd84ed136b0cc71f8ab8cd4d4f6a2e4c|origin=https://streamdog.site
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2Risht9Vyoio0132HWiiYqNd31NntV2Fclw5TvoIuj1okmFjHG4HVmXhr&s=10" group-title="GitTv",ICC TV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=ae7076b647133606b704d33e4cef5134:810251515584cf71216d9a2d1ebf04bb
+https://mix.drmlive.net/mix/icctv1.mpd
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk7VG5YzN1WdlLRqMKL9rkhSzDfk2nXX1L7za4tXU6nlOPjI7WQSCPjp4&s=10" group-title="Champions Trophy", Toffee Live
+#https://tf.kyni.us/live.php?id=match-1&e=.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="Hotstar Hindi" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN6oMyTk1I9MQHw637eQLkFeBzP7XwAz-h8zwC2QMmh37sugi0ws5r4iU&s=10" group-title="Sports",Hotstar Hindi
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=ae7076b647133606b704d33e4cef5134:810251515584cf71216d9a2d1ebf04bb
+#https://mix.drmlive.au/mix/icctv1.mpd?|User-Agent=@Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 YGX/537.36?|drmScheme=clearkey&drmLicense=ae7076b647133606b704d33e4cef5134:810251515584cf71216d9a2d1ebf04bb
+#https://cdnt20.t20hd.cfd/live/m3-index.m3u8
+#https://sendgbxt.ruscfd.lat/720p.m3u8
+https://ee4ee8c03a26.eu-central-1.playback.live-video.net/api/video/v1/eu-central-1.755921704393.channel.LOohfipmCQDP.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGcOxZampz9U9qMXLYrItEoZl9fiAyTD2tEQ&usqp=CAU" group-title="Champions Trophy",Shoq Live
+#https://live-hw-stream.starzplayarabia.com/ICC_Champions_Trophy_2025/dash/drm/index.mpd?|drmScheme=clearkey&drmLicense=f108f8cb08c765aedf55d5b5eae58f4c:04a4ed8c992d291ce2097663b2adb677
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpcB-U7zUTfFHc1QpbTptROn7cXYjJ7qEenrFhZ9WM4p0suhNecEY5HnM&s=10" group-title="Champions Trophy", MyCo
+#https://ml-pull-hwc.myco.io/stream1/hls/stream1.m3u8
+
+#EXTINF:-1 tvg-id="Cric" tvg-name="star sports 4k" tvg-logo="https://raw.githubusercontent.com/rahul979854/logo/main/images%20(13).jpeg" group-title="CRICKET",Star Sports 4k
+https://github.com/rahul979854/Channels/raw/main/StarSports4k.m3u8
+
+#EXTINF:-1 tvg-id="Cric" tvg-name="Amazon prime" tvg-logo="https://1000logos.net/wp-content/uploads/2022/10/Amazon-Prime-Video-Logo-2022.png" group-title="CRICKET",Prime English 4k
+#https://aba5sdmaaaaaaaamjyr2xiy4rbicb.otte.live.cf.ww.aiv-cdn.net/pdx-nitro/live/clients/dash/enc/wr8i0xhnut/out/v1/190f1d69a3d5467f8fb7d9df4339bc49/cenc.mpd?|drmScheme=clearkey&drmLicense=cb8daf414566aa17d06f8294f3f3b444:89d58908a57d70ef87bf16c9b5821ca2
+#https://a201aivottlinear-a.akamaihd.net/OTTB/pdx-nitro/live/clients/dash/enc/xko28jj0cp/out/v1/190f1d69a3d5467f8fb7d9df4339bc49/cenc.mpd?|drmScheme=clearkey&drmLicense=7aa124253d518f18740c5bd932d581a3:1819c82fc27225f5e79ae189ddece0ea
+#https://aba5sdmaaaaaaaamidug47tdi5buy.otte.live.cf.ww.aiv-cdn.net/pdx-nitro/live/clients/dash/enc/iowtj5wfb1/out/v1/190f1d69a3d5467f8fb7d9df4339bc49/cenc.mpd?|drmScheme=clearkey&drmLicense=7aa124253d518f18740c5bd932d581a3:1819c82fc27225f5e79ae189ddece0ea
+#https://abhvfwoaaaaaaaamge5xi5icfzq64.otte.live.cf.ww.aiv-cdn.net/iad-nitro/live/clients/dash/enc/xjrxodbgeh/out/v1/69b95861163a42d9a34a1d4ceece7a7a/cenc.mpd?|drmScheme=clearkey&drmLicense=867ab2da044bcc1e4cc1a9252b03ce3e:0db59352d361b0a132c0a64bb231750a
+#https://a170aivottlinear-a.akamaihd.net/OTTB/sin-nitro/live/clients/dash/enc/tsrm0zirxz/out/v1/190f1d69a3d5467f8fb7d9df4339bc49/cenc.mpd?|drmScheme=clearkey&drmLicense=9cb6b6283487afe392adcffebf3cd6be:05f4eb67381e0c173954603518ce84c3
+
+#EXTINF:-1 tvg-id="Cric" tvg-name="Amazon prime" tvg-logo="https://1000logos.net/wp-content/uploads/2022/10/Amazon-Prime-Video-Logo-2022.png" group-title="CRICKET",Prime Hindi 4k
+#https://aba5sdmaaaaaaaamidug47tdi5buy.otte.live.cf.ww.aiv-cdn.net/pdx-nitro/live/clients/dash/enc/l0phze3ehz/out/v1/fe9782633a364a6a84c9410f26d9b2c4/cenc.mpd?|drmScheme=clearkey&drmLicense=4a5191838da17a2ab771f4258fad347f:54b7a084437459368eed07d182ad644c
+#https://a170aivottlinear-a.akamaihd.net/OTTB/bom-nitro/live/clients/dash/enc/l0phze3ehz/out/v1/fe9782633a364a6a84c9410f26d9b2c4/cenc.mpd?|drmScheme=clearkey&drmLicense=4a5191838da17a2ab771f4258fad347f:54b7a084437459368eed07d182ad644c
+#https://aba5sdmaaaaaaaammj2q5nkaoee4b.otte.live.cf.ww.aiv-cdn.net/pdx-nitro/live/clients/dash/enc/l2xzhgmjur/out/v1/fe9782633a364a6a84c9410f26d9b2c4/cenc.mpd?|drmScheme=clearkey&drmLicense=4a5191838da17a2ab771f4258fad347f:54b7a084437459368eed07d182ad644c
+#https://a170aivottlinear-a.akamaihd.net/OTTB/sin-nitro/live/clients/dash/enc/1jii7mxinw/out/v1/fe9782633a364a6a84c9410f26d9b2c4/cenc.mpd?|drmScheme=clearkey&drmLicense=553a8e7efc48840b17d03797c023d9b6:05fa313fa73df33f19e0f2d3d047bbaf
+
+#EXTINF:-1 tvg-id="Cricbuzz event" tvg-name="Cricbuzz events" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBlr9akJgC4lGRPCAgNKdBFyM0CfIkIESO77AH2TkWz0ZPIurz439yDu_8&s=10" group-title="CRICKET",Cricbuzz Events UHD
+#https://uselector.cdn.intigral-ott.net/CRL2/CRL2.isml/manifest.mpd?|drmScheme=clearkey&drmLicense=77889c7295e1f113852aa6030242b8e4:ec8c522d46888a15ff6533aa28ccd7f5
+#http://tv.cloudcdn.me:80/live.ts?channelId=125422&uid=4578&deviceMac=00:1A:79:41:70:15
+#https://ev-fuj-dxb-cdn-edge2.aws.playco.com/live/eds/CricLife2/DASH/CricLife2.mpd?|drmScheme=clearkey&drmLicense=48bef83b4c6a3c5189b01b0126210da4:bd085230b7b09e50954fe0af111a8a9f
+
+#EXTINF:-1 tvg-id="fancode event" tvg-name="fancode events" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq6OTWwSCPP67REB8IDYWuZww9j_tvvanCYA&usqp=CAU" group-title="CRICKET",Fancode Events UHD
+https://a166aivottlinear-a.akamaihd.net/OTTB/sin-nitro/live/clients/dash/enc/gdhz5mhnyu/out/v1/fe72171ab2684ab8b9ee3e2ffcc9cff2/cenc.mpd?|drmScheme=clearkey&drmLicense=159a2b4e1d2d7f16892d35d935a2fb34:07809840dd0f511221ca78459167d1b3
+
+#EXTINF:-1 tvg-id="Sony event" tvg-name="Sony events" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5SZB3ssT6NnI78-q1DZZhMF6kTRer2jGWdYE4T1N0K7BFYHC95psDihI&s=10" group-title="CRICKET",Sony Events UHD
+https://dai.google.com/ssai/event/g1cPcUIdSQC_3FXsrgV5iA/master.m3u8
+
+#EXTINF:-1 tvg-id="Tata ipl" tvg-name="Tata ipl" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTboihtL2GYEwRrkF6_ArJmSP-w9ExH7LRMiQ&usqp=CAU" group-title="CRICKET",Tata ipl UHD
+#https://live.drmlive-02.workers.dev/jc/2001.m3u8
+#https://drmlive.in/voot/2001.m3u8
+#https://prod-sports-hin-fa.jiocinema.com/bpk-tv/JV_SportsHD15_DIG_MOB/Fallback/index.m3u8
+
+#EXTINF:-1 tvg-id="starsports1kannada.in" tvg-name="Star Sports 1 Kannada" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhPLxN9JyE1KeREoxGvI9JMBIJSWDDaMbb8U_527S4IMBaaNn42atIpdTI&s=10" group-title="CRICKET",Star Sports 1 Kannada Hd
+http://webhop.xyz:8080/live/bana/bana/380977.m3u8
+
+#EXTINF:-1 tvg-id="starsports1hd.in" tvg-name="STAR SPORTS 1 Hd " tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Star_Sports_1_HD.png/2560px-Star_Sports_1_HD.png" group-title="CRICKET",STAR SPORTS 1 Hd
+#http://starshare.live/live/bana/bana/9397.m3u8
+#http://starshare.live/live/bana/bana/124281.m3u8
+#https://starshare.live/live/bana/bana/148.m3u8
+#https://github.com/rahul979854/Channels/raw/main/StarSport1Hd.m3u8
+https://raw.githubusercontent.com/rahul979854/Channels/refs/heads/main/StarSport1Hd.m3u8
+
+#EXTINF:-1 tvg-id="starsports2hd.in" tvg-name="STAR SPORTS 2 Hd" tvg-logo="https://tvschedule.today/_next/image?url=https%3A%2F%2Fltsk-cdn.s3.eu-west-1.amazonaws.com%2Fjumpstart%2FTemp_Live%2Fcdn%2FHLS%2FChannel%2FimageContent-1021-j5nj3c68-v1%2FimageContent-1021-j5nj3c68-m1.png&w=256&q=75" group-title="CRICKET",STAR SPORTS 2 Hd
+#http://starshare.live/live/bana/bana/239.m3u8
+https://github.com/rahul979854/Channels/raw/main/StarSport2Hd.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="Star Sport 2 HD" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Sports18_1_HD.png" group-title="cricket",STAR SPORTS 2 HD
+#https://live.drmlive-02.workers.dev/jc/122.m3u8
+https://github.com/rahul979854/Channels/raw/main/Sports18Hd.m3u8
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
+#https://mix.drmlive.au/mix/jc-122.m3u8
+#https://airplay.bgrid.in/IPTVS/live/voot/1033.m3u8
+
+#EXTINF:-1 tvg-id="starsports1hdhindi.in" tvg-name="Star Sport 1 HINDI HD "tvg-logo="https://static.epg.best/in/StarSports1Hindi.in.png" group-title="CRICKET",Star Sports 1 HINDI HD
+#http://starshare.live/live/bana/bana/9399.m3u8
+#https://starshare.live/live/bana/bana/211.m3u8
+https://github.com/rahul979854/Channels/raw/main/StarSportsHindi.m3u8
+#http://tv.cloudcdn.me:80/live.ts?channelId=295&uid=4578&deviceMac=00:1A:79:41:70:15
+#http://line.dinott.com:80/play/live.php?mac=00:1A:79:74:99:55&stream=1114582&extension=m3u8&play_token=J1f0wPBeSb
+
+#EXTINF:-1 tvg-id="starsportsselect1hd.in" tvg-name="Star Sports Select 1 HD" tvg-logo="https://vignette.wikia.nocookie.net/logopedia/images/b/b5/Star_Sports_Select_1_HD.jpg/revision/latest/scale-to-width-down/340?cb=20180806112709" group-title="INDIA SPORTS",Star Sports Select 1 HD
+#http://starshare.live/live/bana/bana/238.m3u8
+https://github.com/rahul979854/Channels/raw/main/StarSportSelect1Hd.m3u8
+
+#EXTINF:-1 tvg-id="starsportsselecthd2.in" tvg-name="Star Sports Select 2 HD" tvg-logo="https://vignette.wikia.nocookie.net/logopedia/images/4/46/Sss-hd2-bronze.png/revision/latest/top-crop/width/220/height/220?cb=20170728104956" group-title="INDIA SPORTS",Star Sports Select 2 HD
+#http://starshare.live/live/bana/bana/148801.m3u8
+https://github.com/rahul979854/Channels/raw/main/StarSportSelect2Hd.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="ASTRO CRICKET HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/b/b7/Astro_Cricket.png" group-title="CRICKET",ASTRO CRICKET HD
+#http://starshare.live/live/bana/bana/2494.m3u8
+https://github.com/rahul979854/Channels/raw/main/AstroCricketHd.m3u8
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=03c2e0af2f8159f9f0ce9b5dbc865f10:cd84ed136b0cc71f8ab8cd4d4f6a2e4c
+#https://linearjitp-playback.astro.com.my/dash-wv/linear/2504/default_primary.mpd
+#https://astro-gbj7.vercel.app/2504/default_ott.mpd?|drmScheme=clearkey&drmLicense=03c2e0af2f8159f9f0ce9b5dbc865f10:cd84ed136b0cc71f8ab8cd4d4f6a2e4c
+#https://sg-cors.onrender.com/https://linearjitp-playback.astro.com.my/dash-wv/linear/2504/default_ott.mpd
+
+
+#EXTINF:-1 tvg-id="820" ch-number="820" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe45nwhlekrvx-UczVPFC0Cv5eBSHtsZsTZQ&usqp=CAU" group-title="SPORTS",Eurosport
+#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","k":"0OeU48/1ZO0scgoJjrF3xw","kid":"TbI6Qbq/6a/CIqWMWYKDEA"}],"type":"temporary"}
+https://linearjitp-playback.astro.com.my/dash-wv/linear/2100/default_primary.mpd
+
+#EXTINF:-1 tvg-id="" tvg-name="EUROSPORTS HD" tvg-logo="https://www.logotypes101.com/logos/921/A0E9CD5BCC9176DE238B630F5A474D6F/eurosporthd.png" group-title="INDIA SPORTS",EUROSPORTS HD
+#EXTVLCOPT:http-user-agent=
+#EXTHTTP:{"cookie":"Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29tLw:Expires=1739766049:KeyName=prod_linear:Signature=z1yiV7FJx3ZTRUgQKEByo5YapPVlMzad-09uMrJ0eZ6bjUE8vqqJ_qRPf89oHohbI1H-SypiQleVkChHFIVhCw"}
+#https://bldcmprod-cdn.toffeelive.com/cdn/live/euro_sports_hd/playlist.m3u8
+https://github.com/rahul979854/Channels/raw/main/EuroSportsHd.m3u8
+
+#EXTINF:-1 tvg-id="cric" tvg-name="WILLOW CRICKET HD" tvg-logo="http://stariptv.fun/logos/WLLOW.png" group-title="CRICKET",WILLOW CRICKET HD
+#https://abmyxykaaaaaaaamkyvb65fuqebyg.7a77200bf98444ac997a89ed83775793.emt.cf.ww.aiv-cdn.net/gru-nitro/live/clients/dash-sd/enc/vodez4h7i9/out/v1/e929aee089864ce98e4c335d19f41e16/cenc-sd.mpd?|drmScheme=clearkey&drmLicense=7ec6d225c1d219152933378e75e1c466:304eec31418fb552a0b57fdac515d101
+#http://starshare.live/live/bana/bana/215.m3u8
+https://github.com/rahul979854/Channels/raw/main/WillowCricketHd.m3u8
+
+
+#EXTINF:-1 tvg-id="cric" tvg-name="Tsports HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/T_Sports_logo.svg/1200px-T_Sports_logo.svg.png" group-title="CRICKET",Tsports HD
+#https://github.com/rahul979854/Channels/raw/main/TsportsHd.m3u8
+#https://cdn.hoichoi24.com/TSportsHD/video.m3u8
+https://live.tsports.com/mobile_hls/tsports_live_2/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQagsNGVuAJyaMS65cDa-V-Sz2jwlckaF0dbncZ6twaaaXP3cyoN11QPTPx&s=10" group-title="Sports",Willow Sports ᴴᴰ
+https://abmyxykaaaaaaaamkyvb65fuqebyg.7a77200bf98444ac997a89ed83775793.emt.cf.ww.aiv-cdn.net/iad-nitro/live/clients/dash/enc/f60kqesunw/out/v1/a435ed7a00f947deb4369b46d8f2fb70/cenc.mpd?|drmScheme=clearkey&drmLicense=1779c27b9d077a3ba0c9cc1bb9a94b9f:cc5cf3b7928fb9e0a1ee6a8b566f0a8e
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgz6OLpOm-iE31-BQ3JgW-vxcdo-b_2R8HTFq6xF6abK1uYuK9xU28JGc&s=10" group-title="Sports",Willow 2 Sports ᴴᴰ
+#https://d1bz14289ojrvl.cloudfront.net/out/v1/828288b4f25c407189eb6104893fad9e/index.m3u8
+https://github.com/rahul979854/Channels/raw/main/Willow2Hd.m3u8
+
+#EXTINF:-1 tvg-id="cric" tvg-name="Fox Sport 501 HD" tvg-logo="https://media.info/l/o/6/6550.1489223922.png" group-title="CRICKET",Fox Sports 501 HD
+#http://tv.cloudcdn.me:80/live.ts?channelId=36128&uid=4578&deviceMac=00:1A:79:41:70:15
+https://github.com/rahul979854/Channels/raw/main/FoxSports501Hd.m3u8
+
+#EXTINF:-1 tvg-id=ts1070 tvg-logo="https://tv.assets.pressassociation.io/f55b110f-8046-5273-a249-badfe915e918.png" group-title="Sports",TNT 1
+https://ottb.live.cf.ww.aiv-cdn.net/lhr-nitro/live/clients/dash/enc/wf8usag51e/out/v1/bd3b0c314fff4bb1ab4693358f3cd2d3/cenc.mpd?|drmScheme=clearkey&drmLicense=ae26845bd33038a9c0774a0981007294:63ac662dde310cfb4cc6f9b43b34196d
+#https://github.com/rahul979854/Channels/raw/main/TNSports1Hd.m3u8
+#https://abfdm2saaaaaaaamljqrv7ybrrx7h.47348d5020154bfaac6dd4418cd23c5d.emt.cf.ww.aiv-cdn.net/pdx-nitro/live/clients/dash/enc/rdznpzcmct/out/v1/355324ed98a94cbebbaff4bad0cd28ce/cenc.mpd|drmScheme=clearkey&drmLicense=ae26845bd33038a9c0774a0981007294:63ac662dde310cfb4cc6f9b43b34196d
+
+#EXTINF:-1 tvg-id=ts1070 tvg-logo="https://tv.assets.pressassociation.io/77f422fa-d4a2-5687-953c-34f4da7d8b91.png" group-title="Sports",TNT 2
+https://ottb.live.cf.ww.aiv-cdn.net/lhr-nitro/live/clients/dash/enc/f0qvkrra8j/out/v1/f8fa17f087564f51aa4d5c700be43ec4/cenc.mpd?|drmScheme=clearkey&drmLicense=6d1708b185c6c4d7b37600520c7cc93c:1aace05f58d8edef9697fd52cb09f441
+
+#EXTINF:-1 tvg-id=ts1070 tvg-logo="https://tv.assets.pressassociation.io/75c9df5d-d2d8-5d04-92ac-d9973c082c72.png" group-title="Sports",TNT 3
+https://ottb.live.cf.ww.aiv-cdn.net/lhr-nitro/live/clients/dash/enc/lsdasbvglv/out/v1/bb548a3626cd4708afbb94a58d71dce9/cenc.mpd?|drmScheme=clearkey&drmLicense=4e993aa8c1f295f8b94e8e9e6f6d0bfe:86a1ed6e96caab8eb1009fe530d2cf4f
+
+#EXTINF:-1 tvg-id=ts1070 tvg-logo="https://tv.assets.pressassociation.io/056d00c0-1629-5388-857c-f1a9ebdec5b8.png" group-title="Sports",TNT 4
+https://ottb.live.cf.ww.aiv-cdn.net/lhr-nitro/live/clients/dash/enc/i2pcjr4pe5/out/v1/912e9db56d75403b8a9ac0a719110f36/cenc.mpd?|drmScheme=clearkey&drmLicense=e31a5a81caff5d07ea2411a571fc2e59:96c5ef69479732ae734f962748c19729
+
+#EXTINF:-1 tvg-id=ts1070 tvg-logo="https://tv.assets.pressassociation.io/dbf92dca-857c-5522-bbc6-2bda4e23ff31.png" group-title="Sports",TNT 5
+https://github.com/rahul979854/Channels/raw/main/TNTsports5Hd.m3u8?|drmScheme=clearkey&drmLicense=60c0d9b41475e01db4ffb91ed557fbcc:36ee40e58948ca15e3caba8d47b8f34b
+
+#EXTINF:-1 tvg-id=ts1070 tvg-logo="https://assets.tv24.co/channels/bt-sport-ultimate-uhd-l.webp" group-title="Sports",TNT Ultimate
+#https://github.com/rahul979854/Channels/raw/main/TntUltimate4k.m3u8
+#https://7pal.short.gy/TNTUltimate
+http://krooztv.live:80/live/676767/767676/276789.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/hgVx5GL/Bein-1.png" group-title="Sports" tvg-id="beINSports",beIN Sports 1 ᴴᴰ
+https://linearjitp-playback.astro.com.my/dash-wv/linear/408/default_primary.mpd?|drmScheme=clearkey&drmLicense={ "keys":[ { "kty":"oct", "k":"PEUIrzSIRBB/XgJqT9axbg", "kid":"GmVRiatcSesjUwjCsannEA" } ], "type":"temporary" }
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Lpk9gnv/Bein-2.png" group-title="Sports" tvg-id="beINSports2",beIN Sports 2 ᴴᴰ
+https://linearjitp-playback.astro.com.my/dash-wv/linear/5066/default_primary.mpd?|drmScheme=clearkey&drmLicense={ "keys":[ { "kty":"oct", "k":"UQKxKqx3VsZdy0ahAdlg0w", "kid":"OcF1WB4jfv+VWWB+ubI8EA" } ], "type":"temporary" }
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/kQvKn0B/Bein-3.png" group-title="Sports" tvg-id="beINSports3",beIN Sports 3 ᴴᴰ
+https://linearjitp-playback.astro.com.my/dash-wv/linear/2705/default_primary.mpd?|drmScheme=clearkey&drmLicense={ "keys":[ { "kty":"oct", "k":"BCohvyNspymx40PtbgpjNw", "kid":"IMiE747Saydi+LGnjy0ZEA" } ], "type":"temporary" }
+
+#EXTINF:-1 tvg-id="skysportscricket.uk" tvg-name="Sky Sports Cricket" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2L1XzAytScLX1kNIcd5Fg8cPPW5ASZAA17l2eoZj59Df2D3rk9PcyuDOm&s=10" group-title="SKY SPORTS",Sky Sports Cricket
+#http://starshare.live/live/bana/bana/124269.m3u8
+https://github.com/rahul979854/Channels/raw/main/SkySportsCricketHd.m3u8
+
+#EXTINF:-1 tvg-id="skysports" tvg-name="Sky Sports" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeXRyzuz4-DcPeUHtU2OxWXda4-lZjO0Pivg&usqp=CAU" group-title="SKY SPORTS",Sky Sport 3 Nz
+https://github.com/rahul979854/Channels/raw/main/SkySport3Nz.m3u8
+#https://7pal.short.gy/skyspt3nz
+
+
+#EXTINF:-1 tvg-id="1000009276" tvg-logo="https://sonypicturesnetworks.com/images/logos/SONY_SportsTen1_HD_Logo_CLR.png" group-title="SonyLiv", Sony Sports TEN 1 HD
+https://dai.google.com/ssai/event/yeYP86THQ4yl7US8Zx5eug/master.m3u8
+#https://live.drmlive-02.workers.dev/sliv/ten1hd.m3u8
+
+#EXTINF:-1 tvg-id="1000009277" tvg-logo="https://sonypicturesnetworks.com/images/logos/SONY_SportsTen2_HD_Logo_CLR.png" group-title="SonyLiv", Sony Sports TEN 2 HD
+https://dai.google.com/ssai/event/Syu8F41-R1y_JmQ7x0oNxQ/master.m3u8
+#https://live.drmlive-02.workers.dev/sliv/ten2hd.m3u8
+
+#EXTINF:-1 tvg-id="1000009278" tvg-logo="https://sonypicturesnetworks.com/images/logos/SONY_SportsTen3_HD_Logo_CLR.png" group-title="SonyLiv", Sony Sports TEN 3 HD
+https://dai.google.com/ssai/event/nmQFuHURTYGQBNdUG-2Qdw/master.m3u8
+#https://live.drmlive-02.workers.dev/sliv/ten3hd.m3u8
+
+#EXTINF:-1 tvg-id="1000119186" tvg-logo="https://sonypicturesnetworks.com/images/logos/SONY_SportsTen4_HD_Logo_CLR.png" group-title
