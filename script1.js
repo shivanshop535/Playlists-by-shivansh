@@ -47,7 +47,7 @@ const channels = [
 ];
 
 // Fetch the local M3U playlist
-fetch('M3UPlus-Playlist-20241019222427.m3u')
+fetch('StarShare.m3u')
     .then(response => {
         if (!response.ok) {
             throw new Error('Network response was not ok: ' + response.statusText);
